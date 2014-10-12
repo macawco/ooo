@@ -1,0 +1,7 @@
+<input type="text">
+<ul class="slide-list">
+  <li ng-repeat="slide in slides" ng-click="showSlide($index)">
+    <span class="slide-number">{{ $index + 1 }}</span>
+    <span class="slide-name">{{ slide.name }}</span>
+  </li>
+</ul>

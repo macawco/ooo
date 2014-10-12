@@ -1,0 +1,56 @@
+@import 'reset.css';
+
+body {
+  background: black;
+  color: white;
+  font: 14px/1.3 Montserrat, Helvetica;
+}
+
+slide {
+  display: none;
+}
+
+menu {
+  position: fixed;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  padding: 50px;
+  z-index: 1000000;
+  background: rgb(255, 255, 255);
+  color: rgb(50, 50, 50);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale3d(.95, .95, .95);
+  -webkit-transition: all .3s;
+}
+
+menu.visible {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale3d(1, 1, 1);
+}
+
+.slide-list li {
+  cursor: pointer;
+  -webkit-transition: all .12s;
+}
+
+.slide-list li:hover {
+  background: rgb(240, 240, 240);
+}
+
+.slide-list li {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.slide-list li:last-child {
+  border-bottom: none;
+}
+
+menu .slide-number {
+  color: rgb(200, 200, 200);
+}
