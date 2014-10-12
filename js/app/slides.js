@@ -31,11 +31,11 @@ define([
       };
 
       $scope.hide = function(index) {
-        $scope.$slides.eq(index).hide();
+        $scope.$slides.eq(index).removeClass('visible');
       };
 
       $scope.show = function(index) {
-        $scope.$slides.eq(index).show();
+        $scope.$slides.eq(index).addClass('visible');
       };
 
       $scope.handleKey = function(e) {
@@ -68,11 +68,11 @@ define([
       };
 
       $scope.next = function() {
-        $scope.setIndex($scope.index + 1);
+        slideService.setIndex($scope.index + 1);
       };
 
       $scope.prev = function() {
-        $scope.setIndex($scope.index - 1);
+        slideService.setIndex($scope.index - 1);
       };
 
     }])
@@ -86,7 +86,17 @@ define([
 
           slideService.setup(element.find('slide'));
           scope.setup();
-          scope.setIndex(0);
+          slideService.setIndex(0);
+
+          // pass transitions down to each slide if
+          if (attributes.transition) {
+            element.find('slide').each(function() {
+              if (!$(this).attr('transition')) {
+                $(this).attr('transition', attributes.transition);
+              }
+            });
+          }
+
           $(document).on('keydown', scope.handleKey);
 
         }

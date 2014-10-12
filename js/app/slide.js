@@ -22,6 +22,16 @@ define([
             element.load(attributes.src);
           }
 
+          // transition in
+          if (attributes.transitionIn) {
+
+          }
+
+          // transition in
+          if (attributes.transitionOut) {
+
+          }
+
         }
       };
     });
