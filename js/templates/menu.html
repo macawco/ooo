@@ -1,6 +1,6 @@
-<input type="text">
+<input type="text" ng-model="query" placeholder="search" class="menu-search" ng-focus="setFocus(true)" ng-blur="setFocus(false)">
 <ul class="slide-list">
-  <li ng-repeat="slide in slides" ng-click="showSlide($index)">
+  <li ng-repeat="slide in slides | searchFilter:query" ng-click="showSlide($index)" ng-class="{current: $index == index, dimmed: slide.dimmed}">
     <span class="slide-number">{{ $index + 1 }}</span>
     <span class="slide-name">{{ slide.name }}</span>
   </li>

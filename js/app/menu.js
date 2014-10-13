@@ -10,28 +10,48 @@ define([
     .controller('MenuController', function($scope, $element, slideService) {
 
       $scope.slides = slideService.slides;
+      $scope.index = 0;
 
       slideService.on('newIndex', function(newIndex) {
-        $scope.setIndex(newIndex);
+        $scope.index = newIndex;
       });
 
       $scope.toggle = function() {
-        $element.toggleClass('visible');
+        if ($element.hasClass('visible')) {
+          $scope.hide();
+        } else {
+          $scope.show();
+        }
       };
 
       $scope.show = function() {
         $element.addClass('visible');
+
+        setTimeout(function() {
+          $scope.query = '';
+          $element.find('.menu-search').focus();
+        }, 10);
       };
 
       $scope.hide = function() {
+        $scope.query = '';
+        $element.find('.menu-search').blur();
         $element.removeClass('visible');
       };
 
       $scope.handleKey = function(e) {
+        // console.log(e.keyCode);
+
         switch (e.keyCode) {
           // m
           case 77:
-            $scope.toggle();
+            if (!$scope.focus) {
+              $scope.toggle();
+            }
+            break;
+          // esc
+          case 27:
+            $scope.hide();
             break;
         }
       };
@@ -41,16 +61,28 @@ define([
         slideService.setIndex(index);
       };
 
-      $scope.setIndex = function(index) {
-        $element.find('.current').removeClass('current');
-        $element.find('li').eq(index).addClass('current');
+      $scope.setFocus = function(focus) {
+        $scope.focus = focus;
       };
 
-      // @todo: replace timeout with a legit event
-      setTimeout(function() {
-        $scope.setIndex(slideService.index);
-      }, 100);
+    })
 
+    .filter('searchFilter', function ($filter) {
+      return function (input, search) {
+        if (angular.isUndefined(input)) {
+          return;
+        }
+
+        angular.forEach(input, function(found) {
+          found.dimmed = true;
+        });
+
+        angular.forEach($filter('filter')(input, search, false), function(found) {
+          found.dimmed = false;
+        });
+
+        return input;
+      };
     })
 
     .directive('menu', function(slideService) {
@@ -60,7 +92,7 @@ define([
         templateUrl: 'js/templates/menu.html',
         scope: true,
         link: function(scope, element, attributes) {
-          scope.setIndex(slideService.index);
+
           $(document).on('keydown', scope.handleKey);
         }
       };

@@ -19,7 +19,7 @@ slide {
   right: 0;
   margin: auto;
   width: 1400px;
-  height: 700px;
+  height: 800px;
   background: black;
   opacity: 0;
   -webkit-transition: all .5s;
@@ -73,6 +73,10 @@ menu.visible {
   color: white;
 }
 
+.slide-list li.dimmed {
+  opacity: .2;
+}
+
 menu .slide-number {
   display: inline-block;
   width: 30px;
@@ -112,4 +116,15 @@ slide[transition="swingTop"] {
 
 slide[transition="swingTop"].visible {
   -webkit-transform: rotateX(0);
+}
+
+
+.menu-search {
+  width: 100%;
+  border: none;
+  height: 40px;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-family: Montserrat;
 }
