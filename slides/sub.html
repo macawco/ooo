@@ -1,0 +1,27 @@
+<div class="wrapper" sub="sub">
+  <div class="sub sub-1"></div>
+  <div class="sub sub-2"></div>
+  <div class="sub sub-3"></div>
+</div>
+
+<script sub-def="sub">
+  (function() {
+    return [
+      function() {
+        $('.sub').hide();
+      },
+      function() {
+        $('.sub').hide();
+        $('.sub-1').show();
+      },
+      function() {
+        $('.sub').hide();
+        $('.sub-2').show();
+      },
+      function() {
+        $('.sub').hide();
+        $('.sub-3').show();
+      }
+    ];
+  })();
+</script>

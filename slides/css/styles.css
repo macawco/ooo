@@ -1,3 +1,5 @@
+@import 'sub.css';
+
 [name="Title"] {
   background: red;
 }

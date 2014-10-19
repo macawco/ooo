@@ -1,0 +1,21 @@
+[name="Sub"] {
+  background: black;
+}
+
+[name="Sub"] .sub {
+  display: none;
+  width: 300px;
+  height: 300px;
+}
+
+[name="Sub"] .sub-1 {
+  background: red;
+}
+
+[name="Sub"] .sub-2 {
+  background: white;
+}
+
+[name="Sub"] .sub-3 {
+  background: blue;
+}

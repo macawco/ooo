@@ -14,6 +14,8 @@ define([
       service.total = 0;
       service.slides = [];
       service.handlers = {};
+      service.subs = {};
+      service.subIndex = 0;
 
       service.setup = function($slides) {
         service.slides = [];
@@ -27,6 +29,10 @@ define([
         });
       };
 
+      service.registerSub = function(index, sub) {
+        service.subs[index] = sub;
+      };
+
       service.setIndex = function(index) {
         if (index < 0) {
           return;
@@ -34,6 +40,11 @@ define([
 
         if (index >= service.total) {
           return;
+        }
+
+        if (service.subs[index]) {
+          service.subIndex = 0;
+          service.subs[index][0]();
         }
 
         service.index = index;
@@ -55,11 +66,47 @@ define([
       };
 
       service.next = function() {
+        if (service.nextSub()) {
+          return;
+        }
+
         service.setIndex(service.index + 1);
       };
 
+      service.nextSub = function() {
+        var sub = service.subs[service.index];
+
+        if (sub) {
+          if (service.subIndex < sub.length - 1) {
+            service.subIndex++;
+            sub[service.subIndex]();
+            return true;
+          }
+        } else {
+          return false;
+        }
+      };
+
       service.prev = function() {
+        if (service.prevSub()) {
+          return;
+        }
+
         service.setIndex(service.index - 1);
+      };
+
+      service.prevSub = function() {
+        var sub = service.subs[service.index];
+
+        if (sub) {
+          if (service.subIndex > 0) {
+            service.subIndex--;
+            sub[service.subIndex]();
+            return true;
+          }
+        } else {
+          return false;
+        }
       };
 
       return service;

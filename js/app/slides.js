@@ -68,11 +68,13 @@ define([
       };
 
       $scope.next = function() {
-        slideService.setIndex($scope.index + 1);
+        slideService.next();
+        // slideService.setIndex($scope.index + 1);
       };
 
       $scope.prev = function() {
-        slideService.setIndex($scope.index - 1);
+        slideService.prev();
+        // slideService.setIndex($scope.index - 1);
       };
 
     }])
