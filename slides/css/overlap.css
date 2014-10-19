@@ -1,0 +1,223 @@
+[name="Overlap"] {
+  background: black;
+}
+
+[name="Overlap"] .circle-name {
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+[name="Overlap"] .final-name {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 10;
+  height: 1em;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+[name="Overlap"] .final-name.visible {
+  -webkit-transition: all 1s 1.5s;
+  opacity: 1;
+}
+
+[name="Overlap"] .circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 2s;
+}
+
+[name="Overlap"] .designer,
+[name="Overlap"] .developer {
+  position: absolute;
+  -webkit-transition: all 1.5s;
+}
+
+[name="Overlap"] .designer {
+  top: -500px;
+  left: -450px;
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+
+[name="Overlap"] .designer .circle-name {
+  right: 200px;
+  bottom: 280px;
+}
+
+[name="Overlap"] .developer .circle-name {
+  left: 200px;
+  top: 280px;
+}
+
+[name="Overlap"] .developer {
+  bottom: -500px;
+  right: -450px;
+  z-index: 0;
+}
+
+[name="Overlap"] .circles.touching .designer {
+  top: -425px;
+  left: -375px;
+}
+
+[name="Overlap"] .circles.touching .developer {
+  bottom: -425px;
+  right: -375px;
+}
+
+[name="Overlap"] .circles.touching .circle-name {
+  -webkit-transition: all 1.5s;
+}
+
+[name="Overlap"] .circles.touching .designer .circle-name {
+  right: 300px;
+}
+
+[name="Overlap"] .circles.touching .developer .circle-name {
+  left: 300px;
+}
+
+[name="Overlap"] .circles.overlapping {
+  -webkit-transform: rotate(720deg) scale(.5);
+}
+
+[name="Overlap"] .circles.zoomed {
+  -webkit-transition: all .7s;
+  -webkit-transform: rotate(720deg) scale(1.5);
+}
+
+[name="Overlap"] .circles.overlapping .circle-name {
+  display: none;
+}
+
+[name="Overlap"] .circles.overlapping .designer {
+  top: -200px;
+  left: 100px;
+}
+
+[name="Overlap"] .circles.overlapping .developer {
+  bottom: -200px;
+  right: 100px;
+}
+
+[name="Overlap"] .logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  -webkit-transition: all .6s;
+}
+
+[name="Overlap"] .logo.visible {
+  opacity: 1;
+}
+
+[name="Overlap"] .photoshop {
+  left: 120px;
+  height: 168px;
+}
+
+[name="Overlap"] .sublime-text {
+  right: 120px;
+  height: 160px;
+}
+
+[name="Overlap"] .lde {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  z-index: 2;
+  width: 1200px;
+  height: 500px;
+  font-size: 150px;
+  line-height: 150px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  opacity: 0;
+  -webkit-transform: scale(.8);
+  -webkit-transition: all .7s;
+}
+
+[name="Overlap"] .lde .word {
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 1s;
+}
+
+[name="Overlap"] .lde .lde-live {
+  top: 0;
+}
+
+[name="Overlap"] .lde .lde-design {
+  top: 150px;
+}
+
+[name="Overlap"] .lde .lde-environment {
+  top: 300px;
+}
+
+[name="Overlap"] .lde.visible {
+  -webkit-transform: scale(1);
+  opacity: 1;
+}
+
+[name="Overlap"] .lde span {
+  -webkit-transition: all .7s;
+}
+
+[name="Overlap"] .lde.abbreviated span {
+  opacity: 0.3;
+}
+
+[name="Overlap"] .lde.live {
+  -webkit-transform: rotateZ(10deg) scale(2.5) translateX(360px) translateY(264px);
+}
+
+[name="Overlap"] .lde.live .lde-design {
+  opacity: 1;
+}
+
+[name="Overlap"] .lde.live .lde-design,
+[name="Overlap"] .lde.live .lde-environment {
+  opacity: .1;
+}
+
+[name="Overlap"] .lde.design {
+  -webkit-transform: rotateZ(-10deg) scale(2.1) translateX(320px) translateY(135px);
+}
+
+[name="Overlap"] .lde.design .lde-design {
+  opacity: 1;
+}
+
+[name="Overlap"] .lde.design .lde-live,
+[name="Overlap"] .lde.design .lde-environment {
+  opacity: .1;
+}
+
+[name="Overlap"] .lde.environment {
+  -webkit-transform: rotateZ(10deg) scale(1.1) translateX(75px) translateY(-291px);
+}
+
+[name="Overlap"] .lde.environment .lde-environment {
+  opacity: 1;
+}
+
+[name="Overlap"] .lde.environment .lde-live,
+[name="Overlap"] .lde.environment .lde-design {
+  opacity: .1;
+}

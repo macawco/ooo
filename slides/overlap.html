@@ -1,0 +1,82 @@
+<div class="wrapper" sub="overlap">
+  <div class="circles">
+    <div class="designer">
+      <div class="circle-name">Designer</div>
+      <img src="slides/images/designer-circle.png">
+    </div>
+    <div class="developer">
+      <div class="circle-name">Developer</div>
+      <img src="slides/images/developer-circle.png">
+    </div>
+  </div>
+
+  <div class="circle-name final-name">Designer</div>
+
+  <div class="photoshop logo">
+    <img src="slides/images/photoshop-logo.png">
+  </div>
+
+  <div class="sublime-text logo">
+    <img src="slides/images/sublime-text-logo.png">
+  </div>
+
+  <div class="lde">
+    <div class="word lde-live"><strong>L</strong><span>ive</span></div>
+    <div class="word lde-design"><strong>D</strong><span>esign</span></div>
+    <div class="word lde-environment"><strong>E</strong><span>nvironment</span></div>
+  </div>
+
+</div>
+
+<script sub-def="overlap">
+  (function() {
+    return [
+      function() {
+        $('[sub="overlap"] .lde').removeClass('visible abbreviated');
+        $('[sub="overlap"] .circles').removeClass('touching overlapping zoomed');
+        $('[sub="overlap"] .final-name').removeClass('visible');
+        $('[sub="overlap"] .logo').removeClass('visible');
+      },
+      function() {
+        $('[sub="overlap"] .circles').removeClass('overlapping').addClass('touching');
+        $('[sub="overlap"] .final-name').removeClass('visible');
+      },
+      function() {
+        $('[sub="overlap"] .circles').addClass('overlapping');
+        $('[sub="overlap"] .final-name').addClass('visible');
+        $('[sub="overlap"] .logo').removeClass('visible');
+      },
+      function() {
+        $('[sub="overlap"] .photoshop').addClass('visible');
+        $('[sub="overlap"] .sublime-text').removeClass('visible');
+      },
+      function() {
+        $('[sub="overlap"] .final-name').addClass('visible');
+        $('[sub="overlap"] .logo').addClass('visible');
+        $('[sub="overlap"] .circles').removeClass('zoomed');
+        $('[sub="overlap"] .sublime-text').addClass('visible');
+      },
+      function() {
+        $('[sub="overlap"] .final-name').removeClass('visible');
+        $('[sub="overlap"] .logo').removeClass('visible');
+        $('[sub="overlap"] .circles').addClass('zoomed');
+        $('[sub="overlap"] .lde').addClass('visible');
+      },
+      function() {
+        $('[sub="overlap"] .lde').addClass('abbreviated');
+      },
+      function() {
+        $('[sub="overlap"] .lde').removeClass('abbreviated').addClass('live');
+      },
+      function() {
+        $('[sub="overlap"] .lde').removeClass('live').addClass('design');
+      },
+      function() {
+        $('[sub="overlap"] .lde').removeClass('design').addClass('environment');
+      },
+      function() {
+        $('[sub="overlap"] .lde').removeClass('environment');
+      }
+    ];
+  })();
+</script>

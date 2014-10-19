@@ -1,0 +1,98 @@
+[name="PostScript"] {
+  background: black;
+}
+
+[name="PostScript"] {
+  -webkit-perspective: 800;
+}
+
+[name="PostScript"] h1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 1em;
+  font-size: 60px;
+  text-align: center;
+  -webkit-transition: all 1.2s;
+  -webkit-transform: rotateX(-90deg) translateY(-600px) translateZ(-2000px);
+}
+
+[name="PostScript"] h1.hidden {
+  opacity: 0;
+}
+
+[name="PostScript"] .book,
+[name="PostScript"] .page {
+  position: absolute;
+  width: 700px;
+  height: 800px;
+}
+
+[name="PostScript"] .spine {
+  position: absolute;
+  width: 100px;
+  height: 800px;
+  background: -webkit-linear-gradient(-30deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)) white;
+  -webkit-transform-origin: left;
+  -webkit-transform: rotateY(90deg);
+}
+
+[name="PostScript"] .pages {
+  position: absolute;
+  width: 700px;
+  height: 100px;
+  bottom: 0;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)) white;
+  -webkit-transform-origin: bottom;
+  -webkit-transform: rotateX(90deg);
+}
+
+[name="PostScript"] .book {
+  top: 200px;
+  left: 350px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translateZ(2000px) translateY(350px) rotateX(90deg);
+  -webkit-transition: none;
+}
+
+[name="PostScript"] .visible {
+  top: -60px;
+  left: 320px;
+  /*-webkit-transform: translateZ(0px) rotateX(40deg) rotateZ(-30deg);*/
+  -webkit-transform: translateY(90px) translateZ(0px) rotateX(20deg) rotateZ(-20deg);
+  -webkit-transition: all 1.2s ease-in-out;
+}
+
+[name="PostScript"] .cover {
+  -webkit-transform: translateZ(2px);
+}
+
+[name="PostScript"] .page {
+  top: 0;
+  left: 0;
+  background: white;
+  -webkit-transform-origin: left;
+  -webkit-transition: all .8s;
+}
+
+[name="PostScript"] .opened {
+  top: 0;
+  left: 700px;
+  -webkit-transition: all .7s .1s;
+  -webkit-transform: rotateX(0) rotateZ(0);
+}
+
+[name="PostScript"] .opened .cover {
+  -webkit-transform: translateZ(2px) rotateY(180deg);
+}
+
+[name="PostScript"] .opened .left-page {
+  -webkit-transform: translateZ(4px) rotateY(-180deg);
+}
+
+[name="PostScript"] .left-page-content {
+  -webkit-transform: rotateY(180deg);
+}

@@ -1,0 +1,34 @@
+<div class="wrapper" sub="book">
+  <div class="book">
+    <h1>We've been here before</h1>
+    <div class="page cover">
+      <img src="slides/images/postscript-cover.jpg">
+    </div>
+    <div class="spine"></div>
+    <div class="pages"></div>
+    <div class="page left-page">
+      <img class="left-page-content" src="slides/images/postscript-left.png">
+    </div>
+    <div class="page right-page">
+      <img src="slides/images/postscript-right.png">
+    </div>
+  </div>
+</div>
+
+<script sub-def="book">
+  (function() {
+    return [
+      function() {
+        $('h1').removeClass('hidden');
+        $('.book').removeClass('visible opened');
+      },
+      function() {
+        $('h1').addClass('hidden');
+        $('.book').removeClass('opened').addClass('visible');
+      },
+      function() {
+        $('.book').addClass('opened');
+      }
+    ];
+  })();
+</script>
