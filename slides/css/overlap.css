@@ -193,7 +193,7 @@
 
 [name="Overlap"] .lde.live .lde-design,
 [name="Overlap"] .lde.live .lde-environment {
-  opacity: .1;
+  opacity: 0;
 }
 
 [name="Overlap"] .lde.design {
@@ -206,7 +206,7 @@
 
 [name="Overlap"] .lde.design .lde-live,
 [name="Overlap"] .lde.design .lde-environment {
-  opacity: .1;
+  opacity: 0;
 }
 
 [name="Overlap"] .lde.environment {
@@ -219,5 +219,95 @@
 
 [name="Overlap"] .lde.environment .lde-live,
 [name="Overlap"] .lde.environment .lde-design {
-  opacity: .1;
+  opacity: 0;
+}
+
+[name="Overlap"] .lde-icon {
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+[name="Overlap"] .lde-icon.visible {
+  opacity: 1;
+}
+
+[name="Overlap"] .live-1 .lde-icon {
+  left: 900px;
+  top: 100px;
+}
+
+ [name="Overlap"] .lde-icon-delay-1 {
+  -webkit-transition-delay: .1s;
+ }
+
+ [name="Overlap"] .lde-icon-delay-2 {
+  -webkit-transition-delay: .2s;
+ }
+
+
+.lde-icon-select {
+  top: 110px;
+  left: 50px;
+}
+
+.lde-icon-zoom {
+  top: 90px;
+  left: 300px;
+}
+.lde-icon-eyedropper {
+  left: 560px;
+  top: 80px;
+}
+
+.lde-icon-fixed {
+  left: 50px;
+  top: 80px;
+}
+
+.lde-icon-absolute {
+  left: 340px;
+  top: 80px;
+}
+
+.lde-icon-static {
+  left: 630px;
+  top: 80px;
+}
+
+
+.lde-icon-states {
+  left: 70px;
+  top: 80px;
+}
+
+.lde-icon-display {
+  left: 400px;
+  top: 80px;
+}
+
+.lde-icon-embed {
+  left: 710px;
+  top: 70px;
+}
+
+.lde-icon-html {
+  left: 80px;
+  top: 360px;
+}
+
+.lde-icon-css {
+  left: 410px;
+  top: 360px;
+}
+
+.lde-icon-js {
+  left: 730px;
+  top: 360px;
+}
+
+.lde-icon-browser {
+  left: 270px;
+  top: 360px;
 }

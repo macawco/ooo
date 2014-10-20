@@ -1,0 +1,42 @@
+<div class="wrapper" sub="race">
+  <div class="boxes">
+    <div class="box froont">
+      <img class="logo" src="slides/images/froont-logo.png">
+    </div>
+    <div class="box adobe">
+      <img class="logo" src="slides/images/adobe-logo.png">
+    </div>
+    <div class="box webflow">
+      <img class="logo" src="slides/images/webflow-logo.png">
+    </div>
+    <div class="box macaw">
+      <img class="logo" src="slides/images/macaw-logo-black.png">
+    </div>
+  </div>
+</div>
+
+<script sub-def="race">
+  (function() {
+    return [
+      function() {
+        $('box').removeClass('expanded');
+      },
+      function() {
+        $('.box').removeClass('expanded');
+        $('.froont').addClass('expanded');
+      },
+      function() {
+        $('.box').removeClass('expanded');
+        $('.adobe').addClass('expanded');
+      },
+      function() {
+        $('.box').removeClass('expanded');
+        $('.webflow').addClass('expanded');
+      },
+      function() {
+        $('.box').removeClass('expanded');
+        $('.macaw').addClass('expanded');
+      }
+    ];
+  })();
+</script>

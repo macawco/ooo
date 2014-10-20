@@ -1,0 +1,79 @@
+[name="Race"] .boxes {
+  width: 1400px;
+  height: 800px;
+}
+
+[name="Race"] .box {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  z-index: 0;
+  -webkit-transition: all .5s;
+}
+
+[name="Race"] .logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  -webkit-transition: all .5s;
+}
+
+[name="Race"] .froont {
+  top: 300px;
+  background: #2ad57e;
+}
+
+[name="Race"] .froont .logo {
+  width: 199px;
+  height: 38px;
+}
+
+[name="Race"] .adobe {
+  left: 350px;
+  top: 250px;
+  background: #ee3576;
+}
+
+[name="Race"] .adobe .logo {
+  width: 79px;
+  height: 108px;
+}
+
+[name="Race"] .webflow {
+  left: 700px;
+  top: 200px;
+  background: #3fc9de;
+}
+
+[name="Race"] .webflow .logo {
+  width: 165px;
+  height: 44px;
+}
+
+[name="Race"] .macaw {
+  left: 1050px;
+  top: 150px;
+  background: #ffec6a;
+}
+
+[name="Race"] .macaw .logo {
+  width: 231px;
+  height: 44px;
+}
+
+[name="Race"] .expanded {
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 1400px;
+  height: 800px;
+  -webkit-transition-delay: .3s;
+}
+
+[name="Race"] .expanded .logo {
+  right: 950px;
+  -webkit-transition-delay: .3s;
+}
