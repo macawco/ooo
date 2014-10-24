@@ -1,0 +1,110 @@
+[name="Us"] .feathers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 4578px;
+  height: 3272px;
+  -webkit-transform: translateX(-2780px) translateY(-2100px);
+  -webkit-transition: all .7s ease-in;
+}
+
+[name="Us"] .feathers.zoomed {
+  -webkit-transform: translateX(-1680px) translateY(-1200px) scale3d(0.33, 0.33, 0.33);
+}
+
+/*[name="Us"] .feathers.zoomed .feather-set-1 {
+  -webkit-transition: all 360s;
+  -webkit-transform: rotate(360deg);
+}
+
+[name="Us"] .feathers.zoomed .feather-set-2 {
+  -webkit-transition: all 480s;
+  -webkit-transform: rotate(360deg);
+}
+
+[name="Us"] .feathers.zoomed .feather-set-3 {
+  -webkit-transition: all 720s;
+  -webkit-transform: rotate(360deg);
+}*/
+
+[name="Us"] .feather-set {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4578px;
+  height: 3272px;
+}
+
+[name="Us"] .feathers .feather-set-0 {
+  top: 2000px;
+  left: 3000px;
+  width: 1438px;
+  height: 1308px;
+}
+
+[name="Us"] .feathers.zoomed .feather-set-0 {
+  -webkit-transition: all 5s ease-out;
+  -webkit-transform: rotateZ(-20deg);
+}
+
+[name="Us"] .feathers.zoomed .feather-set-1 {
+  -webkit-transition: all 240s linear;
+  -webkit-transform: rotateZ(360deg);
+}
+
+[name="Us"] .feathers.zoomed .feather-set-2 {
+  -webkit-transition: all 360s linear;
+  -webkit-transform: rotateZ(360deg);
+}
+
+[name="Us"] .feathers.zoomed .feather-set-3 {
+  -webkit-transition: all 480s linear;
+  -webkit-transform: rotateZ(-360deg);
+}
+
+[name="Us"] .names {
+  position: absolute;
+  top: 550px;
+  left: 100px;
+  width: 600px;
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: all .5s;
+}
+
+[name="Us"] .names.hidden {
+  opacity: 0;
+}
+
+[name="Us"] .tom {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+[name="Us"] .adam {
+  position: absolute;
+  top: 0;
+  left: 650px;
+}
+
+[name="Us"] h1 {
+  width: 600px;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+[name="Us"] h2 {
+  width: 600px;
+  font-size: 36px;
+  font-weight: 500;
+  opacity: .5;
+}
+
+[name="Us"] .logo {
+  position: absolute;
+  top: 1350px;
+  left: 2100px;
+}

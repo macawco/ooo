@@ -1,0 +1,38 @@
+<div class="wrapper" sub="us">
+  <div class="names">
+    <div class="tom">
+      <h1>Tom Giannattasio</h1>
+      <h2>@attasi</h2>
+    </div>
+
+    <div class="adam">
+      <h1>Adam Christ</h1>
+      <h2>@gesusc</h2>
+    </div>
+  </div>
+
+  <div class="feathers">
+    <img src="slides/images/macaw-us.png" class="logo">
+    <div class="feather-set-1">
+      <img src="slides/images/feather-main.png" class="feather-set feather-set-0">
+      <img src="slides/images/feathers-small-1.png" class="feather-set">
+    </div>
+    <img src="slides/images/feathers-small-2.png" class="feather-set feather-set-2">
+    <img src="slides/images/feathers-small-3.png" class="feather-set feather-set-3">
+  </div>
+</div>
+
+<script sub-def="us">
+  (function() {
+    return [
+      function() {
+        $('[sub="us"] .feathers').removeClass('zoomed');
+        $('[sub="us"] .names').removeClass('hidden');
+      },
+      function() {
+        $('[sub="us"] .feathers').addClass('zoomed');
+        $('[sub="us"] .names').addClass('hidden');
+      }
+    ];
+  })();
+</script>
