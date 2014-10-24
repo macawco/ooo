@@ -1,8 +1,8 @@
-[name="Coding"] {
+[name="Image Editors"] {
   background: black;
 }
 
-[name="Coding"] .title {
+[name="Image Editors"] .title {
   /*color: #2ad57e;*/
   color: black;
   font-size: 125px;
@@ -13,17 +13,17 @@
   left: 0;
   right: 0;
   margin: auto;
-  width: 522px;
+  width: 1002px;
   display: inline-block;
 }
 
 
-[name="Coding"] .title.step2 {
+[name="Image Editors"] .title.step2 {
   top: 275px;
   -webkit-transition: all .5s;
 }
 
-[name="Coding"] .ratings {
+[name="Image Editors"] .ratings {
   position: absolute;
   top: 410px;
   left: 0;
@@ -34,12 +34,12 @@
   opacity: 0;
 }
 
-[name="Coding"] .ratings.step2 {
+[name="Image Editors"] .ratings.step2 {
   opacity: 1;
   -webkit-transition: all .5s;
 }
 
-[name="Coding"] .rating {
+[name="Image Editors"] .rating {
   color: black;
   font-size: 50px;
   font-weight: bold;
@@ -48,16 +48,16 @@
   margin: 0 30px;
 }
 
-[name="Coding"] .rating img {
+[name="Image Editors"] .rating img {
   width: 100px;
   float: left;
 }
 
-[name="Coding"] .rating span {
+[name="Image Editors"] .rating span {
   float: left;
 }
 
-[name="Coding"] .code {
+[name="Image Editors"] .code {
   opacity: 1;
   position: absolute;
   top: 0;
@@ -65,7 +65,7 @@
   margin: 0;
   width: 1400px;
   height: 1000px;
-  background: #2ad57e;
+  background: #ee3576;
   /*-webkit-clip-path: polygon(300px 0px, 750px 0px, 750px 900px, 0px 900px);*/
   /*-webkit-clip-path: polygon(478px 450px,1011px 440px,1027px -12px,652px -11px);*/
 }
