@@ -1,7 +1,11 @@
 <div class="wrapper" sub="5d">
   <h1 class="two-d-text">2 DIMENSIONS</h1>
   <div class="axises">
-    <div class="clock-face"></div>
+    <div class="clock-face">
+      <img src="slides/images/face-1.png" class="face face-1">
+      <img src="slides/images/face-2.png" class="face face-2">
+      <img src="slides/images/face-3.png" class="face face-3">
+    </div>
     <svg class="axis x" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        viewBox="0 0 1393 518" enable-background="new 0 0 1393 518" xml:space="preserve">
       <g>
@@ -74,6 +78,17 @@
           $('[sub="5d"] .z').css('-webkit-animation', 'SECONDS 60s linear infinite');
           $('[sub="5d"] .x').css('-webkit-animation', 'MINUTES 3600s linear infinite');
         }, 1000);
+      },
+      function() {
+        $('[sub="5d"] .face-1').addClass('visible');
+      },
+      function() {
+        $('[sub="5d"] .face-1').removeClass('visible');
+        $('[sub="5d"] .face-2').addClass('visible');
+      },
+      function() {
+        $('[sub="5d"] .face-2').removeClass('visible');
+        $('[sub="5d"] .face-3').addClass('visible');
       }
     ];
   })();

@@ -1,0 +1,35 @@
+[name="EWW"] .overlay {
+  background: rgb(0, 255, 119);
+}
+
+[name="EWW"] .eww {
+  opacity: .9;
+}
+
+[name="EWW"] h1 {
+  position: absolute;
+  top: 350px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  line-height: 1em;
+  text-align: center;
+  color: white;
+}
+
+[name="EWW"] h2 {
+  position: absolute;
+  top: 470px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  line-height: 1em;
+  text-align: center;
+  color: white;
+}

@@ -17,8 +17,23 @@
   border: 90px solid rgb(90, 90, 90);
   border-radius: 50%;
   opacity: 0;
-  -webkit-transform: translateX(-780px) translateZ(51px);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translateX(-780px) translateZ(-70px) rotate(90deg);
   -webkit-transition: all 1s;
+}
+
+[sub="5d"] .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transform: translateZ(-350px);
+  -webkit-transition: all 1s;
+}
+
+[sub="5d"] .face.visible {
+  opacity: 1;
+  -webkit-transform: translateZ(-150px);
 }
 
 [sub="5d"] .fill {
@@ -160,7 +175,7 @@
 
 /* clock */
 [sub="5d"] .axises.clock {
-  -webkit-transform: rotateX(90deg) rotateZ(-70deg) translateZ(-180px) translateX(-100px) scale3d(.4, .4, .4) rotateX(0) rotateY(-90deg) rotateZ(0);
+  -webkit-transform: rotateX(90deg) rotateZ(-66deg) translateZ(-180px) translateX(-130px) scale3d(.4, .4, .4) rotateX(0) rotateY(-90deg) rotateZ(0);
 }
 
 [sub="5d"] .axises.clock .clock-face {
