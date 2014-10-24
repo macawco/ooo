@@ -1,0 +1,28 @@
+<div class="wrapper" sub="ratings">
+  <div class="bottom"></div>
+
+  <div class="top"></div>
+
+  <div class="rating design">
+    <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
+    <div class="word">Design</div>
+  </div>
+
+  <div class="rating output">
+      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
+      <div class="word">Output</div>
+    </div>
+</div>
+
+<script sub-def="ratings">
+  (function() {
+    return [
+      function() {
+        $('[sub="overlap"] .lde').removeClass('visible abbreviated');
+        $('[sub="overlap"] .circles').removeClass('touching overlapping zoomed');
+        $('[sub="overlap"] .final-name').removeClass('visible');
+        $('[sub="overlap"] .logo').removeClass('visible');
+      }
+    ];
+  })();
+</script>

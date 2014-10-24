@@ -1,0 +1,23 @@
+[name="Coding"] {
+  background: black;
+}
+
+[name="Coding"] .title {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+[name="Coding"] .image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  width: 750px;
+  height: 900px;
+  background: white;
+  -webkit-clip-path: polygon(300px 0px, 750px 0px, 750px 900px, 0px 900px);
+  /*-webkit-clip-path: polygon(478px 450px,1011px 440px,1027px -12px,652px -11px);*/
+}

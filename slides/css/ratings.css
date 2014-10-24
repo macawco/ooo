@@ -1,0 +1,81 @@
+[name="Ratings"] {
+  background: black;
+}
+
+[name="Ratings"] .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #ee3576;
+  width: 100%;
+  height: 475px;
+  -webkit-clip-path: polygon(0px 400px, 1400px 325px, 1400px 0px, 0px 0px);
+}
+
+[name="Ratings"] .bottom {
+  position: absolute;
+  top: 350px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #3fc9de;
+  width: 100%;
+  height: 475px;
+  -webkit-clip-path: polygon(0px 60px, 1400px 15px, 1400px 500px, 0px 500px);
+}
+
+[name="Ratings"] .rating {
+  position: absolute;
+  top: 100px;
+  color: black;
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+[name="Ratings"] .rating-icon {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+}
+
+[name="Ratings"] .design {
+  top: 75px;
+  left: 100px;
+  width: 606px;
+}
+
+[name="Ratings"] .design .word {
+  left: 200px;
+}
+
+[name="Ratings"] .design .rating-icon {
+  left: 0;
+}
+
+[name="Ratings"] .output {
+  top: 490px;
+  right: 100px;
+  width: 650px;
+}
+
+[name="Ratings"] .output .word {
+  right: 200px;
+}
+
+[name="Ratings"] .output .rating-icon {
+  right: 0;
+}
+
+[name="Ratings"] .rating .word {
+  position: absolute;
+  top: 40px;
+}
+
+
+[name="Ratings"] .rating-icon.visible {
+  opacity: 1;
+}
