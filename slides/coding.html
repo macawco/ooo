@@ -1,17 +1,19 @@
 <div class="wrapper" sub="coding">
-  <div class="code"></div>
+  <div class="image code"></div>
+  <div class="image geocities"></div>
+
+  <div class="bg"></div>
 
   <div class="title">Coding</div>
 
-  <div class="ratings">
-    <div class="rating design">
-      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
-      <span>3</span>
-    </div>
-    <div class="rating output">
-      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
-      <span>8</span>
-    </div>
+  <div class="rating design">
+    <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
+    <span>3</span>
+  </div>
+
+  <div class="rating output">
+    <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
+    <span>8</span>
   </div>
 </div>
 
@@ -22,8 +24,26 @@
       },
       function() {
         $('[sub="coding"] .title').addClass('step2');
-        $('[sub="coding"] .ratings').addClass('step2');
+        $('[sub="coding"] .bg').addClass('mask');
+        $('[sub="coding"] .image.code').addClass('visible');
       },
+      function() {
+        // $('[sub="coding"] .ratings').addClass('step2');
+        $('[sub="coding"] .image.geocities').addClass('visible');
+      },
+      function() {
+        // $('[sub="coding"] .ratings').addClass('step2');
+        $('[sub="coding"] .rating.design').addClass('visible');
+      },
+      function() {
+        $('[sub="coding"] .rating.design').addClass('done');
+        $('[sub="coding"] .rating.output').addClass('delay visible');
+        // $('[sub="coding"] .rating.design').removeClass('visible');
+        // $('[sub="coding"] .rating.code').addClass('visible');
+      },
+      function() {
+        $('[sub="coding"] .rating.output').removeClass('delay').addClass('done');
+      }
     ];
   })();
 </script>

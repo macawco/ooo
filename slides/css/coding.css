@@ -9,55 +9,91 @@
   font-weight: bold;
   text-transform: uppercase;
   position: absolute;
-  top: 350px;
-  left: 0;
-  right: 0;
-  margin: auto;
+  top: 319px;
+  left: 450px;
   width: 522px;
   display: inline-block;
 }
 
 
 [name="Coding"] .title.step2 {
-  top: 275px;
+  top: 100px;
+  left: 750px;
   -webkit-transition: all .5s;
 }
 
 [name="Coding"] .ratings {
   position: absolute;
-  top: 410px;
-  left: 0;
-  right: 0;
-  margin: auto;
+  top: 275px;
+  left: 807px;
   width: 408px;
   text-align: center;
   opacity: 0;
 }
 
 [name="Coding"] .ratings.step2 {
+  top: 250px;
   opacity: 1;
   -webkit-transition: all .5s;
 }
 
 [name="Coding"] .rating {
   color: black;
-  font-size: 50px;
+  font-size: 350px;
   font-weight: bold;
-  float: left;
-  line-height: 105px;
-  margin: 0 30px;
+  line-height: 326px;
+  position: absolute;
+  right: 111px;
+  top: 460px;
+  opacity: 0;
+}
+
+[name="Coding"] .rating.visible.delay {
+  -webkit-transition-delay: .5s;
+}
+
+[name="Coding"] .rating.visible {
+  opacity: 1;
+  -webkit-transition: all .5s;
 }
 
 [name="Coding"] .rating img {
-  width: 100px;
+  width: 150px;
   float: left;
 }
 
 [name="Coding"] .rating span {
   float: left;
+  opacity: 1;
 }
 
-[name="Coding"] .code {
+[name="Coding"] .design.done {
+  transform: scale(0.4);
+  top: 200px;
+  right: 331px;
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .output.done {
+  transform: scale(0.4);
+  top: 200px;
+  right: 125px;
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .rating.done img {
+  width: 177px;
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .rating.done {
+  font-size: 250px;
+  font-weight: bold;
+  line-height: 202px;
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .bg {
   opacity: 1;
   position: absolute;
   top: 0;
@@ -66,6 +102,40 @@
   width: 1400px;
   height: 1000px;
   background: #2ad57e;
+  -webkit-clip-path: polygon(0px 0px, 1400px 0px, 1400px 800px, 0px 800px);
   /*-webkit-clip-path: polygon(300px 0px, 750px 0px, 750px 900px, 0px 900px);*/
   /*-webkit-clip-path: polygon(478px 450px,1011px 440px,1027px -12px,652px -11px);*/
+}
+
+[name="Coding"] .bg.mask {
+  -webkit-clip-path: polygon(600px 0px, 1400px 0px, 1400px 800px, 800px 800px);
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .image {
+  position: absolute;
+  top: 0;
+  width: 1400px;
+  height: 800px;
+  left: 0;
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 800px, 0px 800px);
+  opacity: 0;
+}
+
+[name="Coding"] .code {
+  background: url(../images/old-site-code.png);
+  background-color: white;
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .geocities {
+  background: url(../images/geocities.png) -245px 0px no-repeat;
+  background-color: white;
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .image.visible {
+  opacity: 1;
+  -webkit-clip-path: polygon(0px 0px, 575px 0px, 785px 800px, 0px 800px);
+  -webkit-transition: all .5s;
 }
