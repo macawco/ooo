@@ -1,0 +1,80 @@
+<div class="wrapper" sub="5d">
+  <h1 class="two-d-text">2 DIMENSIONS</h1>
+  <div class="axises">
+    <div class="clock-face"></div>
+    <svg class="axis x" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 1393 518" enable-background="new 0 0 1393 518" xml:space="preserve">
+      <g>
+        <g>
+          <path fill="#5CA9DD" d="M1393,259L1076.4,0v124H0v269h1076.4v125L1393,259z M1059.6,297.4h-38l39.8-52.2l-36-47.4h38.2l18.6,26.6
+            l18.8-26.6h37l-35.8,47.4l39.4,52.2H1103l-21.4-30.6L1059.6,297.4z"/>
+        </g>
+      </g>
+      <path class="fill x-fill" d="M1141.6,297.4l-39.4-52.2l35.8-47.4h-37l-18.8,26.6l-18.6-26.6h-38.2l36,47.4l-39.8,52.2h38l22-30.6l21.4,30.6H1141.6z"/>
+    </svg>
+
+    <svg class="axis y" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 518 1393" enable-background="new 0 0 518 1393" xml:space="preserve">
+      <g>
+        <g>
+          <path fill="#F7DC78" d="M394,1076.4V0H125v1076.4H0L259,1393l259-316.6H394z M276.3,1141.4c-2,5.2-4.2,9.8-6.7,13.9
+            c-2.5,4.1-5.4,7.5-8.8,10.4c-3.4,2.9-7.4,5-12,6.5c-4.6,1.5-10,2.2-16.3,2.2c-3.1,0-6.2-0.2-9.5-0.6c-3.3-0.4-6.1-0.9-8.5-1.6
+            l3.6-27.6c1.6,0.5,3.4,1,5.3,1.3c1.9,0.3,3.7,0.5,5.3,0.5c5.1,0,8.7-1.2,11-3.5c2.3-2.3,4.2-5.6,5.8-9.9l3.2-8.2l-41.6-98h36.4
+            l22.2,64h0.6l19.8-64h34.8L276.3,1141.4z"/>
+        </g>
+      </g>
+      <path class="fill y-fill" d="M320.9,1026.8h-34.8l-19.8,64h-0.6l-22.2-64h-36.4l41.6,98l-3.2,8.2c-1.6,4.3-3.5,7.6-5.8,9.9c-2.3,2.3-5.9,3.5-11,3.5
+  c-1.6,0-3.4-0.2-5.3-0.5c-1.9-0.3-3.7-0.8-5.3-1.3l-3.6,27.6c2.4,0.7,5.2,1.2,8.5,1.6c3.3,0.4,6.4,0.6,9.5,0.6
+  c6.3,0,11.7-0.7,16.3-2.2c4.6-1.5,8.6-3.6,12-6.5c3.4-2.9,6.3-6.3,8.8-10.4c2.5-4.1,4.7-8.7,6.7-13.9L320.9,1026.8z"/>
+    </svg>
+
+    <svg class="axis z" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 518 1393" enable-background="new 0 0 518 1393" xml:space="preserve">
+      <g>
+        <g>
+          <path fill="#EA4877" d="M259,0L0,316.6h124V1393h269V316.6h125L259,0z M303.9,363.4h-88.8v-25.6l46.8-48.8h-45v-25.2h85v24.6
+            L253.7,338h50.2V363.4z"/>
+        </g>
+      </g>
+      <path class="fill z-fill" d="M303.9,363.4V338h-50.2l48.2-49.6v-24.6h-85V289h45l-46.8,48.8v25.6H303.9z"/>
+    </svg>
+  </div>
+</div>
+
+<script sub-def="5d">
+  (function() {
+    return [
+      function() {
+        $('[sub="5d"] .two-d-text').removeClass('hidden');
+        $('[sub="5d"] .axises').removeClass('with-x with-y with-z');
+      },
+      function() {
+        $('[sub="5d"] .two-d-text').addClass('hidden');
+        $('[sub="5d"] .axises').removeClass('with-y with-z').addClass('with-x');
+      },
+      function() {
+        $('[sub="5d"] .axises').removeClass('with-z').addClass('with-y');
+      },
+      function() {
+        $('[sub="5d"] .axises').removeClass('clock').addClass('with-z');
+        $('[sub="5d"] .x-fill')[0].setAttribute('class', 'fill x-fill');
+        $('[sub="5d"] .y-fill')[0].setAttribute('class', 'fill y-fill');
+        $('[sub="5d"] .z-fill')[0].setAttribute('class', 'fill z-fill');
+
+        $('[sub="5d"] .z').css('-webkit-animation', 'none');
+        $('[sub="5d"] .x').css('-webkit-animation', 'none');
+      },
+      function() {
+        $('[sub="5d"] .axises').addClass('clock');
+        $('[sub="5d"] .x-fill')[0].setAttribute('class', 'fill x-fill filled');
+        $('[sub="5d"] .y-fill')[0].setAttribute('class', 'fill y-fill filled');
+        $('[sub="5d"] .z-fill')[0].setAttribute('class', 'fill z-fill filled');
+
+        setTimeout(function() {
+          $('[sub="5d"] .z').css('-webkit-animation', 'SECONDS 60s linear infinite');
+          $('[sub="5d"] .x').css('-webkit-animation', 'MINUTES 3600s linear infinite');
+        }, 1000);
+      }
+    ];
+  })();
+</script>

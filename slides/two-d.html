@@ -1,0 +1,17 @@
+<div class="wrapper" sub="2d">
+  <img src="slides/images/2d-shade.png" class="shade">
+  <img src="slides/images/2d.jpg">
+</div>
+
+<script sub-def="2d">
+  (function() {
+    return [
+      function() {
+        $('[sub="2d"] .shade').removeClass('visible');
+      },
+      function() {
+        $('[sub="2d"] .shade').addClass('visible');
+      }
+    ];
+  })();
+</script>

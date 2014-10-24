@@ -1,6 +1,9 @@
 @import 'book.css';
 @import 'overlap.css';
 @import 'race.css';
+@import 'two-d.css';
+@import 'dynamic-design.css';
+@import 'five-d.css';
 
 [name="Title"] {
   background: red;

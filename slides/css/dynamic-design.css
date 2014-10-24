@@ -1,0 +1,15 @@
+[sub="dynamic-design"] img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+[sub="dynamic-design"] .shade {
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all .25s;
+}
+
+[sub="dynamic-design"] .shade.visible {
+  opacity: 1;
+}

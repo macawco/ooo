@@ -1,0 +1,17 @@
+<div class="wrapper" sub="dynamic-design">
+  <img src="slides/images/medium-shade.png" class="shade">
+  <img src="slides/images/medium.png">
+</div>
+
+<script sub-def="dynamic-design">
+  (function() {
+    return [
+      function() {
+        $('[sub="dynamic-design"] .shade').removeClass('visible');
+      },
+      function() {
+        $('[sub="dynamic-design"] .shade').addClass('visible');
+      }
+    ];
+  })();
+</script>

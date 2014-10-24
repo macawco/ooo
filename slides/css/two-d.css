@@ -1,0 +1,15 @@
+[sub="2d"] img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+[sub="2d"] .shade {
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all .25s;
+}
+
+[sub="2d"] .shade.visible {
+  opacity: 1;
+}
