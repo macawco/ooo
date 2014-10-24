@@ -1,27 +1,46 @@
 <div class="wrapper" sub="ratings">
-  <div class="bottom"></div>
+  <div class="rating-text">Ratings</div>
 
-  <div class="top"></div>
+  <div class="rating-details"></div>
 
-  <div class="rating design">
-    <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
-    <div class="word">Design</div>
-  </div>
+  <div class="bottom section"></div>
 
-  <div class="rating output">
-      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
-      <div class="word">Output</div>
+  <div class="rating-detail-wrapper">
+    <div class="rating-detail">
+      <div class="detail">0-10</div>
+      <div class="label">Scale</div>
     </div>
+
+    <div class="rating-detail">
+      <div class="detail cats">
+        <div class="category design">
+          <img src="slides/images/stream-icon.png" class="rating-icon-stream">
+          <div class="cat-label">Design</div>
+        </div>
+        <div class="plus">+</div>
+        <div class="category output">
+          <img src="slides/images/stream-icon.png" class="rating-icon-stream">
+          <div class="cat-label">Output</div>
+        </div>
+      </div>
+      <div class="label">Categories</div>
+    </div>
+
+  </div>
 </div>
 
 <script sub-def="ratings">
   (function() {
     return [
       function() {
-        $('[sub="overlap"] .lde').removeClass('visible abbreviated');
-        $('[sub="overlap"] .circles').removeClass('touching overlapping zoomed');
-        $('[sub="overlap"] .final-name').removeClass('visible');
-        $('[sub="overlap"] .logo').removeClass('visible');
+        $('[sub="ratings"] .rating-text').removeClass('up');
+        $('[sub="ratings"] .rating-details').removeClass('up');
+        $('[sub="ratings"] .rating-detail-wrapper').removeClass('visible');
+      },
+      function() {
+        $('[sub="ratings"] .rating-text').addClass('up');
+        $('[sub="ratings"] .rating-details').addClass('up');
+        $('[sub="ratings"] .rating-detail-wrapper').addClass('visible');
       }
     ];
   })();

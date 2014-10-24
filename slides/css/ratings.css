@@ -2,80 +2,120 @@
   background: black;
 }
 
-[name="Ratings"] .top {
+[name="Ratings"] .rating-text {
+  color: #ee3576;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
   position: absolute;
-  top: 0;
+  top: 340px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /*width: 810px;*/
+  display: inline-block;
+  text-align: center;
+}
+
+[name="Ratings"] .rating-text.up {
+  transform: rotate(-10deg);
+  top: 32px;
+  font-size: 250px;
+  left: -350px;
+  line-height: 190px;
+  white-space: nowrap;
+  -webkit-transition: all 1s ease;
+}
+
+[name="Ratings"] .rating-details {
+  position: absolute;
+  top: 800px;
   left: 0;
   right: 0;
   margin: auto;
   background: #ee3576;
   width: 100%;
-  height: 475px;
-  -webkit-clip-path: polygon(0px 400px, 1400px 325px, 1400px 0px, 0px 0px);
+  height: 800px;
+  -webkit-clip-path: polygon(1500px 55px, 1400px 800px, 0px 800px, 0px 336px);
 }
 
-[name="Ratings"] .bottom {
+[name="Ratings"] .rating-details.up {
+  top: 0;
+  -webkit-transition: all 1s ease;
+}
+
+[name="Ratings"] .rating-detail-wrapper {
   position: absolute;
-  top: 350px;
-  left: 0;
+  top: 400px;
   right: 0;
+  left: 0;
   margin: auto;
-  background: #3fc9de;
-  width: 100%;
-  height: 475px;
-  -webkit-clip-path: polygon(0px 60px, 1400px 15px, 1400px 500px, 0px 500px);
+  opacity: 0;
 }
 
-[name="Ratings"] .rating {
-  position: absolute;
-  top: 100px;
+[name="Ratings"] .visible {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+}
+
+[name="Ratings"] .rating-detail {
+  opacity: 1;
   color: black;
-  font-size: 100px;
+  font-size: 30px;
   text-transform: uppercase;
+  width: 50%;
+  position: relative;
+  float: left;
+  text-align: center;
+  height: 237px;
+}
+
+[name="Ratings"] .rating-detail .detail {
+  font-size: 150px;
   font-weight: bold;
 }
 
-[name="Ratings"] .rating-icon {
+[name="Ratings"] .rating-detail .label {
   position: absolute;
-  top: 0;
-  width: 200px;
-  height: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+[name="Ratings"] .detail.cats {
+  font-size: 50px;
+}
+
+[name="Ratings"] .category {
+  overflow: hidden;
 }
 
 [name="Ratings"] .design {
-  top: 75px;
-  left: 100px;
-  width: 606px;
-}
-
-[name="Ratings"] .design .word {
-  left: 200px;
-}
-
-[name="Ratings"] .design .rating-icon {
-  left: 0;
+  margin-top: -10px;
 }
 
 [name="Ratings"] .output {
-  top: 490px;
-  right: 100px;
-  width: 650px;
+  margin-top: 25px;
 }
 
-[name="Ratings"] .output .word {
-  right: 200px;
-}
-
-[name="Ratings"] .output .rating-icon {
-  right: 0;
-}
-
-[name="Ratings"] .rating .word {
+[name="Ratings"] .plus {
   position: absolute;
-  top: 40px;
+  left: 0;
+  right: 0;
+  top: 52px;
+  margin: auto;
 }
 
+[name="Ratings"] .category img {
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+  margin-top: -10px;
+}
 
-[name="Ratings"] .rating-icon.visible {
-  opacity: 1;
+[name="Ratings"] .cat-label {
+  line-height: 84px;
+  display: inline-block;
+  margin-left: -9px;
 }

@@ -1,0 +1,71 @@
+[name="WYSIWYGS"] {
+  background: black;
+}
+
+[name="WYSIWYGS"] .title {
+  /*color: #2ad57e;*/
+  color: black;
+  font-size: 125px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 703px;
+  display: inline-block;
+}
+
+
+[name="WYSIWYGS"] .title.step2 {
+  top: 275px;
+  -webkit-transition: all .5s;
+}
+
+[name="WYSIWYGS"] .ratings {
+  position: absolute;
+  top: 410px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 408px;
+  text-align: center;
+  opacity: 0;
+}
+
+[name="WYSIWYGS"] .ratings.step2 {
+  opacity: 1;
+  -webkit-transition: all .5s;
+}
+
+[name="WYSIWYGS"] .rating {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  float: left;
+  line-height: 105px;
+  margin: 0 30px;
+}
+
+[name="WYSIWYGS"] .rating img {
+  width: 100px;
+  float: left;
+}
+
+[name="WYSIWYGS"] .rating span {
+  float: left;
+}
+
+[name="WYSIWYGS"] .code {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 1400px;
+  height: 1000px;
+  background: #3fc9de;
+  /*-webkit-clip-path: polygon(300px 0px, 750px 0px, 750px 900px, 0px 900px);*/
+  /*-webkit-clip-path: polygon(478px 450px,1011px 440px,1027px -12px,652px -11px);*/
+}

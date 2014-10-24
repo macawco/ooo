@@ -1,0 +1,29 @@
+<div class="wrapper" sub="wysiwygs">
+  <div class="code"></div>
+
+  <div class="title">WYSIWYGS</div>
+
+  <div class="ratings">
+    <div class="rating design">
+      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
+      <span>3</span>
+    </div>
+    <div class="rating output">
+      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
+      <span>8</span>
+    </div>
+  </div>
+</div>
+
+<script sub-def="wysiwygs">
+  (function() {
+    return [
+      function() {
+      },
+      function() {
+        $('[sub="wysiwygs"] .title').addClass('step2');
+        $('[sub="wysiwygs"] .ratings').addClass('step2');
+      },
+    ];
+  })();
+</script>

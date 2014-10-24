@@ -1,0 +1,29 @@
+<div class="wrapper" sub="plugins">
+  <div class="code"></div>
+
+  <div class="title">Plugins</div>
+
+  <div class="ratings">
+    <div class="rating design">
+      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
+      <span>3</span>
+    </div>
+    <div class="rating output">
+      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
+      <span>8</span>
+    </div>
+  </div>
+</div>
+
+<script sub-def="plugins">
+  (function() {
+    return [
+      function() {
+      },
+      function() {
+        $('[sub="plugins"] .title').addClass('step2');
+        $('[sub="plugins"] .ratings').addClass('step2');
+      },
+    ];
+  })();
+</script>
