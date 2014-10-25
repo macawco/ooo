@@ -249,7 +249,9 @@
 }
 
 [name="Image Editors"] .code {
-  background: url(../images/old-site-code.png);
+  background: url(../images/image-editors-screen.png);
+  background-position: 0px -15px;
+  background-size: 90%;
   background-color: white;
   -webkit-transition: all .5s;
 }

@@ -1,9 +1,9 @@
-[name="NewWYSIWYGS"] {
+[name="New WYSIWYGS"] {
   background: black;
 }
 
 
-[name="NewWYSIWYGS"] .approach-title {
+[name="New WYSIWYGS"] .approach-title {
   position: absolute;
   width: 872px;
   text-align: center;
@@ -13,24 +13,24 @@
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .last-step {
+[name="New WYSIWYGS"] .last-step {
   opacity: 0.2;
   transform: scale(1.2);
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .approach-wrapper {
+[name="New WYSIWYGS"] .approach-wrapper {
   position: relative;
   display: inline-block;
   width: 350px;
 }
 
-[name="NewWYSIWYGS"] .slide-icon {
+[name="New WYSIWYGS"] .slide-icon {
   /*width: 200px;*/
   float: left;
 }
 
-[name="NewWYSIWYGS"] .title {
+[name="New WYSIWYGS"] .title {
   /*color: #2ad57e;*/
   color: black;
   font-size: 125px;
@@ -48,22 +48,22 @@
   opacity: 0;
 }
 
-[name="NewWYSIWYGS"] .title-show {
+[name="New WYSIWYGS"] .title-show {
   left: 150px;
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .title-show .title {
+[name="New WYSIWYGS"] .title-show .title {
   opacity: 1;
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .title-show .approach-wrapper {
+[name="New WYSIWYGS"] .title-show .approach-wrapper {
   width: 972px;
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .approach-title.mini {
+[name="New WYSIWYGS"] .approach-title.mini {
   top: -98px;
   left: 685px;
   width: 872px;
@@ -71,11 +71,11 @@
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .dim {
+[name="New WYSIWYGS"] .dim {
   opacity: 0.4;
 }
 
-[name="NewWYSIWYGS"] .topics {
+[name="New WYSIWYGS"] .topics {
   position: absolute;
   top: 200px;
   right: 0;
@@ -83,7 +83,7 @@
   text-align: right;
 }
 
-[name="NewWYSIWYGS"] .topic-title {
+[name="New WYSIWYGS"] .topic-title {
   color: white;
   font-size: 70px;
   font-weight: bold;
@@ -93,78 +93,78 @@
   white-space: nowrap;
 }
 
-[name="NewWYSIWYGS"] .topic-content {
+[name="New WYSIWYGS"] .topic-content {
   color: black;
   font-size: 30px;
   width: 100%;
 }
 
-[name="NewWYSIWYGS"] .topic-content > div {
+[name="New WYSIWYGS"] .topic-content > div {
   padding: 10px 0;
   margin-left: 110%;
   white-space: nowrap;
   opacity: 0;
 }
 
-[name="NewWYSIWYGS"] .topics.good {
+[name="New WYSIWYGS"] .topics.good {
   opacity: 0;
 }
 
-[name="NewWYSIWYGS"] .topics.bad {
+[name="New WYSIWYGS"] .topics.bad {
   opacity: 0;
 }
 
-[name="NewWYSIWYGS"] .topics.show {
+[name="New WYSIWYGS"] .topics.show {
   opacity: 1;
   -webkit-transition: all .7s ease .5s;
 }
 
-[name="NewWYSIWYGS"] .show .topic-title {
+[name="New WYSIWYGS"] .show .topic-title {
   margin-left: 0%;
   -webkit-transition: all .7s ease .5s;
 }
 
-[name="NewWYSIWYGS"] .show .topic-content > div {
+[name="New WYSIWYGS"] .show .topic-content > div {
   margin-left: 0%;
   opacity: 1;
   -webkit-transition: all .7s ease-out;
 }
 
-[name="NewWYSIWYGS"] .topics.hide {
+[name="New WYSIWYGS"] .topics.hide {
   opacity: 0;
   -webkit-transition: all .7s ease;
 }
 
-[name="NewWYSIWYGS"] .topics.hide-fast {
+[name="New WYSIWYGS"] .topics.hide-fast {
   opacity: 0;
   -webkit-transition: all .3s ease;
 }
 
-[name="NewWYSIWYGS"] .delay1 {
+[name="New WYSIWYGS"] .delay1 {
   -webkit-transition-delay: 0.8s !important;
 }
 
-[name="NewWYSIWYGS"] .delay2 {
+[name="New WYSIWYGS"] .delay2 {
   -webkit-transition-delay: 1.2s !important;
 }
 
-[name="NewWYSIWYGS"] .delay3 {
+[name="New WYSIWYGS"] .delay3 {
   -webkit-transition-delay: 1.6s !important;
 }
 
-[name="NewWYSIWYGS"] .ratings {
+[name="New WYSIWYGS"] .ratings {
   position: absolute;
   top: 324px;
   width: 100%;
   /*opacity: 0;*/
 }
 
-[name="NewWYSIWYGS"] .ratings.show {
+[name="New WYSIWYGS"] .ratings.show {
   opacity: 1;
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .rating {
+[name="New WYSIWYGS"] .rating {
   color: white;
   font-size: 200px;
   font-weight: bold;
@@ -175,55 +175,55 @@
   float: left;
 }
 
-[name="NewWYSIWYGS"] .rating.visible.delay {
+[name="New WYSIWYGS"] .rating.visible.delay {
   -webkit-transition-delay: .5s;
 }
 
-[name="NewWYSIWYGS"] .rating.visible {
+[name="New WYSIWYGS"] .rating.visible {
   opacity: 1;
   -webkit-transition: all .5s linear .5s;
 }
 
-[name="NewWYSIWYGS"] .rating-content {
+[name="New WYSIWYGS"] .rating-content {
   display: inline-block;
   padding-right: 24px;
 }
 
-[name="NewWYSIWYGS"] .rating img {
+[name="New WYSIWYGS"] .rating img {
   width: 150px;
   float: left;
 }
 
-[name="NewWYSIWYGS"] .rating span {
+[name="New WYSIWYGS"] .rating span {
   opacity: 1;
   float: left;
 }
 
-[name="NewWYSIWYGS"] .design {
+[name="New WYSIWYGS"] .design {
   top: 330px;
   left: 130px;
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .output {
+[name="New WYSIWYGS"] .output {
   top: 330px;
   right: 130px;
   -webkit-transition: all .5s linear .4s;
 }
 
-[name="NewWYSIWYGS"] .rating.done img {
+[name="New WYSIWYGS"] .rating.done img {
   width: 177px;
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .rating.done {
+[name="New WYSIWYGS"] .rating.done {
   font-size: 250px;
   font-weight: bold;
   line-height: 202px;
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .bg {
+[name="New WYSIWYGS"] .bg {
   opacity: 1;
   position: absolute;
   top: 0;
@@ -238,12 +238,12 @@
   /*-webkit-clip-path: polygon(478px 450px,1011px 440px,1027px -12px,652px -11px);*/
 }
 
-[name="NewWYSIWYGS"] .bg.mask {
+[name="New WYSIWYGS"] .bg.mask {
   -webkit-clip-path: polygon(600px 0px, 1400px 0px, 1400px 800px, 800px 800px);
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .image {
+[name="New WYSIWYGS"] .image {
   position: absolute;
   top: 0;
   width: 1400px;
@@ -253,19 +253,19 @@
   opacity: 0;
 }
 
-[name="NewWYSIWYGS"] .code {
+[name="New WYSIWYGS"] .code {
   background: url(../images/old-site-code.png);
   background-color: white;
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .geocities {
+[name="New WYSIWYGS"] .geocities {
   background: url(../images/geocities.png) -245px 0px no-repeat;
   background-color: white;
   -webkit-transition: all .5s;
 }
 
-[name="NewWYSIWYGS"] .image.visible {
+[name="New WYSIWYGS"] .image.visible {
   opacity: 1;
   -webkit-clip-path: polygon(0px 0px, 575px 0px, 785px 800px, 0px 800px);
   -webkit-transition: all .5s;
