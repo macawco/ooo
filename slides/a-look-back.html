@@ -1,11 +1,27 @@
 <div class="wrapper" sub="a-look-back">
-  
+  <div class="slide-content">
+    <div class="look-back">First we look back<br/>then we can look foward<span class="blue">.</span></div>
+    <div class="why">Why<span class="black">?</span></div>
+    <div class="answer">Learn from where we have been.</div>
+    <div class="how"><span class="black">How?</span> <span class="part2">Analyze approaches.<span></div>
+  </div>
 </div>
 
 <script sub-def="a-look-back">
   (function() {
     return [
       function() {
+      },
+      function() {
+        $('[sub="a-look-back"] .look-back').addClass('dim');
+        $('[sub="a-look-back"] .slide-content').addClass('step2');
+      },
+      function() {
+        $('[sub="a-look-back"] .why').addClass('dim');
+        $('[sub="a-look-back"] .slide-content').addClass('step3');
+      },
+      function() {
+        $('[sub="a-look-back"] .slide-content').addClass('step4');
       }
     ];
   })();
