@@ -49,26 +49,26 @@
   (function() {
     return [
       function() {
+        $('[sub="coding"] .approach-title').removeClass('title-show mini last-step');
+        $('[sub="coding"] .bg').removeClass('mask');
+        $('[sub="coding"] .image.code').removeClass('visible');
+        $('[sub="coding"] .good').removeClass('hide show');
+        $('[sub="coding"] .bad').removeClass('show hide-fast');
+        $('[sub="coding"] .rating.design').removeClass('visible');
+        $('[sub="coding"] .rating.output').removeClass('visible');
       },
       function() {
         $('[sub="coding"] .approach-title').addClass('title-show');
-        // $('[sub="coding"] .title').addClass('step2');
-        // $('[sub="coding"] .bg').addClass('mask');
-        // $('[sub="coding"] .image.code').addClass('visible');
       },
       function() {
         $('[sub="coding"] .approach-title').addClass('mini');
         $('[sub="coding"] .bg').addClass('mask');
         $('[sub="coding"] .image.code').addClass('visible');
         $('[sub="coding"] .good').addClass('show');
-        // $('[sub="coding"] .ratings').addClass('step2');
-        // $('[sub="coding"] .image.geocities').addClass('visible');
       },
       function() {
         $('[sub="coding"] .good').addClass('hide');
         $('[sub="coding"] .bad').addClass('show');
-        // $('[sub="coding"] .ratings').addClass('step2');
-        // 
       },
       function() {
         $('[sub="coding"] .bad').addClass('hide-fast');
@@ -79,18 +79,6 @@
 
         $('[sub="coding"] .rating.design').addClass('visible');
         $('[sub="coding"] .rating.output').addClass('visible');
-        // $('[sub="coding"] .rating.design').addClass('done');
-        // $('[sub="coding"] .rating.output').addClass('delay visible');
-
-        // $('[sub="coding"] .rating.design').removeClass('visible');
-        // $('[sub="coding"] .rating.code').addClass('visible');
-      },
-      function() {
-        // $('[sub="coding"] .rating.design').addClass('done');
-        // $('[sub="coding"] .rating.output').addClass('delay visible');
-      },
-      function() {
-        // $('[sub="coding"] .rating.output').removeClass('delay').addClass('done');
       }
     ];
   })();
