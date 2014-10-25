@@ -24,7 +24,7 @@
   left: -350px;
   line-height: 190px;
   white-space: nowrap;
-  -webkit-transition: all 1s ease;
+  -webkit-transition: all 1.05s;
 }
 
 [name="Ratings"] .rating-details {

@@ -4,16 +4,44 @@
 
   <div class="bg"></div>
 
-  <div class="title">Coding</div>
-
-  <div class="rating design">
-    <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
-    <span>3</span>
+  <div class="approach-title">
+    <div class="approach-wrapper">
+      <img src="slides/images/html-icon.png" class="slide-icon">
+      <div class="title">Coding</div>
+    </div>
   </div>
 
-  <div class="rating output">
-    <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
-    <span>8</span>
+  <div class="topics good">
+    <div class="topic-title">The Good</div>
+    <div class="topic-content">
+      <div class="delay1">working with medium (sort of)</div>
+      <div class="delay2">code output</div>
+    </div>
+  </div>
+
+  <div class="topics bad">
+    <div class="topic-title">The Not So Good</div>
+    <div class="topic-content">
+      <div class="delay1">hard to visualize</div>
+      <div class="delay2">time consuming</div>
+      <div class="delay3">messy code</div>
+    </div>
+  </div>
+
+  <div class="ratings">
+    <div class="rating design">
+      <div class="rating-content">
+        <img src="slides/images/pencil-icon.png" class="rating-icon rating-icon-stream">
+        <span>2</span>
+      </div>
+    </div>
+
+    <div class="rating output">
+      <div class="rating-content">
+        <img src="slides/images/html-icon.png" class="rating-icon rating-icon-stream">
+        <span>8</span>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -23,26 +51,46 @@
       function() {
       },
       function() {
-        $('[sub="coding"] .title').addClass('step2');
+        $('[sub="coding"] .approach-title').addClass('title-show');
+        // $('[sub="coding"] .title').addClass('step2');
+        // $('[sub="coding"] .bg').addClass('mask');
+        // $('[sub="coding"] .image.code').addClass('visible');
+      },
+      function() {
+        $('[sub="coding"] .approach-title').addClass('mini');
         $('[sub="coding"] .bg').addClass('mask');
         $('[sub="coding"] .image.code').addClass('visible');
+        $('[sub="coding"] .good').addClass('show');
+        // $('[sub="coding"] .ratings').addClass('step2');
+        // $('[sub="coding"] .image.geocities').addClass('visible');
       },
       function() {
+        $('[sub="coding"] .good').addClass('hide');
+        $('[sub="coding"] .bad').addClass('show');
         // $('[sub="coding"] .ratings').addClass('step2');
-        $('[sub="coding"] .image.geocities').addClass('visible');
+        // 
       },
       function() {
-        // $('[sub="coding"] .ratings').addClass('step2');
+        $('[sub="coding"] .bad').addClass('hide-fast');
+
+        $('[sub="coding"] .approach-title').removeClass('title-show mini').addClass('last-step');
+        $('[sub="coding"] .bg').removeClass('mask');
+        $('[sub="coding"] .image.code').removeClass('visible');
+
         $('[sub="coding"] .rating.design').addClass('visible');
-      },
-      function() {
-        $('[sub="coding"] .rating.design').addClass('done');
-        $('[sub="coding"] .rating.output').addClass('delay visible');
+        $('[sub="coding"] .rating.output').addClass('visible');
+        // $('[sub="coding"] .rating.design').addClass('done');
+        // $('[sub="coding"] .rating.output').addClass('delay visible');
+
         // $('[sub="coding"] .rating.design').removeClass('visible');
         // $('[sub="coding"] .rating.code').addClass('visible');
       },
       function() {
-        $('[sub="coding"] .rating.output').removeClass('delay').addClass('done');
+        // $('[sub="coding"] .rating.design').addClass('done');
+        // $('[sub="coding"] .rating.output').addClass('delay visible');
+      },
+      function() {
+        // $('[sub="coding"] .rating.output').removeClass('delay').addClass('done');
       }
     ];
   })();

@@ -2,6 +2,34 @@
   background: black;
 }
 
+
+[name="Coding"] .approach-title {
+  position: absolute;
+  width: 872px;
+  text-align: center;
+  top: 225px;
+  left: 264px;
+  height: 350px;
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .last-step {
+  opacity: 0.2;
+  transform: scale(1.2);
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .approach-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 350px;
+}
+
+[name="Coding"] .slide-icon {
+  /*width: 200px;*/
+  float: left;
+}
+
 [name="Coding"] .title {
   /*color: #2ad57e;*/
   color: black;
@@ -9,43 +37,133 @@
   font-weight: bold;
   text-transform: uppercase;
   position: absolute;
-  top: 319px;
-  left: 450px;
+  top: 100px;
+  left: 360px;
   width: 522px;
   display: inline-block;
+  opacity: 0;
 }
 
-
-[name="Coding"] .title.step2 {
-  top: 100px;
-  left: 750px;
+[name="Coding"] .title-show .title {
+  opacity: 1;
   -webkit-transition: all .5s;
+}
+
+[name="Coding"] .title-show .approach-wrapper {
+  width: 872px;
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .approach-title.mini {
+  top: -98px;
+  left: 740px;
+  width: 872px;
+  transform: scale(0.4);
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .dim {
+  opacity: 0.4;
+}
+
+[name="Coding"] .topics {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  padding-right: 42px;
+  text-align: right;
+}
+
+[name="Coding"] .topic-title {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-left: 100%;
+  white-space: nowrap;
+}
+
+[name="Coding"] .topic-content {
+  color: black;
+  font-size: 30px;
+  width: 100%;
+}
+
+[name="Coding"] .topic-content > div {
+  padding: 10px 0;
+  margin-left: 110%;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+[name="Coding"] .topics.good {
+  opacity: 0;
+}
+
+[name="Coding"] .topics.bad {
+  opacity: 0;
+}
+
+[name="Coding"] .topics.show {
+  opacity: 1;
+  -webkit-transition: all .7s ease .5s;
+}
+
+[name="Coding"] .show .topic-title {
+  margin-left: 0%;
+  -webkit-transition: all .7s ease .5s;
+}
+
+[name="Coding"] .show .topic-content > div {
+  margin-left: 0%;
+  opacity: 1;
+  -webkit-transition: all .7s ease-out;
+}
+
+[name="Coding"] .topics.hide {
+  opacity: 0;
+  -webkit-transition: all .7s ease;
+}
+
+[name="Coding"] .topics.hide-fast {
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+}
+
+[name="Coding"] .delay1 {
+  -webkit-transition-delay: 0.8s !important;
+}
+
+[name="Coding"] .delay2 {
+  -webkit-transition-delay: 1.2s !important;
+}
+
+[name="Coding"] .delay3 {
+  -webkit-transition-delay: 1.6s !important;
 }
 
 [name="Coding"] .ratings {
   position: absolute;
-  top: 275px;
-  left: 807px;
-  width: 408px;
-  text-align: center;
-  opacity: 0;
+  top: 324px;
+  width: 100%;
+  /*opacity: 0;*/
 }
 
-[name="Coding"] .ratings.step2 {
-  top: 250px;
+[name="Coding"] .ratings.show {
   opacity: 1;
   -webkit-transition: all .5s;
 }
 
 [name="Coding"] .rating {
-  color: black;
-  font-size: 350px;
+  color: white;
+  font-size: 200px;
   font-weight: bold;
-  line-height: 326px;
-  position: absolute;
-  right: 111px;
-  top: 460px;
+  line-height: 156px;
+  width: 50%;
   opacity: 0;
+  text-align: center;
+  float: left;
 }
 
 [name="Coding"] .rating.visible.delay {
@@ -54,7 +172,12 @@
 
 [name="Coding"] .rating.visible {
   opacity: 1;
-  -webkit-transition: all .5s;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Coding"] .rating-content {
+  display: inline-block;
+  padding-right: 24px;
 }
 
 [name="Coding"] .rating img {
@@ -63,22 +186,20 @@
 }
 
 [name="Coding"] .rating span {
-  float: left;
   opacity: 1;
+  float: left;
 }
 
-[name="Coding"] .design.done {
-  transform: scale(0.4);
-  top: 200px;
-  right: 331px;
+[name="Coding"] .design {
+  top: 330px;
+  left: 130px;
   -webkit-transition: all .5s;
 }
 
-[name="Coding"] .output.done {
-  transform: scale(0.4);
-  top: 200px;
-  right: 125px;
-  -webkit-transition: all .5s;
+[name="Coding"] .output {
+  top: 330px;
+  right: 130px;
+  -webkit-transition: all .5s linear .4s;
 }
 
 [name="Coding"] .rating.done img {
@@ -103,6 +224,7 @@
   height: 1000px;
   background: #2ad57e;
   -webkit-clip-path: polygon(0px 0px, 1400px 0px, 1400px 800px, 0px 800px);
+  -webkit-transition: all .5s;
   /*-webkit-clip-path: polygon(300px 0px, 750px 0px, 750px 900px, 0px 900px);*/
   /*-webkit-clip-path: polygon(478px 450px,1011px 440px,1027px -12px,652px -11px);*/
 }
