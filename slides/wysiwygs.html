@@ -1,16 +1,47 @@
 <div class="wrapper" sub="wysiwygs">
-  <div class="code"></div>
+  <div class="image code"></div>
+  <div class="image geocities"></div>
 
-  <div class="title">WYSIWYGS</div>
+  <div class="bg"></div>
+
+  <div class="approach-title">
+    <div class="approach-wrapper">
+      <img src="slides/images/design-icon.png" class="slide-icon">
+      <div class="title">WYSIWYGS</div>
+    </div>
+  </div>
+
+  <div class="topics good">
+    <div class="topic-title">The Good</div>
+    <div class="topic-content">
+      <div class="delay1">working in medium (HTML/CSS)</div>
+      <div class="delay2">can design visually</div>
+      <div class="delay3">outputs code</div>
+    </div>
+  </div>
+
+  <div class="topics bad">
+    <div class="topic-title">The Not So Good</div>
+    <div class="topic-content">
+      <div class="delay1">clunky design experience</div>
+      <div class="delay2">excess/messy code</div>
+      <div class="delay3">limited capabilities</div>
+    </div>
+  </div>
 
   <div class="ratings">
     <div class="rating design">
-      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
-      <span>3</span>
+      <div class="rating-content">
+        <img src="slides/images/pencil-icon.png" class="rating-icon rating-icon-stream">
+        <span>4</span>
+      </div>
     </div>
+
     <div class="rating output">
-      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
-      <span>8</span>
+      <div class="rating-content">
+        <img src="slides/images/html-icon.png" class="rating-icon rating-icon-stream">
+        <span>7</span>
+      </div>
     </div>
   </div>
 </div>
@@ -19,11 +50,37 @@
   (function() {
     return [
       function() {
+        $('[sub="wysiwygs"] .approach-title').removeClass('title-show mini last-step');
+        $('[sub="wysiwygs"] .bg').removeClass('mask');
+        $('[sub="wysiwygs"] .image.code').removeClass('visible');
+        $('[sub="wysiwygs"] .good').removeClass('hide show');
+        $('[sub="wysiwygs"] .bad').removeClass('show hide-fast');
+        $('[sub="wysiwygs"] .rating.design').removeClass('visible');
+        $('[sub="wysiwygs"] .rating.output').removeClass('visible');
       },
       function() {
-        $('[sub="wysiwygs"] .title').addClass('step2');
-        $('[sub="wysiwygs"] .ratings').addClass('step2');
+        $('[sub="wysiwygs"] .approach-title').addClass('title-show');
       },
+      function() {
+        $('[sub="wysiwygs"] .approach-title').addClass('mini');
+        $('[sub="wysiwygs"] .bg').addClass('mask');
+        $('[sub="wysiwygs"] .image.code').addClass('visible');
+        $('[sub="wysiwygs"] .good').addClass('show');
+      },
+      function() {
+        $('[sub="wysiwygs"] .good').addClass('hide');
+        $('[sub="wysiwygs"] .bad').addClass('show');
+      },
+      function() {
+        $('[sub="wysiwygs"] .bad').addClass('hide-fast');
+
+        $('[sub="wysiwygs"] .approach-title').removeClass('title-show mini').addClass('last-step');
+        $('[sub="wysiwygs"] .bg').removeClass('mask');
+        $('[sub="wysiwygs"] .image.code').removeClass('visible');
+
+        $('[sub="wysiwygs"] .rating.design').addClass('visible');
+        $('[sub="wysiwygs"] .rating.output').addClass('visible');
+      }
     ];
   })();
 </script>

@@ -1,16 +1,46 @@
 <div class="wrapper" sub="plugins">
-  <div class="code"></div>
+  <div class="image code"></div>
+  <div class="image geocities"></div>
 
-  <div class="title">Plugins</div>
+  <div class="bg"></div>
+
+  <div class="approach-title">
+    <div class="approach-wrapper">
+      <img src="slides/images/plugins-icon.png" class="slide-icon">
+      <div class="title">Plugins</div>
+    </div>
+  </div>
+
+  <div class="topics good">
+    <div class="topic-title">The Good</div>
+    <div class="topic-content">
+      <div class="delay1">animations</div>
+      <div class="delay2">interactions</div>
+    </div>
+  </div>
+
+  <div class="topics bad">
+    <div class="topic-title">The Not So Good</div>
+    <div class="topic-content">
+      <div class="delay1">not HTML/CSS</div>
+      <div class="delay2">proprietary formats</div>
+      <div class="delay3">learning curve</div>
+    </div>
+  </div>
 
   <div class="ratings">
     <div class="rating design">
-      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
-      <span>3</span>
+      <div class="rating-content">
+        <img src="slides/images/pencil-icon.png" class="rating-icon rating-icon-stream">
+        <span>8</span>
+      </div>
     </div>
+
     <div class="rating output">
-      <img src="slides/images/stream-icon.png" class="rating-icon rating-icon-stream">
-      <span>8</span>
+      <div class="rating-content">
+        <img src="slides/images/html-icon.png" class="rating-icon rating-icon-stream">
+        <span>0</span>
+      </div>
     </div>
   </div>
 </div>
@@ -19,11 +49,37 @@
   (function() {
     return [
       function() {
+        $('[sub="plugins"] .approach-title').removeClass('title-show mini last-step');
+        $('[sub="plugins"] .bg').removeClass('mask');
+        $('[sub="plugins"] .image.code').removeClass('visible');
+        $('[sub="plugins"] .good').removeClass('hide show');
+        $('[sub="plugins"] .bad').removeClass('show hide-fast');
+        $('[sub="plugins"] .rating.design').removeClass('visible');
+        $('[sub="plugins"] .rating.output').removeClass('visible');
       },
       function() {
-        $('[sub="plugins"] .title').addClass('step2');
-        $('[sub="plugins"] .ratings').addClass('step2');
+        $('[sub="plugins"] .approach-title').addClass('title-show');
       },
+      function() {
+        $('[sub="plugins"] .approach-title').addClass('mini');
+        $('[sub="plugins"] .bg').addClass('mask');
+        $('[sub="plugins"] .image.code').addClass('visible');
+        $('[sub="plugins"] .good').addClass('show');
+      },
+      function() {
+        $('[sub="plugins"] .good').addClass('hide');
+        $('[sub="plugins"] .bad').addClass('show');
+      },
+      function() {
+        $('[sub="plugins"] .bad').addClass('hide-fast');
+
+        $('[sub="plugins"] .approach-title').removeClass('title-show mini').addClass('last-step');
+        $('[sub="plugins"] .bg').removeClass('mask');
+        $('[sub="plugins"] .image.code').removeClass('visible');
+
+        $('[sub="plugins"] .rating.design').addClass('visible');
+        $('[sub="plugins"] .rating.output').addClass('visible');
+      }
     ];
   })();
 </script>

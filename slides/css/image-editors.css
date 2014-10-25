@@ -175,7 +175,7 @@
 
 [name="Image Editors"] .rating.visible {
   opacity: 1;
-  -webkit-transition: all .5s linear .5s;
+  -webkit-transition: all .5s linear .7s;
 }
 
 [name="Image Editors"] .rating-content {
