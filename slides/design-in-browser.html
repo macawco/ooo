@@ -1,11 +1,21 @@
 <div class="wrapper" sub="design-in-browser">
-  
+  <div class="image"></div>
+  <div class="browser"></div>
+  <div class='title'>Designing In the Browser</div>
+
+  <div class="msg">Still not quite right.</div>
 </div>
 
 <script sub-def="design-in-browser">
   (function() {
     return [
       function() {
+      },
+      function() {
+        $('[sub="design-in-browser"]').addClass('step2');
+      },
+      function() {
+        $('[sub="design-in-browser"]').addClass('step3');
       }
     ];
   })();

@@ -1,3 +1,75 @@
 [name="Design In Browser"] {
-  background: black;
+  background: #e42c64;
 }
+
+[name="Design In Browser"] .image {
+  background: url(../images/browser-design.png) no-repeat;
+  background-color: black;
+  background-position: 40px;
+  background-size: 1200px;
+  width: 1400px;
+  height: 800px;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(1400px 0px, 1400px 0px, 1400px 800px, 1400px 800px);
+}
+
+[name="Design In Browser"] .step2 .image {
+  -webkit-clip-path: polygon(700px 0px, 1400px 0px, 1400px 800px, 680px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+[name="Design In Browser"] .browser {
+  background: url(../images/browser-icon.svg) no-repeat;
+  background-size: 500px;
+  background-position: 50% 50%;
+  width: 1400px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+
+  -webkit-clip-path: polygon(0px 0px, 1400px 0px, 1400px 800px, 0px 800px);
+}
+
+[name="Design In Browser"] .step2 .browser {
+  background-position: 51% 50%;
+  background-size: 1255px;
+  -webkit-clip-path: polygon(0px 0px, 700px 0px, 680px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+[name="Design In Browser"] .title {
+  position: absolute;
+  top: 375px;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+[name="Design In Browser"] .step2 .title {
+  width: 50%;
+  -webkit-transition: all .5s ease;
+}
+
+[name="Design In Browser"] .msg {
+  position: absolute;
+  color: black;
+  font-size: 50px;
+  top: 444px;
+  width: 50%;
+  font-weight: bold;
+  text-align: left;
+  opacity: 0;
+  padding-left: 45px;
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 150px, 0px 150px);
+}
+
+[name="Design In Browser"] .step3 .msg {
+  opacity: 1;
+  -webkit-clip-path: polygon(0px 0px, 700px 0px, 700px 150px, 0px 150px);
+  -webkit-transition: all .5s ease;
+}
+
