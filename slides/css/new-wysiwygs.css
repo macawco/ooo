@@ -1,0 +1,272 @@
+[name="NewWYSIWYGS"] {
+  background: black;
+}
+
+
+[name="NewWYSIWYGS"] .approach-title {
+  position: absolute;
+  width: 872px;
+  text-align: center;
+  top: 225px;
+  left: 264px;
+  height: 350px;
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .last-step {
+  opacity: 0.2;
+  transform: scale(1.2);
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .approach-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 350px;
+}
+
+[name="NewWYSIWYGS"] .slide-icon {
+  /*width: 200px;*/
+  float: left;
+}
+
+[name="NewWYSIWYGS"] .title {
+  /*color: #2ad57e;*/
+  color: black;
+  font-size: 125px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 75px;
+  left: 360px;
+  width: 554px;
+  display: inline-block;
+  text-align: left;
+  line-height: 110px;
+  display: inline-block;
+  margin-left: -35px;
+  opacity: 0;
+}
+
+[name="NewWYSIWYGS"] .title-show {
+  left: 150px;
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .title-show .title {
+  opacity: 1;
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .title-show .approach-wrapper {
+  width: 972px;
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .approach-title.mini {
+  top: -98px;
+  left: 685px;
+  width: 872px;
+  transform: scale(0.4);
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .dim {
+  opacity: 0.4;
+}
+
+[name="NewWYSIWYGS"] .topics {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  padding-right: 42px;
+  text-align: right;
+}
+
+[name="NewWYSIWYGS"] .topic-title {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-left: 100%;
+  white-space: nowrap;
+}
+
+[name="NewWYSIWYGS"] .topic-content {
+  color: black;
+  font-size: 30px;
+  width: 100%;
+}
+
+[name="NewWYSIWYGS"] .topic-content > div {
+  padding: 10px 0;
+  margin-left: 110%;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+[name="NewWYSIWYGS"] .topics.good {
+  opacity: 0;
+}
+
+[name="NewWYSIWYGS"] .topics.bad {
+  opacity: 0;
+}
+
+[name="NewWYSIWYGS"] .topics.show {
+  opacity: 1;
+  -webkit-transition: all .7s ease .5s;
+}
+
+[name="NewWYSIWYGS"] .show .topic-title {
+  margin-left: 0%;
+  -webkit-transition: all .7s ease .5s;
+}
+
+[name="NewWYSIWYGS"] .show .topic-content > div {
+  margin-left: 0%;
+  opacity: 1;
+  -webkit-transition: all .7s ease-out;
+}
+
+[name="NewWYSIWYGS"] .topics.hide {
+  opacity: 0;
+  -webkit-transition: all .7s ease;
+}
+
+[name="NewWYSIWYGS"] .topics.hide-fast {
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+}
+
+[name="NewWYSIWYGS"] .delay1 {
+  -webkit-transition-delay: 0.8s !important;
+}
+
+[name="NewWYSIWYGS"] .delay2 {
+  -webkit-transition-delay: 1.2s !important;
+}
+
+[name="NewWYSIWYGS"] .delay3 {
+  -webkit-transition-delay: 1.6s !important;
+}
+
+[name="NewWYSIWYGS"] .ratings {
+  position: absolute;
+  top: 324px;
+  width: 100%;
+  /*opacity: 0;*/
+}
+
+[name="NewWYSIWYGS"] .ratings.show {
+  opacity: 1;
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .rating {
+  color: white;
+  font-size: 200px;
+  font-weight: bold;
+  line-height: 156px;
+  width: 50%;
+  opacity: 0;
+  text-align: center;
+  float: left;
+}
+
+[name="NewWYSIWYGS"] .rating.visible.delay {
+  -webkit-transition-delay: .5s;
+}
+
+[name="NewWYSIWYGS"] .rating.visible {
+  opacity: 1;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="NewWYSIWYGS"] .rating-content {
+  display: inline-block;
+  padding-right: 24px;
+}
+
+[name="NewWYSIWYGS"] .rating img {
+  width: 150px;
+  float: left;
+}
+
+[name="NewWYSIWYGS"] .rating span {
+  opacity: 1;
+  float: left;
+}
+
+[name="NewWYSIWYGS"] .design {
+  top: 330px;
+  left: 130px;
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .output {
+  top: 330px;
+  right: 130px;
+  -webkit-transition: all .5s linear .4s;
+}
+
+[name="NewWYSIWYGS"] .rating.done img {
+  width: 177px;
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .rating.done {
+  font-size: 250px;
+  font-weight: bold;
+  line-height: 202px;
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .bg {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 1400px;
+  height: 1000px;
+  background: #ee3576;
+  -webkit-clip-path: polygon(0px 0px, 1400px 0px, 1400px 800px, 0px 800px);
+  -webkit-transition: all .5s;
+  /*-webkit-clip-path: polygon(300px 0px, 750px 0px, 750px 900px, 0px 900px);*/
+  /*-webkit-clip-path: polygon(478px 450px,1011px 440px,1027px -12px,652px -11px);*/
+}
+
+[name="NewWYSIWYGS"] .bg.mask {
+  -webkit-clip-path: polygon(600px 0px, 1400px 0px, 1400px 800px, 800px 800px);
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .image {
+  position: absolute;
+  top: 0;
+  width: 1400px;
+  height: 800px;
+  left: 0;
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 800px, 0px 800px);
+  opacity: 0;
+}
+
+[name="NewWYSIWYGS"] .code {
+  background: url(../images/old-site-code.png);
+  background-color: white;
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .geocities {
+  background: url(../images/geocities.png) -245px 0px no-repeat;
+  background-color: white;
+  -webkit-transition: all .5s;
+}
+
+[name="NewWYSIWYGS"] .image.visible {
+  opacity: 1;
+  -webkit-clip-path: polygon(0px 0px, 575px 0px, 785px 800px, 0px 800px);
+  -webkit-transition: all .5s;
+}
