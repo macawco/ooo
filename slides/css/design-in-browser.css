@@ -2,6 +2,79 @@
   background: #e42c64;
 }
 
+[name="Design In Browser"] .start-q {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  font-size: 120px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  line-height: 90px;
+}
+
+[name="Design In Browser"] .start-q > div {
+  float: left;
+  padding: 10px;
+}
+
+[name="Design In Browser"] .step2 .start-q {
+  opacity: 0;
+  -webkit-transition: all .3s linear;
+}
+
+[name="Design In Browser"] .start-q .so {
+  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 0px, 0px 0px);
+  -webkit-backface-visibility: hidden;
+}
+
+[name="Design In Browser"] .step1 .start-q .so {
+  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 125px, 0px 125px);
+  -webkit-transition: all .2s ease;
+}
+
+[name="Design In Browser"] .start-q .where {
+  color: black;
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 125px, 0px 125px);
+  -webkit-backface-visibility: hidden;
+}
+
+[name="Design In Browser"] .step1 .start-q .where {
+  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 125px, 0px 125px);
+  -webkit-transition: all .5s ease .2s;
+}
+
+[name="Design In Browser"] .start-q .are {
+  -webkit-clip-path: polygon(0px 125px, 600px 125px, 600px 125px, 0px 125px);
+  -webkit-backface-visibility: hidden;
+  clear: both;
+}
+
+[name="Design In Browser"] .step1 .start-q .are {
+  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 125px, 0px 125px);
+  -webkit-transition: all .1s linear .4s;
+}
+
+[name="Design In Browser"] .start-q .we {
+  -webkit-clip-path: polygon(0px 125px, 600px 125px, 600px 125px, 0px 125px);
+  -webkit-backface-visibility: hidden;
+}
+
+[name="Design In Browser"] .step1 .start-q .we {
+  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 125px, 0px 125px);
+  -webkit-transition: all .1s linear .6s;
+}
+
+[name="Design In Browser"] .start-q .now {
+  -webkit-clip-path: polygon(0px 125px, 600px 125px, 600px 125px, 0px 125px);
+  -webkit-backface-visibility: hidden;
+}
+
+[name="Design In Browser"] .step1 .start-q .now {
+  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 125px, 0px 125px);
+  -webkit-transition: all .1s linear .7s;
+}
+
 [name="Design In Browser"] .image {
   background: url(../images/browser-design.png) no-repeat;
   background-color: black;
@@ -14,7 +87,7 @@
   -webkit-clip-path: polygon(1400px 0px, 1400px 0px, 1400px 800px, 1400px 800px);
 }
 
-[name="Design In Browser"] .step2 .image {
+[name="Design In Browser"] .step3 .image {
   -webkit-clip-path: polygon(700px 0px, 1400px 0px, 1400px 800px, 680px 800px);
   -webkit-transition: all .5s ease;
 }
@@ -28,12 +101,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.2;
+  opacity: 0;
 
   -webkit-clip-path: polygon(0px 0px, 1400px 0px, 1400px 800px, 0px 800px);
 }
 
 [name="Design In Browser"] .step2 .browser {
+  opacity: 0.3;
+  -webkit-transition: all .5s ease;
+}
+
+[name="Design In Browser"] .step3 .browser {
   background-position: 51% 50%;
   background-size: 1255px;
   -webkit-clip-path: polygon(0px 0px, 700px 0px, 680px 800px, 0px 800px);
@@ -47,9 +125,15 @@
   text-align: center;
   font-size: 50px;
   font-weight: bold;
+  opacity: 0;
 }
 
 [name="Design In Browser"] .step2 .title {
+  opacity: 1;
+  -webkit-transition: all .5s ease .3s;
+}
+
+[name="Design In Browser"] .step3 .title {
   width: 50%;
   -webkit-transition: all .5s ease;
 }
@@ -67,7 +151,7 @@
   -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 150px, 0px 150px);
 }
 
-[name="Design In Browser"] .step3 .msg {
+[name="Design In Browser"] .step4 .msg {
   opacity: 1;
   -webkit-clip-path: polygon(0px 0px, 700px 0px, 700px 150px, 0px 150px);
   -webkit-transition: all .5s ease;

@@ -1,5 +1,7 @@
 <div class="wrapper" sub="plugins">
-  <div class="image code"></div>
+  <div class="image code">
+    <iframe></iframe>
+  </div>
   <div class="image geocities"></div>
 
   <div class="bg"></div>
@@ -65,6 +67,9 @@
         $('[sub="plugins"] .bg').addClass('mask');
         $('[sub="plugins"] .image.code').addClass('visible');
         $('[sub="plugins"] .good').addClass('show');
+
+        $('[sub="plugins"] iframe').attr('src', 'http://www.2advanced.com/');
+        
       },
       function() {
         $('[sub="plugins"] .good').addClass('hide');
@@ -79,6 +84,10 @@
 
         $('[sub="plugins"] .rating.design').addClass('visible');
         $('[sub="plugins"] .rating.output').addClass('visible');
+
+        setTimeout(function() {
+          $('[sub="plugins"] iframe').removeAttr('src');
+        }, 1000);
       }
     ];
   })();

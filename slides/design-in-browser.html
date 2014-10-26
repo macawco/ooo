@@ -1,5 +1,14 @@
 <div class="wrapper" sub="design-in-browser">
   <div class="image"></div>
+
+  <div class="start-q">
+    <div class="so">So</div>
+    <div class="where">Where</div>
+    <div class="are">are</div>
+    <div class="we">we</div>
+    <div class="now">now?</div>
+  </div>
+
   <div class="browser"></div>
   <div class='title'>Designing In the Browser</div>
 
@@ -10,12 +19,19 @@
   (function() {
     return [
       function() {
+        $('[sub="design-in-browser"]').removeClass('step1 step2 step3 step4');
+      },
+      function() {
+        $('[sub="design-in-browser"]').addClass('step1');
       },
       function() {
         $('[sub="design-in-browser"]').addClass('step2');
       },
       function() {
         $('[sub="design-in-browser"]').addClass('step3');
+      },
+      function() {
+        $('[sub="design-in-browser"]').addClass('step4');
       }
     ];
   })();

@@ -231,7 +231,8 @@
 }
 
 [name="WYSIWYGS"] .bg.mask {
-  -webkit-clip-path: polygon(600px 0px, 1400px 0px, 1400px 800px, 800px 800px);
+  /*-webkit-clip-path: polygon(600px 0px, 1400px 0px, 1400px 800px, 800px 800px);*/
+  -webkit-clip-path: polygon(571px 0px, 1400px 0px, 1400px 800px, 786px 800px);
   -webkit-transition: all .5s;
 }
 
@@ -246,9 +247,10 @@
 }
 
 [name="WYSIWYGS"] .code {
-  background: url(../images/old-site-code.png);
+  background: url(../images/wysiwygs-image.png);
   background-color: white;
   -webkit-transition: all .5s;
+  background-size: 1400px;
 }
 
 [name="WYSIWYGS"] .geocities {

@@ -230,7 +230,8 @@
 }
 
 [name="Plugins"] .bg.mask {
-  -webkit-clip-path: polygon(600px 0px, 1400px 0px, 1400px 800px, 800px 800px);
+  /*-webkit-clip-path: polygon(600px 0px, 1400px 0px, 1400px 800px, 800px 800px);*/
+  -webkit-clip-path: polygon(571px 0px, 1400px 0px, 1400px 800px, 786px 800px);
   -webkit-transition: all .5s;
 }
 
@@ -245,14 +246,20 @@
 }
 
 [name="Plugins"] .code {
-  background: url(../images/old-site-code.png);
-  background-color: white;
+  /*background: url(../images/old-site-code.png);*/
+  background-color: black;
   -webkit-transition: all .5s;
+}
+
+[name="Plugins"] .code iframe {
+  width: 1400px;
+  height: 800px;
+  position: absolute;
+  left: -350px;
 }
 
 [name="Plugins"] .geocities {
   background: url(../images/geocities.png) -245px 0px no-repeat;
-  background-color: white;
   -webkit-transition: all .5s;
 }
 
