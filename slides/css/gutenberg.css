@@ -1,0 +1,14 @@
+[name="Gutenberg"] .gutenberg {
+  z-index: 0;
+}
+
+[name="Gutenberg"] .printing-press {
+  left: 800px;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all .5s;
+}
+
+[name="Gutenberg"] .visible {
+  opacity: 1;
+}

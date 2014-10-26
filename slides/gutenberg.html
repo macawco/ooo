@@ -1,0 +1,17 @@
+<div class="wrapper" sub="gutenberg">
+  <img class="gutenberg" src="slides/images/gutenberg.jpg">
+  <img class="printing-press" src="slides/images/printing-press.jpg">
+</div>
+
+<script sub-def="gutenberg">
+  (function() {
+    return [
+      function() {
+        $('[sub="gutenberg"] .printing-press').removeClass('visible');
+      },
+      function() {
+        $('[sub="gutenberg"] .printing-press').addClass('visible');
+      }
+    ];
+  })();
+</script>
