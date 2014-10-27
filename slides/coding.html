@@ -1,8 +1,9 @@
 <div class="wrapper" sub="coding">
-  <div class="image code"></div>
-  <div class="image geocities"></div>
 
-  <div class="bg"></div>
+  <img src="slides/images/geocities.png" class="image-overlay geocities" />
+  <img src="slides/images/star-trek-facepalm.gif" class="image-overlay facepalm" />
+
+  <div class="cover overlay"></div>
 
   <div class="approach-title">
     <div class="approach-wrapper">
@@ -11,37 +12,23 @@
     </div>
   </div>
 
-  <div class="topics good">
-    <div class="topic-title">The Good</div>
-    <div class="topic-content">
-      <div class="delay1">working with medium (sort of)</div>
-      <div class="delay2">code output</div>
-    </div>
-  </div>
-
-  <div class="topics bad">
-    <div class="topic-title">The Not So Good</div>
-    <div class="topic-content">
-      <div class="delay1">hard to visualize</div>
-      <div class="delay2">time consuming</div>
-      <div class="delay3">messy code</div>
-    </div>
-  </div>
-
   <div class="ratings">
-    <div class="rating design">
-      <div class="rating-content">
-        <img src="slides/images/pencil-icon.png" class="rating-icon rating-icon-stream">
-        <span>2</span>
+
+    <div class="rating-range"></div>
+
+    <div class="rating left">
+      <div class="bar design">
+        <img src="slides/images/pencil-icon.png" class="bar-icon">
       </div>
     </div>
 
-    <div class="rating output">
-      <div class="rating-content">
-        <img src="slides/images/html-icon.png" class="rating-icon rating-icon-stream">
-        <span>8</span>
+    <div class="rating right">
+      <div class="bar output">
+        <img src="slides/images/html-icon.png" class="bar-icon">
       </div>
     </div>
+
+    <div class="divider"></div>
   </div>
 </div>
 
@@ -49,36 +36,22 @@
   (function() {
     return [
       function() {
-        $('[sub="coding"] .approach-title').removeClass('title-show mini last-step');
-        $('[sub="coding"] .bg').removeClass('mask');
-        $('[sub="coding"] .image.code').removeClass('visible');
-        $('[sub="coding"] .good').removeClass('hide show');
-        $('[sub="coding"] .bad').removeClass('show hide-fast');
-        $('[sub="coding"] .rating.design').removeClass('visible');
-        $('[sub="coding"] .rating.output').removeClass('visible');
+        $('[sub="coding"]').removeClass('step2 step3 step4 step5');
       },
       function() {
-        $('[sub="coding"] .approach-title').addClass('title-show');
+        $('[sub="coding"]').removeClass('step3 step4');
+        $('[sub="coding"]').addClass('step2');
       },
       function() {
-        $('[sub="coding"] .approach-title').addClass('mini');
-        $('[sub="coding"] .bg').addClass('mask');
-        $('[sub="coding"] .image.code').addClass('visible');
-        $('[sub="coding"] .good').addClass('show');
+        $('[sub="coding"]').removeClass('step4');
+        $('[sub="coding"]').addClass('step3');
       },
       function() {
-        $('[sub="coding"] .good').addClass('hide');
-        $('[sub="coding"] .bad').addClass('show');
+        $('[sub="coding"]').removeClass('step5');
+        $('[sub="coding"]').addClass('step4');
       },
       function() {
-        $('[sub="coding"] .bad').addClass('hide-fast');
-
-        $('[sub="coding"] .approach-title').removeClass('title-show mini').addClass('last-step');
-        $('[sub="coding"] .bg').removeClass('mask');
-        $('[sub="coding"] .image.code').removeClass('visible');
-
-        $('[sub="coding"] .rating.design').addClass('visible');
-        $('[sub="coding"] .rating.output').addClass('visible');
+        $('[sub="coding"]').addClass('step5');
       }
     ];
   })();

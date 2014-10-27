@@ -1,7 +1,35 @@
-[name="Coding"] {
-  background: black;
+[name="Coding"],
+[name="Coding"] .wrapper {
+  background: #53d06b;
 }
 
+[name="Coding"] .wrapper {
+  height: 100%;
+}
+
+[name="Coding"] .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1400px;
+  -webkit-clip-path: polygon(-150px 0px, -150px 0px, 0px 800px, -150px 800px);
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .facepalm {
+  -webkit-clip-path: polygon(1400px -100px, 1600px -100px, 1600px 800px, 1600px 800px);
+}
+
+[name="Coding"] .overlay {
+  position: absolute;
+  width: 1400px;
+  height: 800px;
+  opacity: 0.6;
+  background-color: #53d06b;
+  -webkit-clip-path: polygon(0px -100px, 1400px -100px, 1400px 800px, 0px 800px);
+}
+
+/* title */
 
 [name="Coding"] .approach-title {
   position: absolute;
@@ -10,28 +38,19 @@
   top: 225px;
   left: 264px;
   height: 350px;
-}
-
-[name="Coding"] .last-step {
-  opacity: 0.2;
-  transform: scale(1.2);
-  -webkit-transition: all .5s;
+  -webkit-transition: all .5s
 }
 
 [name="Coding"] .approach-wrapper {
   position: relative;
   display: inline-block;
   width: 350px;
-}
-
-[name="Coding"] .slide-icon {
-  /*width: 200px;*/
-  float: left;
+  -webkit-transition: all .5s;
 }
 
 [name="Coding"] .title {
   /*color: #2ad57e;*/
-  color: black;
+  color: white;
   font-size: 125px;
   font-weight: bold;
   text-transform: uppercase;
@@ -41,223 +60,163 @@
   width: 522px;
   display: inline-block;
   opacity: 0;
-}
-
-[name="Coding"] .title-show .title {
-  opacity: 1;
   -webkit-transition: all .5s;
 }
 
-[name="Coding"] .title-show .approach-wrapper {
-  width: 872px;
-  -webkit-transition: all .5s;
+[name="Coding"] .slide-icon {
+  float: left;
+  -webkit-filter: invert(100%);
 }
 
-[name="Coding"] .approach-title.mini {
-  top: -98px;
-  left: 740px;
-  width: 872px;
-  transform: scale(0.4);
-  -webkit-transition: all .5s;
-}
-
-[name="Coding"] .dim {
-  opacity: 0.4;
-}
-
-[name="Coding"] .topics {
-  position: absolute;
-  top: 200px;
-  right: 0;
-  padding-right: 42px;
-  text-align: right;
-}
-
-[name="Coding"] .topic-title {
-  color: white;
-  font-size: 70px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  margin-left: 100%;
-  white-space: nowrap;
-}
-
-[name="Coding"] .topic-content {
-  color: black;
-  font-size: 30px;
-  width: 100%;
-}
-
-[name="Coding"] .topic-content > div {
-  padding: 10px 0;
-  margin-left: 110%;
-  white-space: nowrap;
-  opacity: 0;
-}
-
-[name="Coding"] .topics.good {
-  opacity: 0;
-}
-
-[name="Coding"] .topics.bad {
-  opacity: 0;
-}
-
-[name="Coding"] .topics.show {
-  opacity: 1;
-  -webkit-transition: all .7s ease .5s;
-}
-
-[name="Coding"] .show .topic-title {
-  margin-left: 0%;
-  -webkit-transition: all .7s ease .5s;
-}
-
-[name="Coding"] .show .topic-content > div {
-  margin-left: 0%;
-  opacity: 1;
-  -webkit-transition: all .7s ease-out;
-}
-
-[name="Coding"] .topics.hide {
-  opacity: 0;
-  -webkit-transition: all .7s ease;
-}
-
-[name="Coding"] .topics.hide-fast {
-  opacity: 0;
-  -webkit-transition: all .3s ease;
-}
-
-[name="Coding"] .delay1 {
-  -webkit-transition-delay: 0.8s !important;
-}
-
-[name="Coding"] .delay2 {
-  -webkit-transition-delay: 1.2s !important;
-}
-
-[name="Coding"] .delay3 {
-  -webkit-transition-delay: 1.6s !important;
-}
+/* scale */
 
 [name="Coding"] .ratings {
-  position: absolute;
-  top: 324px;
+  position: relative;
+  top: 480px;
   width: 100%;
-  /*opacity: 0;*/
+  height: 90px;
+  opacity: 0;
+  -webkit-transition: all .5s
 }
 
-[name="Coding"] .ratings.show {
-  opacity: 1;
-  -webkit-transition: all .5s;
+[name="Coding"] .rating-range {
+  position: absolute;
+  top: 0;
+  width: 900px;
+  height: 60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: white;
+  opacity: 0.1;
 }
 
 [name="Coding"] .rating {
-  color: white;
-  font-size: 200px;
-  font-weight: bold;
-  line-height: 156px;
+  position: absolute;
+  top: 0;
+  height: 60px;
   width: 50%;
+}
+
+[name="Coding"] .rating.left {
+  right: 48.5%;
+  -webkit-clip-path: polygon(0px 480px, 683px 480px, 717px 540px, 0px 540px);
+}
+
+[name="Coding"] .rating.right {
+  left: 48.5%;
+  -webkit-clip-path: polygon(683px 480px, 1400px 480px, 1400px 540px, 718px 540px);
+}
+
+[name="Coding"] .ratings .bar {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  background: white;
+  padding: 5px;
+}
+
+[name="Coding"] .ratings .divider {
+  position: absolute;
+  width: 1px;
+  height: 90px;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+  border-left: 2px solid white;
+  transform: skewX(30deg);
+}
+
+[name="Coding"] .ratings .bar-icon {
+  width: 50px;
+}
+
+[name="Coding"] .ratings .design {
+  right: 0;
+  width: 0px;
+  background: #4197f1;
+  margin-right: 1px;
+  text-align: left;
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .ratings .output {
+  left: 0;
+  width: 0px;
+  background: #e42c64;
+  margin-left: 1px;
+  text-align: right;
+  -webkit-transition: all .5s;
+}
+
+/* step 2 */
+
+[name="Coding"] .step2 .approach-title {
+  left: 233px;
+}
+
+[name="Coding"] .step2 .title {
+  opacity: 1;
+}
+
+[name="Coding"] .step2 .approach-wrapper {
+  width: 933px;
+}
+
+/* step 3 */
+
+[name="Coding"] .step3 .geocities {
+  -webkit-clip-path: polygon(-150px 0px, 1400px 0px, 1550px 800px, 0px 800px);
+  -webkit-transition: all .5s;
+}
+
+/* step 4 */
+
+[name="Coding"] .step4 .facepalm {
+  -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
+  -webkit-transition: all .5s;
+}
+
+/* step 5 */
+[name="Coding"] .wrapper.step5 {
+  background: black;
+  -webkit-transition: all .5s;
+}
+
+[name="Coding"] .step5 .geocities {
   opacity: 0;
-  text-align: center;
-  float: left;
+  -webkit-transition: none;
 }
 
-[name="Coding"] .rating.visible.delay {
-  -webkit-transition-delay: .5s;
+[name="Coding"] .step5 .facepalm,
+[name="Coding"] .step5 .overlay {
+  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
+  -webkit-transition: all .5s;
 }
 
-[name="Coding"] .rating.visible {
+[name="Coding"] .step5 .approach-title {
+  top: 140px;
+  -webkit-transition: all .5s;
+}
+
+/*[name="Coding"] .step5 .slide-icon {
+  -webkit-filter: invert(100%);
+  -webkit-transition: all .5s;
+}*/
+
+[name="Coding"] .step5 .ratings {
   opacity: 1;
   -webkit-transition: all .5s linear .5s;
 }
 
-[name="Coding"] .rating-content {
-  display: inline-block;
-  padding-right: 24px;
+[name="Coding"] .step5 .design {
+  width: 100px;
+  -webkit-transition: all .5s ease 1s;
 }
 
-[name="Coding"] .rating img {
-  width: 150px;
-  float: left;
-}
-
-[name="Coding"] .rating span {
-  opacity: 1;
-  float: left;
-}
-
-[name="Coding"] .design {
-  top: 330px;
-  left: 130px;
-  -webkit-transition: all .5s;
-}
-
-[name="Coding"] .output {
-  top: 330px;
-  right: 130px;
-  -webkit-transition: all .5s linear .4s;
-}
-
-[name="Coding"] .rating.done img {
-  width: 177px;
-  -webkit-transition: all .5s;
-}
-
-[name="Coding"] .rating.done {
-  font-size: 250px;
-  font-weight: bold;
-  line-height: 202px;
-  -webkit-transition: all .5s;
-}
-
-[name="Coding"] .bg {
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0;
-  width: 1400px;
-  height: 1000px;
-  background: #2ad57e;
-  -webkit-clip-path: polygon(0px 0px, 1400px 0px, 1400px 800px, 0px 800px);
-  -webkit-transition: all .5s;
-  /*-webkit-clip-path: polygon(300px 0px, 750px 0px, 750px 900px, 0px 900px);*/
-  /*-webkit-clip-path: polygon(478px 450px,1011px 440px,1027px -12px,652px -11px);*/
-}
-
-[name="Coding"] .bg.mask {
-  /*-webkit-clip-path: polygon(600px 0px, 1400px 0px, 1400px 800px, 800px 800px);*/
-  -webkit-clip-path: polygon(571px 0px, 1400px 0px, 1400px 800px, 786px 800px);
-  -webkit-transition: all .5s;
-}
-
-[name="Coding"] .image {
-  position: absolute;
-  top: 0;
-  width: 1400px;
-  height: 800px;
-  left: 0;
-  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 800px, 0px 800px);
-  opacity: 0;
-}
-
-[name="Coding"] .code {
-  background: url(../images/old-site-code.png);
-  background-color: white;
-  -webkit-transition: all .5s;
-}
-
-[name="Coding"] .geocities {
-  background: url(../images/geocities.png) -245px 0px no-repeat;
-  background-color: white;
-  -webkit-transition: all .5s;
-}
-
-[name="Coding"] .image.visible {
-  opacity: 1;
-  -webkit-clip-path: polygon(0px 0px, 575px 0px, 785px 800px, 0px 800px);
-  -webkit-transition: all .5s;
+[name="Coding"] .step5 .output {
+  width: 400px;
+  -webkit-transition: all 1s ease 1s;
 }
