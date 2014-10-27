@@ -97,6 +97,7 @@
 }
 
 [name="Us"] h2 {
+  top: 60px;
   width: 600px;
   font-size: 36px;
   font-weight: 500;

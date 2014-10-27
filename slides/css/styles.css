@@ -12,15 +12,3 @@
 @import 'streams.css';
 @import 'why.css';
 @import 'platform.css';
-
-[name="Title"] {
-  background: red;
-}
-
-[name="Intro"] {
-  background: blue;
-}
-
-[name="Macaw"] {
-  background: black;
-}
