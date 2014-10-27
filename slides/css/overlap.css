@@ -197,7 +197,7 @@
   opacity: 0.3;
 }
 
-[sub="lde"] .lde.live {
+/*[sub="lde"] .lde.live {
   -webkit-transform: rotateZ(10deg) scale(2.5) translateX(360px) translateY(264px);
 }
 
@@ -325,3 +325,4 @@
   left: 270px;
   top: 360px;
 }
+*/
