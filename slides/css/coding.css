@@ -13,7 +13,7 @@
   left: 0;
   width: 1400px;
   -webkit-clip-path: polygon(-150px 0px, -150px 0px, 0px 800px, -150px 800px);
-  -webkit-transition: all .5s;
+  -webkit-transition: all .5s ease;
 }
 
 [name="Coding"] .facepalm {
@@ -38,14 +38,14 @@
   top: 225px;
   left: 264px;
   height: 350px;
-  -webkit-transition: all .5s
+  -webkit-transition: all .5s ease;
 }
 
 [name="Coding"] .approach-wrapper {
   position: relative;
   display: inline-block;
   width: 350px;
-  -webkit-transition: all .5s;
+  -webkit-transition: all .5s ease;
 }
 
 [name="Coding"] .title {
@@ -60,7 +60,9 @@
   width: 522px;
   display: inline-block;
   opacity: 0;
-  -webkit-transition: all .5s;
+
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  -webkit-transition: all .5s ease;
 }
 
 [name="Coding"] .slide-icon {
@@ -76,7 +78,7 @@
   width: 100%;
   height: 90px;
   opacity: 0;
-  -webkit-transition: all .5s
+  -webkit-transition: all .5s ease;
 }
 
 [name="Coding"] .rating-range {
@@ -139,7 +141,7 @@
   background: #4197f1;
   margin-right: 1px;
   text-align: left;
-  -webkit-transition: all .5s;
+  -webkit-transition: all .5s ease;
 }
 
 [name="Coding"] .ratings .output {
@@ -159,6 +161,8 @@
 
 [name="Coding"] .step2 .title {
   opacity: 1;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-transition: all .3s ease;
 }
 
 [name="Coding"] .step2 .approach-wrapper {
@@ -169,20 +173,20 @@
 
 [name="Coding"] .step3 .geocities {
   -webkit-clip-path: polygon(-150px 0px, 1400px 0px, 1550px 800px, 0px 800px);
-  -webkit-transition: all .5s;
+  -webkit-transition: all .5s ease;
 }
 
 /* step 4 */
 
 [name="Coding"] .step4 .facepalm {
   -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
-  -webkit-transition: all .5s;
+  -webkit-transition: all .5s ease;
 }
 
 /* step 5 */
 [name="Coding"] .wrapper.step5 {
   background: black;
-  -webkit-transition: all .5s;
+  -webkit-transition: all .5s ease;
 }
 
 [name="Coding"] .step5 .geocities {
@@ -193,12 +197,12 @@
 [name="Coding"] .step5 .facepalm,
 [name="Coding"] .step5 .overlay {
   -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
-  -webkit-transition: all .5s;
+  -webkit-transition: all .5s ease;
 }
 
 [name="Coding"] .step5 .approach-title {
   top: 140px;
-  -webkit-transition: all .5s;
+  -webkit-transition: all .5s ease;
 }
 
 /*[name="Coding"] .step5 .slide-icon {
