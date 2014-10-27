@@ -1,7 +1,9 @@
 <div class="wrapper" sub="image-editors">
-  <div class="image code"></div>
 
-  <div class="bg"></div>
+  <img src="slides/images/geocities.png" class="image-overlay geocities" />
+  <img src="slides/images/colbert-facepalm.gif" class="image-overlay facepalm" />
+
+  <div class="cover overlay"></div>
 
   <div class="approach-title">
     <div class="approach-wrapper">
@@ -10,37 +12,23 @@
     </div>
   </div>
 
-  <div class="topics good">
-    <div class="topic-title">The Good</div>
-    <div class="topic-content">
-      <div class="delay1">great design tools</div>
-      <div class="delay2">fluid interface</div>
-      <div class="delay3">familiar</div>
-    </div>
-  </div>
-
-  <div class="topics bad">
-    <div class="topic-title">The Not So Good</div>
-    <div class="topic-content">
-      <div class="delay1">outside of medium</div>
-      <div class="delay2">no code output</div>
-    </div>
-  </div>
-
   <div class="ratings">
-    <div class="rating design">
-      <div class="rating-content">
-        <img src="slides/images/pencil-icon.png" class="rating-icon rating-icon-stream">
-        <span>10</span>
+
+    <div class="rating-range"></div>
+
+    <div class="rating left">
+      <div class="bar design">
+        <img src="slides/images/pencil-icon.png" class="bar-icon">
       </div>
     </div>
 
-    <div class="rating output">
-      <div class="rating-content">
-        <img src="slides/images/html-icon.png" class="rating-icon rating-icon-stream">
-        <span>0</span>
+    <div class="rating right">
+      <div class="bar output">
+        <img src="slides/images/html-icon.png" class="bar-icon">
       </div>
     </div>
+
+    <div class="divider"></div>
   </div>
 </div>
 
@@ -48,36 +36,22 @@
   (function() {
     return [
       function() {
-        $('[sub="image-editors"] .approach-title').removeClass('title-show mini last-step');
-        $('[sub="image-editors"] .bg').removeClass('mask');
-        $('[sub="image-editors"] .image.code').removeClass('visible');
-        $('[sub="image-editors"] .good').removeClass('hide show');
-        $('[sub="image-editors"] .bad').removeClass('show hide-fast');
-        $('[sub="image-editors"] .rating.design').removeClass('visible');
-        $('[sub="image-editors"] .rating.output').removeClass('visible');
+        $('[sub="image-editors"]').removeClass('step2 step3 step4 step5');
       },
       function() {
-        $('[sub="image-editors"] .approach-title').addClass('title-show');
+        $('[sub="image-editors"]').removeClass('step3 step4');
+        $('[sub="image-editors"]').addClass('step2');
       },
       function() {
-        $('[sub="image-editors"] .approach-title').addClass('mini');
-        $('[sub="image-editors"] .bg').addClass('mask');
-        $('[sub="image-editors"] .image.code').addClass('visible');
-        $('[sub="image-editors"] .good').addClass('show');
+        $('[sub="image-editors"]').removeClass('step4');
+        $('[sub="image-editors"]').addClass('step3');
       },
       function() {
-        $('[sub="image-editors"] .good').addClass('hide');
-        $('[sub="image-editors"] .bad').addClass('show');
+        $('[sub="image-editors"]').removeClass('step5');
+        $('[sub="image-editors"]').addClass('step4');
       },
       function() {
-        $('[sub="image-editors"] .bad').addClass('hide-fast');
-
-        $('[sub="image-editors"] .approach-title').removeClass('title-show mini').addClass('last-step');
-        $('[sub="image-editors"] .bg').removeClass('mask');
-        $('[sub="image-editors"] .image.code').removeClass('visible');
-
-        $('[sub="image-editors"] .rating.design').addClass('visible');
-        $('[sub="image-editors"] .rating.output').addClass('visible');
+        $('[sub="image-editors"]').addClass('step5');
       }
     ];
   })();

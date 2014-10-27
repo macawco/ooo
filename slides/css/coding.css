@@ -7,6 +7,11 @@
   height: 100%;
 }
 
+[name="Coding"] .no-trans div,
+[name="Coding"] .no-trans img {
+  -webkit-transition: none !important;
+}
+
 [name="Coding"] .image-overlay {
   position: absolute;
   top: 0;
@@ -217,10 +222,10 @@
 
 [name="Coding"] .step5 .design {
   width: 100px;
-  -webkit-transition: all .5s ease 1s;
+  -webkit-transition: all .8s ease 1s;
 }
 
 [name="Coding"] .step5 .output {
   width: 400px;
-  -webkit-transition: all 1s ease 1s;
+  -webkit-transition: all .8s ease 1s;
 }
