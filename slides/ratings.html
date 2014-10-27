@@ -3,29 +3,26 @@
 
   <div class="rating-details"></div>
 
-  <div class="bottom section"></div>
+  <div class="ratings">
 
-  <div class="rating-detail-wrapper">
-    <div class="rating-detail">
-      <div class="detail">0-10</div>
-      <div class="label">Scale</div>
-    </div>
+    <div class="rating-range"></div>
 
-    <div class="rating-detail">
-      <div class="detail cats">
-        <div class="category design">
-          <img src="slides/images/pencil-icon.png">
-          <div class="cat-label">Design</div>
-        </div>
-        <div class="plus">+</div>
-        <div class="category output">
-          <img src="slides/images/html-icon.png">
-          <div class="cat-label">Output</div>
-        </div>
+    <div class="rating left">
+      <div class="bar design">
+        <img src="slides/images/pencil-icon.png" class="bar-icon">
       </div>
-      <div class="label">Categories</div>
     </div>
 
+    <div class="rating right">
+      <div class="bar output">
+        <img src="slides/images/html-icon.png" class="bar-icon">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="label design-label">Design Experience</div>
+    <div class="label output-label">Output Quality</div>
   </div>
 </div>
 
@@ -33,11 +30,13 @@
   (function() {
     return [
       function() {
+        $('[sub="ratings"]').removeClass('step2');
         $('[sub="ratings"] .rating-text').removeClass('up');
         $('[sub="ratings"] .rating-details').removeClass('up');
         $('[sub="ratings"] .rating-detail-wrapper').removeClass('visible');
       },
       function() {
+        $('[sub="ratings"]').addClass('step2');
         $('[sub="ratings"] .rating-text').addClass('up');
         $('[sub="ratings"] .rating-details').addClass('up');
         $('[sub="ratings"] .rating-detail-wrapper').addClass('visible');
