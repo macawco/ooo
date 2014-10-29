@@ -15,6 +15,7 @@
 
 [name="Current Tools"] .tools span {
   opacity: .15;
+  -webkit-transition: all .5s linear .5s;
 }
 
 [name="Current Tools"] .title {
@@ -28,6 +29,7 @@
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
+  -webkit-transition: all .5s linear .5s;
 }
 
 [name="Current Tools"] .title span {
@@ -38,6 +40,7 @@
   padding-right: 40px;
   line-height: 120px;
   margin: auto;
+  -webkit-transition: all .5s linear .5s;
 }
 
 [name="Current Tools"] .title .wireframe-prototype {
