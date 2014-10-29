@@ -9,12 +9,12 @@
   width: 1400px;
   height: 800px;
   -webkit-backface-visibility: hidden;
+  -webkit-transition: all .5s;
 }
 
 [name="20 Years"] .step3 .content {
   transform: scale(2);
   left: -550px;
-  -webkit-transition: all .5s;
 }
 
 [name="20 Years"] .years {
@@ -27,12 +27,12 @@
   color: black;
   opacity: 0;
   -webkit-backface-visibility: hidden;
+  -webkit-transition: all .5s ease;
 }
 
 [name="20 Years"] .step2 .years {
   opacity: 0.3;
   top: 300px;
-  -webkit-transition: all .5s ease;
 }
 
 /*[name="20 Years"] .step3 .years {
@@ -52,6 +52,7 @@
   font-size: 50px;
   font-weight: bold;
   -webkit-backface-visibility: hidden;
+  -webkit-transition: all .5s;
 }
 
 [name="20 Years"] .words > div {
@@ -65,15 +66,21 @@
 [name="20 Years"] .step2 .words {
   top: 175px;
   margin-left: -544px;
-  -webkit-transition: all .5s;
 }
 
 [name="20 Years"] .time {
   opacity: 0;
   transform: perspective( 600px ) rotateY( 90deg );
+  -webkit-transition: all .25s linear;
 }
 
 [name="20 Years"] .step2 .time {
+  transform: perspective( 600px ) rotateY( 0deg );
+  opacity: 1;
+  -webkit-transition: all .25s linear .25s;
+}
+
+[name="20 Years"] .why {
   transform: perspective( 600px ) rotateY( 0deg );
   opacity: 1;
   -webkit-transition: all .25s linear .25s;
@@ -97,6 +104,7 @@
   text-transform: uppercase;
   text-align: left;
   -webkit-backface-visibility: hidden;
+  -webkit-transition: all .5s;
 }
 
 [name="20 Years"] .step3 .result {
