@@ -176,7 +176,7 @@
 
 /* step 3 */
 
-[name="Image Editors"] .step3 .bob-ross {
+[name="Image Editors"] .step3 .screenshot {
   -webkit-clip-path: polygon(-150px 0px, 1400px 0px, 1550px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
@@ -187,7 +187,7 @@
   -webkit-transition: all .5s ease;
 }
 
-[name="Image Editors"] .step4 .bob-ross {
+[name="Image Editors"] .step4 .screenshot {
   -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }

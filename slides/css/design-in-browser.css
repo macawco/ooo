@@ -2,6 +2,24 @@
   background: #e42c64;
 }
 
+[name="Design In Browser"] .geocities {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1400px;
+  height: 800px;
+  z-index: 10;
+  background: url(../images/geocities.png) no-repeat;
+  background-position: -150px 0px;
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+[name="Design In Browser"] .step4 .geocities {
+  -webkit-clip-path: polygon(0px 0px, 700px 0px, 680px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
 [name="Design In Browser"] .start-q {
   position: absolute;
   top: 100px;
@@ -76,10 +94,10 @@
 }
 
 [name="Design In Browser"] .image {
-  background: url(../images/browser-design.png) no-repeat;
+  background: url(../images/sublime-image.png) no-repeat;
   background-color: black;
-  background-position: 40px;
-  background-size: 1200px;
+  background-position: 600px -30px;
+  background-size: 1400px;
   width: 1400px;
   height: 800px;
   top: 0;
@@ -102,8 +120,8 @@
   top: 0;
   left: 0;
   opacity: 0;
-
   -webkit-clip-path: polygon(0px 0px, 1400px 0px, 1400px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
 }
 
 [name="Design In Browser"] .step2 .browser {
@@ -126,6 +144,7 @@
   font-size: 50px;
   font-weight: bold;
   opacity: 0;
+  -webkit-transition: all .5s ease;
 }
 
 [name="Design In Browser"] .step2 .title {
@@ -138,7 +157,7 @@
   -webkit-transition: all .5s ease;
 }
 
-[name="Design In Browser"] .msg {
+/*[name="Design In Browser"] .msg {
   position: absolute;
   color: black;
   font-size: 50px;
@@ -155,5 +174,5 @@
   opacity: 1;
   -webkit-clip-path: polygon(0px 0px, 700px 0px, 700px 150px, 0px 150px);
   -webkit-transition: all .5s ease;
-}
+}*/
 
