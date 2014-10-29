@@ -1,6 +1,7 @@
 [name="Image Editors"],
 [name="Image Editors"] .wrapper {
   background: #4197f1;
+  -webkit-transition: all .5s ease;
 }
 
 [name="Image Editors"] .wrapper {
@@ -17,7 +18,7 @@
 }
 
 [name="Image Editors"] .facepalm {
-  -webkit-clip-path: polygon(1400px -100px, 1600px -100px, 1600px 800px, 1600px 800px);
+  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
 }
 
 [name="Image Editors"] .overlay {
@@ -27,6 +28,7 @@
   opacity: 0.6;
   background-color: #4197f1;
   -webkit-clip-path: polygon(0px -100px, 1400px -100px, 1400px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
 }
 
 /* title */
@@ -180,50 +182,52 @@
 }
 
 /* step 4 */
-
-[name="Image Editors"] .step4 .facepalm {
-  -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
-  -webkit-transition: all .5s ease;
-}
-
-/* step 5 */
-[name="Image Editors"] .wrapper.step5 {
+[name="Image Editors"] .wrapper.step4 {
   background: black;
   -webkit-transition: all .5s ease;
 }
 
-[name="Image Editors"] .step5 .bob-ross {
-  opacity: 0;
-  -webkit-transition: none;
-}
-
-[name="Image Editors"] .step5 .facepalm,
-[name="Image Editors"] .step5 .overlay {
+[name="Image Editors"] .step4 .bob-ross {
   -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
 
-[name="Image Editors"] .step5 .approach-title {
+[name="Image Editors"] .step4 .overlay {
+  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+[name="Image Editors"] .step4 .approach-title {
   top: 140px;
   -webkit-transition: all .5s ease;
 }
 
-/*[name="Image Editors"] .step5 .slide-icon {
+/*[name="Image Editors"] .step4 .slide-icon {
   -webkit-filter: invert(100%);
   -webkit-transition: all .5s;
 }*/
 
-[name="Image Editors"] .step5 .ratings {
+[name="Image Editors"] .step4 .ratings {
   opacity: 1;
   -webkit-transition: all .5s linear .5s;
 }
 
-[name="Image Editors"] .step5 .design {
+[name="Image Editors"] .step4 .design {
   width: 500px;
   -webkit-transition: all .8s ease 1s;
 }
 
-[name="Image Editors"] .step5 .output {
+[name="Image Editors"] .step4 .output {
   width: 0px;
   -webkit-transition: all .8s ease 1s;
 }
+
+/* step 5 */
+
+[name="Image Editors"] .step5 .overlay,
+[name="Image Editors"] .step5 .facepalm {
+  -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+

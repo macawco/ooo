@@ -1,10 +1,10 @@
 <div class="wrapper" sub="a-look-back">
-  <div class="slide-content">
-    <div class="look-back">First we look back<br/>then we can look foward<span class="blue">.</span></div>
-    <div class="why">Why<span class="black">?</span></div>
-    <div class="answer">Learn from where we have been.</div>
-    <div class="how"><span class="black">How?</span> <span class="part2">Analyze approaches.<span></div>
-  </div>
+  <img src="slides/images/back-to-future.jpg" class="image-overlay back-to-future" />
+  <img src="slides/images/back-to-future.gif" class="image-overlay btf-gif" />
+
+  <div class="cover overlay"></div>
+
+  <div class="look-back">A look back</div>
 </div>
 
 <script sub-def="a-look-back">
@@ -13,15 +13,7 @@
       function() {
       },
       function() {
-        $('[sub="a-look-back"] .look-back').addClass('dim');
-        $('[sub="a-look-back"] .slide-content').addClass('step2');
-      },
-      function() {
-        $('[sub="a-look-back"] .why').addClass('dim');
-        $('[sub="a-look-back"] .slide-content').addClass('step3');
-      },
-      function() {
-        $('[sub="a-look-back"] .slide-content').addClass('step4');
+        $('[sub="a-look-back"]').addClass('step2');
       }
     ];
   })();

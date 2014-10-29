@@ -1,6 +1,7 @@
 [name="Plugins"],
 [name="Plugins"] .wrapper {
   background: #e88e47;
+  -webkit-transition: all .5s ease;
 }
 
 [name="Plugins"] .wrapper {
@@ -21,7 +22,7 @@
 }
 
 [name="Plugins"] .facepalm {
-  -webkit-clip-path: polygon(1400px -100px, 1600px -100px, 1600px 800px, 1600px 800px);
+  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
 }
 
 [name="Plugins"] .overlay {
@@ -31,6 +32,7 @@
   opacity: 0.6;
   background-color: #e88e47;
   -webkit-clip-path: polygon(0px -100px, 1400px -100px, 1400px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
 }
 
 /* title */
@@ -182,50 +184,53 @@
 }
 
 /* step 4 */
-
-[name="Plugins"] .step4 .facepalm {
-  -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
-  -webkit-transition: all .5s ease;
-}
-
-/* step 5 */
-[name="Plugins"] .wrapper.step5 {
+[name="Plugins"] .wrapper.step4 {
   background: black;
   -webkit-transition: all .5s ease;
 }
 
-[name="Plugins"] .step5 .geocities {
-  opacity: 0;
-  -webkit-transition: none;
-}
-
-[name="Plugins"] .step5 .facepalm,
-[name="Plugins"] .step5 .overlay {
+[name="Plugins"] .step4 .geocities {
   -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
 
-[name="Plugins"] .step5 .approach-title {
+[name="Plugins"] .step4 .facepalm,
+[name="Plugins"] .step4 .overlay {
+  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+[name="Plugins"] .step4 .approach-title {
   top: 140px;
   -webkit-transition: all .5s ease;
 }
 
-/*[name="Plugins"] .step5 .slide-icon {
+/*[name="Plugins"] .step4 .slide-icon {
   -webkit-filter: invert(100%);
   -webkit-transition: all .5s;
 }*/
 
-[name="Plugins"] .step5 .ratings {
+[name="Plugins"] .step4 .ratings {
   opacity: 1;
   -webkit-transition: all .5s linear .5s;
 }
 
-[name="Plugins"] .step5 .design {
+[name="Plugins"] .step4 .design {
   width: 400px;
   -webkit-transition: all .8s ease 1s;
 }
 
-[name="Plugins"] .step5 .output {
+[name="Plugins"] .step4 .output {
   width: 100px;
   -webkit-transition: all .8s ease 1s;
 }
+
+/* step 5 */
+
+[name="Plugins"] .step5 .overlay,
+[name="Plugins"] .step5 .facepalm {
+  -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+
