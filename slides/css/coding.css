@@ -32,7 +32,17 @@
   height: 800px;
   opacity: 0.6;
   background-color: #53d06b;
-  -webkit-clip-path: polygon(0px -100px, 1400px -100px, 1400px 800px, 0px 800px);
+  -webkit-clip-path: polygon(-150px -100px, 1400px -100px, 1400px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+[name="Coding"] .overlay-black {
+  position: absolute;
+  width: 1400px;
+  height: 800px;
+  background: black;
+  opacity: 0.4;
+  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
 
@@ -91,7 +101,7 @@
 [name="Coding"] .rating-range {
   position: absolute;
   top: 0;
-  width: 900px;
+  width: 980px;
   height: 60px;
   left: 0;
   right: 0;
@@ -178,31 +188,44 @@
 
 /* step 3 */
 
-[name="Coding"] .step3 .geocities {
+[name="Coding"] .step3 .screenshot {
   -webkit-clip-path: polygon(-150px 0px, 1400px 0px, 1550px 800px, 0px 800px);
-  -webkit-transition: all .5s ease;
+  -webkit-transition: all .4s ease;
+}
+
+[name="Coding"] .step3 .approach-title {
+  opacity: 0;
+  -webkit-transition: all .4s ease .3s;
+}
+
+[name="Coding"] .step3 .overlay {
+  -webkit-clip-path: polygon(1400px -100px, 1400px -100px, 1550px 800px, 1550px 800px);
+  -webkit-transition: all .4s ease .3s;
 }
 
 /* step 4 */
 
 [name="Coding"] .wrapper.step4 {
   background: black;
-  -webkit-transition: all .5s ease;
+  -webkit-transition: none;
+  /*-webkit-transition: all .5s ease;*/
 }
 
-[name="Coding"] .step4 .geocities {
+[name="Coding"] .step4 .screenshot {
   -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
 
 [name="Coding"] .step4 .overlay {
-  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
+  -webkit-clip-path: polygon(1400px 800px, 1400px 800px, 1550px 800px, 1550px 800px);
+  /*-webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);*/
   -webkit-transition: all .5s ease;
 }
 
 [name="Coding"] .step4 .approach-title {
   top: 140px;
-  -webkit-transition: all .5s ease;
+  opacity: 1;
+  -webkit-transition: top .5s ease, opacity .4s ease .3s;
 }
 
 /*[name="Coding"] .step4 .slide-icon {
@@ -227,10 +250,15 @@
 
 /* step 5 */
 
-[name="Coding"] .step5 .overlay,
+/*[name="Coding"] .step5 .overlay,*/
 [name="Coding"] .step5 .facepalm {
   -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
+}
+
+[name="Coding"] .step5 .overlay-black {
+  -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
+  -webkit-transition: none;
 }
 
 

@@ -8,9 +8,10 @@
   height: 100%;
 }
 
-/*[name="Plugins"] .no-trans div {
+[name="Plugins"] .no-trans div,
+[name="Plugins"] .no-trans img {
   -webkit-transition: none !important;
-}*/
+}
 
 [name="Plugins"] .image-overlay {
   position: absolute;
@@ -31,7 +32,17 @@
   height: 800px;
   opacity: 0.6;
   background-color: #e88e47;
-  -webkit-clip-path: polygon(0px -100px, 1400px -100px, 1400px 800px, 0px 800px);
+  -webkit-clip-path: polygon(-150px -100px, 1400px -100px, 1400px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+[name="Plugins"] .overlay-black {
+  position: absolute;
+  width: 1400px;
+  height: 800px;
+  background: black;
+  opacity: 0;
+  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
 
@@ -59,7 +70,6 @@
   color: white;
   font-size: 125px;
   font-weight: bold;
-  margin-left: -35px;
   text-transform: uppercase;
   position: absolute;
   top: 100px;
@@ -91,7 +101,7 @@
 [name="Plugins"] .rating-range {
   position: absolute;
   top: 0;
-  width: 900px;
+  width: 980px;
   height: 60px;
   left: 0;
   right: 0;
@@ -180,13 +190,25 @@
 
 [name="Plugins"] .step3 .screenshot {
   -webkit-clip-path: polygon(-150px 0px, 1400px 0px, 1550px 800px, 0px 800px);
-  -webkit-transition: all .5s ease;
+  -webkit-transition: all .4s ease;
+}
+
+[name="Plugins"] .step3 .approach-title {
+  opacity: 0;
+  -webkit-transition: all .4s ease .3s;
+}
+
+[name="Plugins"] .step3 .overlay {
+  -webkit-clip-path: polygon(1400px -100px, 1400px -100px, 1550px 800px, 1550px 800px);
+  -webkit-transition: all .4s ease .3s;
 }
 
 /* step 4 */
+
 [name="Plugins"] .wrapper.step4 {
   background: black;
-  -webkit-transition: all .5s ease;
+  -webkit-transition: none;
+  /*-webkit-transition: all .5s ease;*/
 }
 
 [name="Plugins"] .step4 .screenshot {
@@ -194,15 +216,16 @@
   -webkit-transition: all .5s ease;
 }
 
-[name="Plugins"] .step4 .facepalm,
 [name="Plugins"] .step4 .overlay {
-  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
+  -webkit-clip-path: polygon(1400px 800px, 1400px 800px, 1550px 800px, 1550px 800px);
+  /*-webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);*/
   -webkit-transition: all .5s ease;
 }
 
 [name="Plugins"] .step4 .approach-title {
   top: 140px;
-  -webkit-transition: all .5s ease;
+  opacity: 1;
+  -webkit-transition: top .5s ease, opacity .4s ease .3s;
 }
 
 /*[name="Plugins"] .step4 .slide-icon {
@@ -227,10 +250,13 @@
 
 /* step 5 */
 
-[name="Plugins"] .step5 .overlay,
+/*[name="Plugins"] .step5 .overlay,*/
 [name="Plugins"] .step5 .facepalm {
   -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
 
-
+[name="Plugins"] .step5 .overlay-black {
+  -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
+  -webkit-transition: none;
+}
