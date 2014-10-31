@@ -1,0 +1,23 @@
+<div class="wrapper" sub="gutenberg-deal">
+  <img class="gutenberg" src="slides/images/gutenberg.jpg">
+  <img class="glasses" src="slides/images/glasses.png">
+  <h1>Deal with it.</h1>
+</div>
+
+<script sub-def="gutenberg-deal">
+  (function() {
+    return [
+      function() {
+        $('[sub="gutenberg-deal"] .glasses').removeClass('visible');
+        $('[sub="gutenberg-deal"] h1').removeClass('visible');
+      },
+      function() {
+        $('[sub="gutenberg-deal"] .glasses').addClass('visible');
+
+        setTimeout(function() {
+          $('[sub="gutenberg-deal"] h1').addClass('visible');
+        }, 2000);
+      }
+    ];
+  })();
+</script>

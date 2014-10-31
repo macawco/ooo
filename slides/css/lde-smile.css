@@ -1,0 +1,134 @@
+[sub="lde-smile"] section {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  -webkit-transition: all 1s;
+}
+
+[sub="lde-smile"] .graph {
+  top: 350px;
+  left: 50%;
+  width: 0;
+}
+
+[sub="lde-smile"] .design {
+  right: 0;
+  width: 500px;
+  height: 50px;
+  background: #4eacf2;
+}
+
+[sub="lde-smile"] .code {
+  left: 0;
+  width: 500px;
+  height: 50px;
+  background: #ea4877;
+}
+
+[sub="lde-smile"] .bar {
+  opacity: 0;
+  width: 0;
+}
+
+[sub="lde-smile"] .bar.visible {
+  opacity: 1;
+  -webkit-transition: all 1s;
+}
+
+[sub="lde-smile"] .wysiwyg .bar.visible {
+  width: 200px;
+}
+
+[sub="lde-smile"] .wysiwyg .cover {
+  left: -160px;
+  right: 0;
+  margin: auto;
+  width: 320px;
+  height: 100px;
+  background: black;
+  top: 50px;
+  -webkit-transition: all 1s;
+}
+
+[sub="lde-smile"] .frown .design {
+  height: 100px;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 10px;
+}
+
+[sub="lde-smile"] .frown .code {
+  height: 100px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 10px;
+}
+
+[sub="lde-smile"] .frown .cover {
+  border-radius: 50% 50% 0 0;
+  -webkit-transition: all 1s;
+}
+
+[sub="lde-smile"] h1 {
+  z-index: 10;
+  width: 100%;
+  font-size: 200px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+[sub="lde-smile"] .wysiwyg.hidden {
+  opacity: 0;
+}
+
+[sub="lde-smile"] .lde {
+  opacity: 0;
+}
+
+[sub="lde-smile"] .lde.visible {
+  opacity: 1;
+}
+
+[sub="lde-smile"] .lde .bar.visible {
+  width: 400px;
+}
+
+[sub="lde-smile"] .lde .cover {
+  left: -350px;
+  right: 0;
+  margin: auto;
+  width: 700px;
+  height: 200px;
+  background: black;
+  top: -200px;
+  -webkit-transition: all 1s;
+}
+
+[sub="lde-smile"] .smile .design {
+  height: 150px;
+  border-bottom-left-radius: 100%;
+  border-top-left-radius: 10px;
+}
+
+[sub="lde-smile"] .smile .code {
+  height: 150px;
+  border-bottom-right-radius: 100%;
+  border-top-right-radius: 10px;
+}
+
+[sub="lde-smile"] .smile .cover {
+  top: -100px;
+  border-radius: 0 0 50% 50%;
+  -webkit-transition: all 1s;
+}
+
+[sub="lde-smile"] .wysiwyg.side {
+  -webkit-transform: scale(0.5) translateX(-600px);
+}
+
+[sub="lde-smile"] .lde.side {
+  -webkit-transform: scale(0.5) translateX(700px);
+}

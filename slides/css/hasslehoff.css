@@ -1,0 +1,69 @@
+[name="Hasslehoff"] section {
+  width: 1400px;
+  height: 800px;
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+[name="Hasslehoff"] section.visible {
+  opacity: 1;
+}
+
+[name="Hasslehoff"] .ipad {
+  z-index: 5;
+}
+
+[name="Hasslehoff"] .hasslehoff-ipad {
+  left: 393px;
+  top: 171px;
+  z-index: 100;
+  width: 606px;
+}
+
+[name="Hasslehoff"] .fridge {
+  z-index: 4;
+  -webkit-perspective: 500;
+  -webkit-perspective-origin: 1600px -100px;
+}
+
+[name="Hasslehoff"] .hasslehoff-fridge {
+  left: 101px;
+  top: 110px;
+  z-index: 100;
+  width: 606px;
+  -webkit-transform: rotateY(5deg) rotateX(-1deg) rotateZ(1deg);
+}
+
+[name="Hasslehoff"] .fridge-finger {
+  left: 599px;
+  top: 465px;
+  z-index: 101;
+}
+
+[name="Hasslehoff"] .tesla {
+  z-index: 3;
+  -webkit-perspective: 1000;
+  -webkit-perspective-origin: 1100px 200px;
+}
+
+[name="Hasslehoff"] .hasslehoff-tesla {
+  left: 517px;
+  top: 175px;
+  z-index: 100;
+  width: 440px;
+  -webkit-transform: rotateX(10deg);
+}
+
+[name="Hasslehoff"] .loon {
+  z-index: 2;
+}
+
+[name="Hasslehoff"] .loon-mask {
+  left: 262px;
+  top: 369px;
+  z-index: 100;
+  width: 398px;
+  height: 261px;
+  -webkit-transform: rotate(-22.7deg);
+  overflow: hidden;
+}

@@ -1,17 +1,18 @@
 <div class="wrapper" sub="race">
-  <div class="boxes">
-    <div class="box froont">
-      <img class="logo" src="slides/images/froont-logo.png">
-    </div>
-    <div class="box adobe">
-      <img class="logo" src="slides/images/adobe-logo.png">
-    </div>
-    <div class="box webflow">
-      <img class="logo" src="slides/images/webflow-logo.png">
-    </div>
-    <div class="box macaw">
-      <img class="logo" src="slides/images/macaw-logo-black.png">
-    </div>
+  <div class="macaw product">
+    <img class="logo" src="slides/images/macaw-logo.png">
+    <div class="url">macaw.co</div>
+    <img class="screen" src="slides/images/macaw-screen.jpg">
+  </div>
+  <div class="webflow product">
+    <img class="logo" src="slides/images/webflow-logo.png">
+    <div class="url">webflow.com</div>
+    <img class="screen" src="slides/images/webflow-screen.jpg">
+  </div>
+  <div class="reflow product">
+    <img class="logo" src="slides/images/reflow-logo.png">
+    <div class="url">creative.adobe.com/products/reflow</div>
+    <img class="screen" src="slides/images/reflow-screen.jpg">
   </div>
 </div>
 
@@ -19,23 +20,20 @@
   (function() {
     return [
       function() {
-        $('box').removeClass('expanded');
+        $('.macaw').removeClass('visible');
+        $('.webflow').removeClass('visible');
+        $('.reflow').removeClass('visible');
       },
       function() {
-        $('.box').removeClass('expanded');
-        $('.froont').addClass('expanded');
+        $('.macaw').addClass('visible');
       },
       function() {
-        $('.box').removeClass('expanded');
-        $('.adobe').addClass('expanded');
+        $('.macaw').removeClass('visible');
+        $('.webflow').addClass('visible');
       },
       function() {
-        $('.box').removeClass('expanded');
-        $('.webflow').addClass('expanded');
-      },
-      function() {
-        $('.box').removeClass('expanded');
-        $('.macaw').addClass('expanded');
+        $('.webflow').removeClass('visible');
+        $('.reflow').addClass('visible');
       }
     ];
   })();

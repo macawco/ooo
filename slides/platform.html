@@ -1,0 +1,24 @@
+<div class="wrapper" sub="platform">
+
+  <img src="slides/images/fridge.jpg" class="fridge">
+  <img src="slides/images/tesla.jpg" class="tesla">
+  <img src="slides/images/firefox-os.jpg" class="firefox-os">
+  <img src="slides/images/wii-u.jpg" class="wii-sdk">
+  <img src="slides/images/rdio.jpg" class="rdio">
+  <img src="slides/images/itunes.jpg" class="itunes">
+  <img src="slides/images/matrix.jpg" class="matrix">
+
+</div>
+
+<script sub-def="platform">
+  (function() {
+    return [
+      function() {
+        $('[sub="platform"] .lde').removeClass('visible abbreviated');
+      },
+      function() {
+        $('[sub="platform"] .circles').removeClass('overlapping').addClass('touching');
+      }
+    ];
+  })();
+</script>

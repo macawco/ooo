@@ -1,0 +1,94 @@
+<div class="wrapper" sub="lde-design" set="live">
+
+  <div class="set live">
+    <img src="slides/images/live-icon.png" class="lde-icon single lde-icon-live">
+  </div>
+
+  <div class="set flow">
+    <img src="slides/images/stream-icon.png" class="lde-icon single lde-icon-stream">
+  </div>
+
+  <div class="set responsive">
+    <img src="slides/images/responsive-icon.png" class="lde-icon single lde-icon-responsive">
+  </div>
+
+  <div class="set positioning">
+    <div class="lde-icon-set">
+      <img src="slides/images/static-icon.png" class="lde-icon lde-icon-static">
+      <img src="slides/images/fixed-icon.png" class="lde-icon lde-icon-fixed">
+      <img src="slides/images/absolute-icon.png" class="lde-icon lde-icon-absolute">
+    </div>
+  </div>
+
+  <div class="set web">
+    <div class="lde-icon-set">
+      <img src="slides/images/states-icon.png" class="lde-icon lde-icon-states">
+      <img src="slides/images/display-icon.png" class="lde-icon lde-icon-display">
+      <img src="slides/images/embed-icon.png" class="lde-icon lde-icon-embed">
+    </div>
+  </div>
+
+  <div class="set draw">
+    <div class="lde-icon-set">
+      <img src="slides/images/select-icon.png" class="lde-icon lde-icon-select">
+      <img src="slides/images/zoom-icon.png" class="lde-icon lde-icon-zoom">
+      <img src="slides/images/eyedropper-icon.png" class="lde-icon lde-icon-eyedropper">
+    </div>
+  </div>
+
+  <div class="set environment">
+    <div class="lde-icon-set">
+      <img src="slides/images/html-icon.png" class="lde-icon lde-icon-html">
+      <img src="slides/images/css-icon.png" class="lde-icon lde-icon-css">
+      <img src="slides/images/js-icon.png" class="lde-icon lde-icon-js">
+    </div>
+  </div>
+
+</div>
+
+<script sub-def="lde-design">
+  (function() {
+    return [
+      function() {
+        $('[sub="lde-design"] .set').removeClass('visible');
+        $('[sub="lde-design"] .live').addClass('visible');
+        $('[sub="lde-design"]').attr('set', 'live');
+      },
+      function() {
+        $('[sub="lde-design"] .set').removeClass('visible');
+        $('[sub="lde-design"] .live').addClass('visible');
+        $('[sub="lde-design"]').attr('set', 'live');
+      },
+      function() {
+        $('[sub="lde-design"] .set').removeClass('visible');
+        $('[sub="lde-design"] .flow').addClass('visible');
+        $('[sub="lde-design"]').attr('set', 'flow');
+      },
+      function() {
+        $('[sub="lde-design"] .set').removeClass('visible');
+        $('[sub="lde-design"] .responsive').addClass('visible');
+        $('[sub="lde-design"]').attr('set', 'responsive');
+      },
+      function() {
+        $('[sub="lde-design"] .set').removeClass('visible');
+        $('[sub="lde-design"] .positioning').addClass('visible');
+        $('[sub="lde-design"]').attr('set', 'positioning');
+      },
+      function() {
+        $('[sub="lde-design"] .set').removeClass('visible');
+        $('[sub="lde-design"] .web').addClass('visible');
+        $('[sub="lde-design"]').attr('set', 'web');
+      },
+      function() {
+        $('[sub="lde-design"] .set').removeClass('visible');
+        $('[sub="lde-design"] .draw').addClass('visible');
+        $('[sub="lde-design"]').attr('set', 'draw');
+      },
+      function() {
+        $('[sub="lde-design"] .set').removeClass('visible');
+        $('[sub="lde-design"] .environment').addClass('visible');
+        $('[sub="lde-design"]').attr('set', 'environment');
+      }
+    ];
+  })();
+</script>

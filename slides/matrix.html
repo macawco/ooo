@@ -1,0 +1,18 @@
+<div class="wrapper" sub="matrix">
+  <img src="slides/images/matrix.jpg">
+</div>
+
+<script sub-def="matrix">
+  (function() {
+    return [
+      function() {
+        $('[sub="matrix"] .feathers').removeClass('zoomed');
+        $('[sub="matrix"] .names').removeClass('hidden');
+      },
+      function() {
+        $('[sub="matrix"] .feathers').addClass('zoomed');
+        $('[sub="matrix"] .names').addClass('hidden');
+      }
+    ];
+  })();
+</script>

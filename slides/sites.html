@@ -1,0 +1,56 @@
+<div class="wrapper" sub="sites">
+
+  <div class="bars">
+    <div class="bar english">
+      <h1>English</h1>
+      <h2>335M</h2>
+    </div>
+
+    <div class="bar spanish">
+      <h1>Spanish</h1>
+      <h2>415M</h2>
+    </div>
+
+    <div class="bar mandarin">
+      <h1>Mandarin</h1>
+      <h2>850M</h2>
+    </div>
+
+    <div class="bar html">
+      <h1>HTML</h1>
+      <h2>1B</h2>
+    </div>
+  </div>
+
+</div>
+
+<script sub-def="sites">
+  (function() {
+    return [
+      function() {
+        $('[sub="sites"] .bars').removeClass('english spanish mandarin html').addClass('english');
+        $('[sub="sites"] .english').addClass('visible');
+      },
+      function() {
+        $('[sub="sites"] .bars').removeClass('english spanish mandarin html').addClass('spanish');
+        $('[sub="sites"] .spanish').addClass('visible');
+      },
+      function() {
+        $('[sub="sites"] .bars').removeClass('english spanish mandarin html').addClass('mandarin');
+        $('[sub="sites"] .mandarin').addClass('visible');
+      },
+      function() {
+        $('[sub="sites"] .bars').removeClass('english spanish mandarin html').addClass('html');
+        $('[sub="sites"] .html').addClass('visible');
+      },
+      // function() {
+      //   $('[sub="sites"] .bars').removeClass('english spanish mandarin html').addClass('html-2');
+      //   $('[sub="sites"] .html').addClass('triple');
+      // },
+      // function() {
+      //   $('[sub="sites"] .bars').removeClass('english spanish mandarin html').addClass('html-3');
+      //   $('[sub="sites"] .html').addClass('tenfold');
+      // },
+    ];
+  })();
+</script>

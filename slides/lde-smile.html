@@ -1,0 +1,52 @@
+<div class="wrapper" sub="lde-smile">
+
+  <section class="wysiwyg">
+    <h1>WYSIWYG</h1>
+    <div class="graph">
+      <div class="bar design"></div>
+      <div class="bar code"></div>
+      <div class="cover"></div>
+    </div>
+  </section>
+
+  <section class="lde">
+    <h1>LDE</h1>
+    <div class="graph">
+      <div class="bar design"></div>
+      <div class="bar code"></div>
+      <div class="cover"></div>
+    </div>
+  </section>
+
+</div>
+
+<script sub-def="lde-smile">
+  (function() {
+    return [
+      function() {
+        $('[sub="lde-smile"] .design').removeClass('smiling');
+        $('[sub="lde-smile"] .code').removeClass('smiling');
+      },
+      function() {
+        $('[sub="lde-smile"] .wysiwyg .bar').addClass('visible');
+      },
+      function() {
+        $('[sub="lde-smile"] .wysiwyg').addClass('frown');
+      },
+      function() {
+        $('[sub="lde-smile"] .wysiwyg').addClass('hidden');
+        $('[sub="lde-smile"] .lde').addClass('visible');
+      },
+      function() {
+        $('[sub="lde-smile"] .lde .bar').addClass('visible');
+      },
+      function() {
+        $('[sub="lde-smile"] .lde').addClass('smile');
+      },
+      function() {
+        $('[sub="lde-smile"] .wysiwyg').removeClass('hidden').addClass('side');
+        $('[sub="lde-smile"] .lde').addClass('side');
+      },
+    ];
+  })();
+</script>

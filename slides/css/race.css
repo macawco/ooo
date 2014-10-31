@@ -1,79 +1,83 @@
-[name="Race"] .boxes {
+[name="Race"] .product {
   width: 1400px;
   height: 800px;
 }
 
-[name="Race"] .box {
-  position: absolute;
-  width: 320px;
-  height: 320px;
-  z-index: 0;
-  -webkit-transition: all .5s;
+[name="Race"] .url {
+  top: 140px;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  opacity: 0;
 }
 
 [name="Race"] .logo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  right: 0;
   margin: auto;
-  -webkit-transition: all .5s;
-}
-
-[name="Race"] .froont {
-  top: 300px;
-  background: #2ad57e;
-}
-
-[name="Race"] .froont .logo {
-  width: 199px;
-  height: 38px;
-}
-
-[name="Race"] .adobe {
-  left: 350px;
-  top: 250px;
-  background: #ee3576;
-}
-
-[name="Race"] .adobe .logo {
-  width: 79px;
-  height: 108px;
-}
-
-[name="Race"] .webflow {
-  left: 700px;
-  top: 200px;
-  background: #3fc9de;
-}
-
-[name="Race"] .webflow .logo {
-  width: 165px;
-  height: 44px;
-}
-
-[name="Race"] .macaw {
-  left: 1050px;
-  top: 150px;
-  background: #ffec6a;
+  opacity: 0;
 }
 
 [name="Race"] .macaw .logo {
-  width: 231px;
-  height: 44px;
+  width: 300px;
 }
 
-[name="Race"] .expanded {
+[name="Race"] .webflow .logo {
+  width: 289px;
+}
+
+[name="Race"] .reflow .logo {
+  width: 142px;
+}
+
+[name="Race"] .screen {
+  bottom: -50px;
   left: 0;
-  top: 0;
-  z-index: 1;
-  width: 1400px;
-  height: 800px;
-  -webkit-transition-delay: .3s;
+  right: 0;
+  margin: auto;
+  opacity: 0;
 }
 
-[name="Race"] .expanded .logo {
-  right: 950px;
-  -webkit-transition-delay: .3s;
+[name="Race"] .product.visible .screen {
+  bottom: 0;
+  opacity: 1;
+  -webkit-transition: all 1s .5s;
+}
+
+[name="Race"] .product.visible .logo {
+  opacity: 1;
+  -webkit-transition: all 1s;
+}
+
+[name="Race"] .product.visible .url {
+  opacity: .5;
+  -webkit-transition: all 1s .7s;
+}
+
+[name="Race"] .product.macaw .logo {
+  top: 40px;
+}
+
+[name="Race"] .product.macaw.visible .logo {
+  top: 70px;
+}
+
+[name="Race"] .product.webflow .logo {
+  top: 30px;
+}
+
+[name="Race"] .product.webflow.visible .logo {
+  top: 50px;
+}
+
+[name="Race"] .product.reflow .logo {
+  top: 0px;
+}
+
+[name="Race"] .product.reflow.visible .logo {
+  top: 30px;
+}
+
+[name="Race"] .product.reflow .url {
+  top: 190px;
 }

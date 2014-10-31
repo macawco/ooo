@@ -1,8 +1,8 @@
-[name="Overlap"] {
+[sub="lde"] {
   background: black;
 }
 
-[name="Overlap"] .circle-name {
+[sub="lde"] .circle-name {
   position: absolute;
   color: black;
   font-size: 40px;
@@ -11,7 +11,7 @@
   letter-spacing: 10px;
 }
 
-[name="Overlap"] .final-name {
+[sub="lde"] .final-name {
   top: 0;
   right: 0;
   bottom: 0;
@@ -24,12 +24,12 @@
   -webkit-transition: all .5s;
 }
 
-[name="Overlap"] .final-name.visible {
+[sub="lde"] .final-name.visible {
   -webkit-transition: all 1s 1.5s;
   opacity: 1;
 }
 
-[name="Overlap"] .circles {
+[sub="lde"] .circles {
   position: absolute;
   top: 0;
   left: 0;
@@ -38,81 +38,91 @@
   -webkit-transition: all 2s;
 }
 
-[name="Overlap"] .designer,
-[name="Overlap"] .developer {
+[sub="lde"] .designer,
+[sub="lde"] .developer {
   position: absolute;
+  width: 1200px;
+  height: 1200px;
   -webkit-transition: all 1.5s;
 }
 
-[name="Overlap"] .designer {
+[sub="lde"] .designer {
   top: -500px;
   left: -450px;
   z-index: 1;
   mix-blend-mode: screen;
 }
 
-[name="Overlap"] .designer .circle-name {
+[sub="lde"] img {
+  z-index: 0;
+}
+
+[sub="lde"] .circle-name {
+  z-index: 1;
+}
+
+[sub="lde"] .designer .circle-name {
   right: 200px;
   bottom: 280px;
 }
 
-[name="Overlap"] .developer .circle-name {
+[sub="lde"] .developer .circle-name {
   left: 200px;
   top: 280px;
 }
 
-[name="Overlap"] .developer {
+[sub="lde"] .developer {
   bottom: -500px;
   right: -450px;
   z-index: 0;
 }
 
-[name="Overlap"] .circles.touching .designer {
+[sub="lde"] .circles.touching .designer {
   top: -425px;
   left: -375px;
 }
 
-[name="Overlap"] .circles.touching .developer {
+[sub="lde"] .circles.touching .developer {
   bottom: -425px;
   right: -375px;
 }
 
-[name="Overlap"] .circles.touching .circle-name {
+[sub="lde"] .circles.touching .circle-name {
   -webkit-transition: all 1.5s;
 }
 
-[name="Overlap"] .circles.touching .designer .circle-name {
+[sub="lde"] .circles.touching .designer .circle-name {
   right: 300px;
 }
 
-[name="Overlap"] .circles.touching .developer .circle-name {
+[sub="lde"] .circles.touching .developer .circle-name {
   left: 300px;
 }
 
-[name="Overlap"] .circles.overlapping {
+[sub="lde"] .circles.overlapping {
   -webkit-transform: rotate(720deg) scale(.5);
 }
 
-[name="Overlap"] .circles.zoomed {
+[sub="lde"] .circles.zoomed {
   -webkit-transition: all .7s;
   -webkit-transform: rotate(720deg) scale(1.5);
 }
 
-[name="Overlap"] .circles.overlapping .circle-name {
+[sub="lde"] .circles.overlapping .circle-name {
   display: none;
 }
 
-[name="Overlap"] .circles.overlapping .designer {
+[sub="lde"] .circles.overlapping .designer {
   top: -200px;
   left: 100px;
 }
 
-[name="Overlap"] .circles.overlapping .developer {
+[sub="lde"] .circles.overlapping .developer {
   bottom: -200px;
   right: 100px;
 }
 
-[name="Overlap"] .logo {
+[sub="lde"] .logo {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -121,21 +131,21 @@
   -webkit-transition: all .6s;
 }
 
-[name="Overlap"] .logo.visible {
+[sub="lde"] .logo.visible {
   opacity: 1;
 }
 
-[name="Overlap"] .photoshop {
+[sub="lde"] .photoshop {
   left: 120px;
   height: 168px;
 }
 
-[name="Overlap"] .sublime-text {
-  right: 120px;
+[sub="lde"] .sublime-text {
+  right: 300px;
   height: 160px;
 }
 
-[name="Overlap"] .lde {
+[sub="lde"] .lde {
   position: absolute;
   top: 150px;
   left: 100px;
@@ -152,97 +162,101 @@
   -webkit-transition: all .7s;
 }
 
-[name="Overlap"] .lde .word {
+[sub="lde"] .lde .word * {
+  position: static;
+}
+
+[sub="lde"] .lde .word {
   position: absolute;
   left: 0;
   -webkit-transition: all 1s;
 }
 
-[name="Overlap"] .lde .lde-live {
+[sub="lde"] .lde .lde-live {
   top: 0;
 }
 
-[name="Overlap"] .lde .lde-design {
+[sub="lde"] .lde .lde-design {
   top: 150px;
 }
 
-[name="Overlap"] .lde .lde-environment {
+[sub="lde"] .lde .lde-environment {
   top: 300px;
 }
 
-[name="Overlap"] .lde.visible {
+[sub="lde"] .lde.visible {
   -webkit-transform: scale(1);
   opacity: 1;
 }
 
-[name="Overlap"] .lde span {
+[sub="lde"] .lde span {
   -webkit-transition: all .7s;
 }
 
-[name="Overlap"] .lde.abbreviated span {
+[sub="lde"] .lde.abbreviated span {
   opacity: 0.3;
 }
 
-[name="Overlap"] .lde.live {
+/*[sub="lde"] .lde.live {
   -webkit-transform: rotateZ(10deg) scale(2.5) translateX(360px) translateY(264px);
 }
 
-[name="Overlap"] .lde.live .lde-design {
+[sub="lde"] .lde.live .lde-design {
   opacity: 1;
 }
 
-[name="Overlap"] .lde.live .lde-design,
-[name="Overlap"] .lde.live .lde-environment {
+[sub="lde"] .lde.live .lde-design,
+[sub="lde"] .lde.live .lde-environment {
   opacity: 0;
 }
 
-[name="Overlap"] .lde.design {
+[sub="lde"] .lde.design {
   -webkit-transform: rotateZ(-10deg) scale(2.1) translateX(320px) translateY(135px);
 }
 
-[name="Overlap"] .lde.design .lde-design {
+[sub="lde"] .lde.design .lde-design {
   opacity: 1;
 }
 
-[name="Overlap"] .lde.design .lde-live,
-[name="Overlap"] .lde.design .lde-environment {
+[sub="lde"] .lde.design .lde-live,
+[sub="lde"] .lde.design .lde-environment {
   opacity: 0;
 }
 
-[name="Overlap"] .lde.environment {
+[sub="lde"] .lde.environment {
   -webkit-transform: rotateZ(10deg) scale(1.1) translateX(75px) translateY(-291px);
 }
 
-[name="Overlap"] .lde.environment .lde-environment {
+[sub="lde"] .lde.environment .lde-environment {
   opacity: 1;
 }
 
-[name="Overlap"] .lde.environment .lde-live,
-[name="Overlap"] .lde.environment .lde-design {
+[sub="lde"] .lde.environment .lde-live,
+[sub="lde"] .lde.environment .lde-design {
   opacity: 0;
 }
 
-[name="Overlap"] .lde-icon {
+[sub="lde"] .lde-icon {
   position: absolute;
   z-index: 100;
   opacity: 0;
   -webkit-transition: all .5s;
 }
 
-[name="Overlap"] .lde-icon.visible {
+[sub="lde"] .lde-icon.visible {
   opacity: 1;
 }
 
-[name="Overlap"] .live-1 .lde-icon {
+[sub="lde"] .live-1 .lde-icon {
   left: 900px;
   top: 100px;
 }
 
- [name="Overlap"] .lde-icon-delay-1 {
+ [sub="lde"] .lde-icon-delay-1 {
   -webkit-transition-delay: .1s;
  }
 
- [name="Overlap"] .lde-icon-delay-2 {
+ [sub="lde"] .lde-icon-delay-2 {
   -webkit-transition-delay: .2s;
  }
 
@@ -311,3 +325,4 @@
   left: 270px;
   top: 360px;
 }
+*/
