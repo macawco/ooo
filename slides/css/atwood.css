@@ -1,0 +1,10 @@
+[name="Atwoods Law"] section {
+  width: 1400px;
+  height: 800px;
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+[name="Atwoods Law"] section.visible {
+  opacity: 1;
+}

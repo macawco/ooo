@@ -11,14 +11,12 @@
     </div>
   </div>
 
+  <!-- <img src="slides/images/macaw-site.png" class="logo"> -->
+
   <div class="feathers">
-    <img src="slides/images/macaw-us.png" class="logo">
     <div class="feather-set-1">
       <img src="slides/images/feather-main.png" class="feather-set feather-set-0">
-      <img src="slides/images/feathers-small-1.png" class="feather-set">
     </div>
-    <img src="slides/images/feathers-small-2.png" class="feather-set feather-set-2">
-    <img src="slides/images/feathers-small-3.png" class="feather-set feather-set-3">
   </div>
 </div>
 
@@ -26,13 +24,13 @@
   (function() {
     return [
       function() {
-        $('[sub="us"] .feathers').removeClass('zoomed');
+        $('[sub="us"] .logo').removeClass('visible');
         $('[sub="us"] .names').removeClass('hidden');
       },
-      function() {
-        $('[sub="us"] .feathers').addClass('zoomed');
-        $('[sub="us"] .names').addClass('hidden');
-      }
+      // function() {
+      //   $('[sub="us"] .logo').addClass('visible');
+      //   $('[sub="us"] .names').addClass('hidden');
+      // }
     ];
   })();
 </script>

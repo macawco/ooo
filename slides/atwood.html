@@ -1,0 +1,33 @@
+<div class="wrapper" sub="atwood">
+
+  <img src="slides/images/atwoods-law.png" class="quote">
+
+  <section class="ipad">
+    <img src="slides/images/hasslehoff-3.gif" class="hasslehoff-ipad">
+    <img src="slides/images/ipad.jpg">
+  </section>
+
+</div>
+
+<script sub-def="atwood">
+  (function() {
+    return [
+      function() {
+        $('[sub="hoff"] section').removeClass('visible');
+        $('[sub="hoff"] section').eq(0).addClass('visible');
+      },
+      // function() {
+      //   $('[sub="hoff"] section').removeClass('visible');
+      //   $('[sub="hoff"] section').eq(1).addClass('visible');
+      // },
+      // function() {
+      //   $('[sub="hoff"] section').removeClass('visible');
+      //   $('[sub="hoff"] section').eq(2).addClass('visible');
+      // },
+      // function() {
+      //   $('[sub="hoff"] section').removeClass('visible');
+      //   $('[sub="hoff"] section').eq(3).addClass('visible');
+      // }
+    ];
+  })();
+</script>

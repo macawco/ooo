@@ -1,0 +1,130 @@
+[name="Sites"] .bars {
+  width: 1300px;
+  height: 800px;
+  -webkit-transition: all 1s;
+  -webkit-transform-origin: left;
+  -webkit-transform: translateY(-370px) scale(2);
+}
+
+[name="Sites"] .bars.english {
+  -webkit-transform: translateY(-370px) scale(2);
+}
+
+[name="Sites"] .bars.spanish {
+  -webkit-transform: translateY(-180px) scale(1.8);
+}
+
+[name="Sites"] .bars.mandarin {
+  -webkit-transform: translateY(0px) scale(1);
+}
+
+[name="Sites"] .bars.html {
+  -webkit-transform: translateY(70px) scale(1);
+}
+
+[name="Sites"] .bars.html-2 {
+  -webkit-transform: translateY(70px) scaleX(.33);
+}
+
+[name="Sites"] .bars.html-3 {
+  -webkit-transform: translateY(70px) scaleX(.03);
+}
+
+[name="Sites"] .bar {
+  width: 0;
+  height: 150px;
+  opacity: 0;
+  font-size: 50px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  -webkit-transition: all .5s;
+}
+
+[name="Sites"] .bar.visible {
+  opacity: 1;
+}
+
+[name="Sites"] h1 {
+  top: 43px;
+  left: 40px;
+}
+
+[name="Sites"] h2 {
+  top: 43px;
+  left: 100%;
+  margin-left: 40px;
+  opacity: 0;
+  -webkit-transition: all .5s .5s;
+}
+
+[name="Sites"] .bar.visible h2 {
+  opacity: 1;
+}
+
+[name="Sites"] .bar.english {
+  top: 510px;
+  background: #4eacf2;
+}
+
+[name="Sites"] .bar.english.visible {
+  width: 33.5%;
+}
+
+[name="Sites"] .bar.english h2 {
+  color: #4eacf2;
+}
+
+[name="Sites"] .bar.spanish {
+  top: 340px;
+  background: #65d381;
+}
+
+[name="Sites"] .bar.spanish.visible {
+  width: 41.5%;
+}
+
+[name="Sites"] .bar.spanish h2 {
+  color: #65d381;
+}
+
+[name="Sites"] .bar.mandarin {
+  top: 170px;
+  background: #f7dc77;
+}
+
+[name="Sites"] .bar.mandarin.visible {
+  width: 85%;
+}
+
+[name="Sites"] .mandarin h2 {
+  color: #f7dc77;
+}
+
+[name="Sites"] .bar.html {
+  top: 0;
+  background: #ed9d5c;
+}
+
+[name="Sites"] .bar.html.visible {
+  width: 100%;
+}
+
+[name="Sites"] .bar.html.triple {
+  width: 300%;
+}
+
+[name="Sites"] .bar.html.tenfold {
+  width: 3500%;
+}
+
+[name="Sites"] .bar.html h2 {
+  right: 40px;
+  left: auto;
+}
+
+[name="Sites"] .bars.html-2 h1,
+[name="Sites"] .bars.html-2 h2 {
+  opacity: 0;
+  -webkit-transition: none;
+}

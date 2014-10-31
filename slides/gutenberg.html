@@ -1,6 +1,8 @@
 <div class="wrapper" sub="gutenberg">
   <img class="gutenberg" src="slides/images/gutenberg.jpg">
   <img class="printing-press" src="slides/images/printing-press.jpg">
+  <img class="glasses" src="slides/images/glasses.png">
+  <h1>Deal with it.</h1>
 </div>
 
 <script sub-def="gutenberg">
@@ -11,6 +13,14 @@
       },
       function() {
         $('[sub="gutenberg"] .printing-press').addClass('visible');
+      },
+      function() {
+        $('[sub="gutenberg"] .printing-press').removeClass('visible');
+        $('[sub="gutenberg"] .glasses').addClass('visible');
+
+        setTimeout(function() {
+          $('[sub="gutenberg"] h1').addClass('visible');
+        }, 3000);
       }
     ];
   })();

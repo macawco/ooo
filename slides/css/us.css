@@ -13,6 +13,17 @@
   -webkit-transform: translateX(-1680px) translateY(-1200px) scale3d(0.33, 0.33, 0.33);
 }
 
+[name="Us"] .logo {
+  top: 540px;
+  left: 100px;
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+[name="Us"] .logo.visible {
+  opacity: 1;
+}
+
 /*[name="Us"] .feathers.zoomed .feather-set-1 {
   -webkit-transition: all 360s;
   -webkit-transform: rotate(360deg);
@@ -106,6 +117,6 @@
 
 [name="Us"] .logo {
   position: absolute;
-  top: 1350px;
-  left: 2100px;
+  top: 540px;
+  left: 100px;
 }
