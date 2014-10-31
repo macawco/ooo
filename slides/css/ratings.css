@@ -18,6 +18,7 @@
   left: 0;
   right: 0;
   margin: auto;
+  line-height: 190px;
   /*width: 810px;*/
   display: inline-block;
   text-align: center;
@@ -30,7 +31,6 @@
   font-size: 250px;
   left: -350px;
   color: black;
-  line-height: 190px;
   white-space: nowrap;
   -webkit-transition: all 1.05s;
 }
@@ -192,6 +192,6 @@
 
 [name="Ratings"] .step2 .output-label {
   opacity: 1;
-  padding-left: 306px;
+  padding-left: 324px;
   -webkit-transition: all .8s ease 1.5s;
 }
