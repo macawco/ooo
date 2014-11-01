@@ -1,6 +1,6 @@
 <div class="wrapper" sub="days-gone">
   <img class="image days-gone" src="slides/images/days-gone-image.png" />
-  <div class="overlay"></div>
+  <div class="overlay-color"></div>
 
   <div class="image dreamweaver"></div>
   <div class="image muse"></div>
@@ -15,9 +15,10 @@
   (function() {
     return [
       function() {
-
+        $('[sub="days-gone"]').removeClass('step2 step3');
       },
       function() {
+        $('[sub="days-gone"]').removeClass('step3');
         $('[sub="days-gone"]').addClass('step2');
       },
       function() {

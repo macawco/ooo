@@ -26,7 +26,7 @@
   -webkit-transition: all .5s;
 }
 
-[name="Days Gone"] .overlay {
+[name="Days Gone"] .overlay-color {
   opacity: 0;
   background: #4197f1;
   -webkit-transition: all .5s;
@@ -71,7 +71,7 @@
 
 /* step 2 */
 
-[name="Days Gone"] .step2 .overlay {
+[name="Days Gone"] .step2 .overlay-color {
   opacity: 0.8;
 }
 
