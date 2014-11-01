@@ -1,0 +1,28 @@
+<div class="wrapper" sub="20-years">
+  <div class="content">
+    <div class="years">20<span class="unit">yrs</span></div>
+
+    <div class="words">
+      <div class="why">Why hasn't this changed?</div>
+      <div class="time">It's been...</div>
+    </div>
+
+    <div class="result">We're still designing the same way.</div>
+  </div>
+
+<script sub-def="20-years">
+  (function() {
+    return [
+      function() {
+        $('[sub="20-years"]').removeClass('step2 step3');
+      },
+      function() {
+        $('[sub="20-years"]').removeClass('step3');
+        $('[sub="20-years"]').addClass('step2');
+      },
+      function() {
+        $('[sub="20-years"]').addClass('step3');
+      }
+    ];
+  })();
+</script>

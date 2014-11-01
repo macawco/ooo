@@ -1,0 +1,182 @@
+[name="Current Tools"] {
+  background: black;
+}
+
+[name="Current Tools"] .tools {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  right: 35px;
+  bottom: 35px;
+  margin: auto;
+  text-align: justify;
+  font-size:40px;
+  overflow: hidden;
+}
+
+[name="Current Tools"] .tools span {
+  opacity: .15;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Current Tools"] .title {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  height: 120px;
+  text-align: right;
+  font-size: 125px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Current Tools"] .title span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-right: 40px;
+  line-height: 120px;
+  margin: auto;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Current Tools"] .title .wireframe-prototype {
+  /*color: #4197f1;*/
+  top: -100px;
+  opacity: 0;
+
+}
+
+[name="Current Tools"] .title .html-framework {
+  /*color: #53d06b;*/
+  opacity: 0;
+}
+
+[name="Current Tools"] .title .grid-system {
+  /*color: #f4d85e;*/
+  opacity: 0;
+}
+
+[name="Current Tools"] .title .css {
+  /*color: #e88e47;*/
+  opacity: 0;
+}
+
+[name="Current Tools"] .title .misc {
+  /*color: #e42c64;*/
+  opacity: 0;
+}
+
+/* frame 2 */
+
+[name="Current Tools"] .frame2 .title .main {
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+[name="Current Tools"] .frame2 .title .wireframe-prototype {
+  opacity: 1;
+  -webkit-transition: all .5s ease .5s;
+}
+
+[name="Current Tools"] .frame2 .tools .wireframe-prototype {
+  color: #4197f1;
+  opacity: .5;
+  -webkit-transition: all .5s linear .5s;
+}
+
+/* frame 3 */
+
+[name="Current Tools"] .frame3 .title .wireframe-prototype {
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+[name="Current Tools"] .frame3 .tools .wireframe-prototype {
+  opacity: .3;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Current Tools"] .frame3 .title .html-framework {
+  opacity: 1;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Current Tools"] .frame3 .tools .html-framework {
+  color: #53d06b;
+  opacity: .8;
+  -webkit-transition: all .5s linear .5s;
+}
+
+/* frame 4 */
+
+[name="Current Tools"] .frame4 .title .html-framework {
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+[name="Current Tools"] .frame4 .tools .html-framework {
+  opacity: .3;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Current Tools"] .frame4 .title .grid-system {
+  opacity: 1;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Current Tools"] .frame4 .tools .grid-system {
+  color: #f4d85e;
+  opacity: .8;
+  -webkit-transition: all .5s linear .5s;
+}
+
+/* frame 5 */
+
+[name="Current Tools"] .frame5 .title .grid-system {
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+[name="Current Tools"] .frame5 .tools .grid-system {
+  opacity: .3;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Current Tools"] .frame5 .title .css {
+  opacity: 1;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Current Tools"] .frame5 .tools .css {
+  color: #e88e47;
+  opacity: .8;
+  -webkit-transition: all .5s linear .5s;
+}
+
+/* frame 6 */
+
+[name="Current Tools"] .frame6 .title .css {
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+[name="Current Tools"] .frame6 .tools .css {
+  opacity: .3;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Current Tools"] .frame6 .title .misc {
+  opacity: 1;
+  -webkit-transition: all .5s linear .5s;
+}
+
+[name="Current Tools"] .frame6 .tools .misc {
+  color: #e42c64;
+  opacity: .8;
+  -webkit-transition: all .5s linear .5s;
+}

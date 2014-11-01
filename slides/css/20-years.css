@@ -1,0 +1,113 @@
+[name="20 Years"] {
+  background: #4197f1;
+}
+
+[name="20 Years"] .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1400px;
+  height: 800px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all .5s;
+}
+
+[name="20 Years"] .step3 .content {
+  transform: scale(2);
+  left: -550px;
+}
+
+[name="20 Years"] .years {
+  position: absolute;
+  top: 800px;
+  left: 0;
+  font-size: 600px;
+  font-weight: bold;
+  line-height: 400px;
+  color: black;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all .5s ease;
+}
+
+[name="20 Years"] .step2 .years {
+  opacity: 0.3;
+  top: 300px;
+}
+
+/*[name="20 Years"] .step3 .years {
+  top: 242px;
+  -webkit-transition: all .5s;
+}*/
+
+[name="20 Years"] .unit {
+  font-size: 347px;
+}
+
+[name="20 Years"] .words {
+  position: absolute;
+  top: 375px;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all .5s;
+}
+
+[name="20 Years"] .words > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+[name="20 Years"] .step2 .words {
+  top: 175px;
+  margin-left: -544px;
+}
+
+[name="20 Years"] .time {
+  opacity: 0;
+  transform: perspective( 600px ) rotateY( 90deg );
+  -webkit-transition: all .25s linear;
+}
+
+[name="20 Years"] .step2 .time {
+  transform: perspective( 600px ) rotateY( 0deg );
+  opacity: 1;
+  -webkit-transition: all .25s linear .25s;
+}
+
+[name="20 Years"] .why {
+  transform: perspective( 600px ) rotateY( 0deg );
+  opacity: 1;
+  -webkit-transition: all .25s linear .25s;
+}
+
+[name="20 Years"] .step2 .why {
+  transform: perspective( 600px ) rotateY( 90deg );
+  opacity: 0;
+  -webkit-transition: all .25s;
+}
+
+[name="20 Years"] .result {
+  position: absolute;
+  opacity: 0;
+  width: 502px;
+  left: 775px;
+  top: 246px;
+  text-align: center;
+  font-size: 62px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all .5s;
+}
+
+[name="20 Years"] .step3 .result {
+  opacity: 1;
+  -webkit-transition: all .5s;
+}

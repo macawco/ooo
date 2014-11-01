@@ -1,0 +1,28 @@
+<div class="wrapper" sub="days-gone">
+  <img class="image days-gone" src="slides/images/days-gone-image.png" />
+  <div class="overlay"></div>
+
+  <div class="image dreamweaver"></div>
+  <div class="image muse"></div>
+
+  <div class="overlay-left"></div>
+  <!-- <div class="overlay-right"></div> -->
+
+  <div class="text">They Gone.</div>
+</div>
+
+<script sub-def="days-gone">
+  (function() {
+    return [
+      function() {
+
+      },
+      function() {
+        $('[sub="days-gone"]').addClass('step2');
+      },
+      function() {
+        $('[sub="days-gone"]').addClass('step3');
+      }
+    ];
+  })();
+</script>

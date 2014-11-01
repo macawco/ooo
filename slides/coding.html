@@ -1,0 +1,59 @@
+<div class="wrapper" sub="coding">
+
+  <img src="slides/images/geocities.png" class="image-overlay screenshot" />
+  <img src="slides/images/star-trek-facepalm.gif" class="image-overlay facepalm" />
+
+  <div class="cover overlay"></div>
+  <div class="cover overlay-black"></div>
+
+  <div class="approach-title">
+    <div class="approach-wrapper">
+      <img src="slides/images/html-icon.png" class="slide-icon">
+      <div class="title">Coding</div>
+    </div>
+  </div>
+
+  <div class="ratings">
+
+    <div class="rating-range"></div>
+
+    <div class="rating left">
+      <div class="bar design">
+        <img src="slides/images/pencil-icon.png" class="bar-icon">
+      </div>
+    </div>
+
+    <div class="rating right">
+      <div class="bar output">
+        <img src="slides/images/html-icon.png" class="bar-icon">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+  </div>
+</div>
+
+<script sub-def="coding">
+  (function() {
+    return [
+      function() {
+        $('[sub="coding"]').removeClass('step2 step3 step4 step5');
+      },
+      function() {
+        $('[sub="coding"]').removeClass('step3 step4');
+        $('[sub="coding"]').addClass('step2');
+      },
+      function() {
+        $('[sub="coding"]').removeClass('step4');
+        $('[sub="coding"]').addClass('step3');
+      },
+      function() {
+        $('[sub="coding"]').removeClass('step5');
+        $('[sub="coding"]').addClass('step4');
+      },
+      function() {
+        $('[sub="coding"]').addClass('step5');
+      }
+    ];
+  })();
+</script>

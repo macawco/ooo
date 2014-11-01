@@ -1,0 +1,197 @@
+[name="Ratings"] {
+  background: black;
+}
+
+[name="Ratings"] .wrapper {
+  height: 800px;
+  background: black;
+  -webkit-transition: all .5s;
+}
+
+[name="Ratings"] .rating-text {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 340px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  line-height: 190px;
+  /*width: 810px;*/
+  display: inline-block;
+  text-align: center;
+  -webkit-transition: all .5s
+}
+
+[name="Ratings"] .rating-text.up {
+  transform: rotate(-10deg);
+  top: 32px;
+  font-size: 250px;
+  left: -350px;
+  color: black;
+  white-space: nowrap;
+  -webkit-transition: all 1.05s;
+}
+
+[name="Ratings"] .rating-details {
+  position: absolute;
+  top: 800px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: black;
+  width: 100%;
+  height: 800px;
+  -webkit-clip-path: polygon(1500px 55px, 1400px 800px, 0px 800px, 0px 336px);
+  -webkit-transition: all .5s;
+}
+
+[name="Ratings"] .rating-details.up {
+  top: 0;
+  -webkit-transition: all 1s ease;
+}
+
+[name="Ratings"] .visible {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+}
+
+/* scale */
+
+[name="Ratings"] .ratings {
+  position: relative;
+  top: 480px;
+  width: 100%;
+  height: 90px;
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+}
+
+[name="Ratings"] .rating-range {
+  position: absolute;
+  top: 0;
+  width: 980px;
+  height: 60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: white;
+  opacity: 0.1;
+}
+
+[name="Ratings"] .rating {
+  position: absolute;
+  top: 0;
+  height: 60px;
+  width: 50%;
+}
+
+[name="Ratings"] .rating.left {
+  right: 48.5%;
+  -webkit-clip-path: polygon(0px 480px, 683px 480px, 717px 540px, 0px 540px);
+}
+
+[name="Ratings"] .rating.right {
+  left: 48.5%;
+  -webkit-clip-path: polygon(683px 480px, 1400px 480px, 1400px 540px, 718px 540px);
+}
+
+[name="Ratings"] .ratings .bar {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  background: white;
+  padding: 5px;
+}
+
+[name="Ratings"] .ratings .divider {
+  position: absolute;
+  width: 1px;
+  height: 90px;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+  border-left: 2px solid white;
+  transform: skewX(30deg);
+}
+
+[name="Ratings"] .ratings .bar-icon {
+  width: 50px;
+}
+
+[name="Ratings"] .ratings .design {
+  right: 0;
+  width: 0px;
+  background: #4197f1;
+  margin-right: 1px;
+  text-align: left;
+  -webkit-transition: all .5s ease;
+}
+
+[name="Ratings"] .ratings .output {
+  left: 0;
+  width: 0px;
+  background: #e42c64;
+  margin-left: 1px;
+  text-align: right;
+  -webkit-transition: all .5s;
+}
+
+[name="Ratings"] .ratings .label {
+  font-size: 25px;
+  position: absolute;
+  top: 70px;
+  width: 50%;
+  opacity: 0;
+}
+
+[name="Ratings"] .ratings .design-label {
+  right: 50%;
+  color: #4197f1;
+  text-align: right;
+}
+
+[name="Ratings"] .ratings .output-label {
+  left: 50%;
+  color: #e42c64;
+  text-align: left;
+}
+
+
+/* step 2 */
+
+[name="Ratings"] .wrapper.step2 {
+  background: #333;
+  -webkit-transition: all 1.05s;
+}
+
+[name="Ratings"] .step2 .ratings {
+  opacity: 1;
+  -webkit-transition: all .5s linear 1s;
+}
+
+[name="Ratings"] .step2 .design {
+  width: 500px;
+  -webkit-transition: all .8s ease 1.5s;
+}
+
+[name="Ratings"] .step2 .output {
+  width: 500px;
+  -webkit-transition: all .8s ease 1.5s;
+}
+
+[name="Ratings"] .step2 .design-label {
+  opacity: 1;
+  padding-right: 260px;
+  -webkit-transition: all .8s ease 1.5s;
+}
+
+[name="Ratings"] .step2 .output-label {
+  opacity: 1;
+  padding-left: 324px;
+  -webkit-transition: all .8s ease 1.5s;
+}

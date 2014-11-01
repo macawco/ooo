@@ -1,0 +1,21 @@
+<div class="wrapper" sub="back-where-we-started">
+  <div class="image"></div>
+  <div class="geocities"></div>
+</div>
+
+<script sub-def="back-where-we-started">
+  (function() {
+    return [
+      function() {
+        $('[sub="back-where-we-started"]').removeClass('step1 step2 step3 step4');
+      },
+      // function() {
+      //   $('[sub="back-where-we-started"]').addClass('step1');
+      // },
+      function() {
+        $('[sub="back-where-we-started"]').removeClass('step3');
+        $('[sub="back-where-we-started"]').addClass('step2');
+      }
+    ];
+  })();
+</script>

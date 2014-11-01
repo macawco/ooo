@@ -1,0 +1,59 @@
+<div class="wrapper" sub="plugins">
+
+  <img src="slides/images/flash-image.png" class="image-overlay screenshot" />
+  <img src="slides/images/naked-gun-facepalm.gif" class="image-overlay facepalm" />
+
+  <div class="cover overlay"></div>
+  <div class="cover overlay-black"></div>
+
+  <div class="approach-title">
+    <div class="approach-wrapper">
+      <img src="slides/images/plugins-icon.png" class="slide-icon">
+      <div class="title">Plugins</div>
+    </div>
+  </div>
+
+  <div class="ratings">
+
+    <div class="rating-range"></div>
+
+    <div class="rating left">
+      <div class="bar design">
+        <img src="slides/images/pencil-icon.png" class="bar-icon">
+      </div>
+    </div>
+
+    <div class="rating right">
+      <div class="bar output">
+        <img src="slides/images/html-icon.png" class="bar-icon">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+  </div>
+</div>
+
+<script sub-def="plugins">
+  (function() {
+    return [
+      function() {
+        $('[sub="plugins"]').removeClass('step2 step3 step4 step5');
+      },
+      function() {
+        $('[sub="plugins"]').removeClass('step3 step4');
+        $('[sub="plugins"]').addClass('step2');
+      },
+      function() {
+        $('[sub="plugins"]').removeClass('step4');
+        $('[sub="plugins"]').addClass('step3');
+      },
+      function() {
+        $('[sub="plugins"]').removeClass('step5');
+        $('[sub="plugins"]').addClass('step4');
+      },
+      function() {
+        $('[sub="plugins"]').addClass('step5');
+      }
+    ];
+  })();
+</script>

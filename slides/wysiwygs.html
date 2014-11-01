@@ -1,0 +1,59 @@
+<div class="wrapper" sub="wysiwygs">
+
+  <img src="slides/images/wysiwygs-image.png" class="image-overlay screenshot" />
+  <img src="slides/images/cosby-facepalm.gif" class="image-overlay facepalm" />
+
+  <div class="cover overlay"></div>
+  <div class="cover overlay-black"></div>
+
+  <div class="approach-title">
+    <div class="approach-wrapper">
+      <img src="slides/images/design-icon.png" class="slide-icon">
+      <div class="title">WYSIWYGS</div>
+    </div>
+  </div>
+
+  <div class="ratings">
+
+    <div class="rating-range"></div>
+
+    <div class="rating left">
+      <div class="bar design">
+        <img src="slides/images/pencil-icon.png" class="bar-icon">
+      </div>
+    </div>
+
+    <div class="rating right">
+      <div class="bar output">
+        <img src="slides/images/html-icon.png" class="bar-icon">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+  </div>
+</div>
+
+<script sub-def="wysiwygs">
+  (function() {
+    return [
+      function() {
+        $('[sub="wysiwygs"]').removeClass('step2 step3 step4 step5');
+      },
+      function() {
+        $('[sub="wysiwygs"]').removeClass('step3 step4');
+        $('[sub="wysiwygs"]').addClass('step2');
+      },
+      function() {
+        $('[sub="wysiwygs"]').removeClass('step4');
+        $('[sub="wysiwygs"]').addClass('step3');
+      },
+      function() {
+        $('[sub="wysiwygs"]').removeClass('step5');
+        $('[sub="wysiwygs"]').addClass('step4');
+      },
+      function() {
+        $('[sub="wysiwygs"]').addClass('step5');
+      }
+    ];
+  })();
+</script>

@@ -1,0 +1,45 @@
+[name="A Look Back"] {
+  background: black;
+}
+
+[name="A Look Back"] .image-overlay {
+  position: absolute;
+  top: 0;
+  left: -100;
+  width: 1520px;
+  -webkit-transition: all .5s ease;
+}
+
+[name="A Look Back"] .btf-gif {
+  /*-webkit-clip-path: polygon(-150px 0px, -150px 0px, 0px 800px, -150px 800px);*/
+  -webkit-clip-path: polygon(-150px 0px, 1500px 0px, 1650px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+[name="A Look Back"] .overlay {
+  position: absolute;
+  width: 1400px;
+  height: 800px;
+  opacity: 0.6;
+  background-color: #4197f1;
+}
+
+[name="A Look Back"] .look-back {
+  position: absolute;
+  top: 630px;
+  left: 30px;
+  font-size: 150px;
+  line-height: 120px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.5);
+}
+/*
+[name="A Look Back"] .step2 .btf-gif {
+  -webkit-clip-path: polygon(-150px 0px, 1500px 0px, 1650px 800px, 0px 800px);
+}
+*/
+
+
+

@@ -1,0 +1,46 @@
+<div class="wrapper" sub="ratings">
+  <div class="rating-text">Ratings</div>
+
+  <div class="rating-details"></div>
+
+  <div class="ratings">
+
+    <div class="rating-range"></div>
+
+    <div class="rating left">
+      <div class="bar design">
+        <img src="slides/images/pencil-icon.png" class="bar-icon">
+      </div>
+    </div>
+
+    <div class="rating right">
+      <div class="bar output">
+        <img src="slides/images/html-icon.png" class="bar-icon">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="label design-label">Design Experience</div>
+    <div class="label output-label">Code Quality</div>
+  </div>
+</div>
+
+<script sub-def="ratings">
+  (function() {
+    return [
+      function() {
+        $('[sub="ratings"]').removeClass('step2');
+        $('[sub="ratings"] .rating-text').removeClass('up');
+        $('[sub="ratings"] .rating-details').removeClass('up');
+        $('[sub="ratings"] .rating-detail-wrapper').removeClass('visible');
+      },
+      function() {
+        $('[sub="ratings"]').addClass('step2');
+        $('[sub="ratings"] .rating-text').addClass('up');
+        $('[sub="ratings"] .rating-details').addClass('up');
+        $('[sub="ratings"] .rating-detail-wrapper').addClass('visible');
+      }
+    ];
+  })();
+</script>

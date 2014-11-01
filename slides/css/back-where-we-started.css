@@ -1,0 +1,43 @@
+[name="Back Where We Started"] {
+  background: black;
+}
+
+[name="Back Where We Started"] .geocities {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1400px;
+  height: 800px;
+  z-index: 10;
+  background: url(../images/geocities.png) no-repeat;
+  background-position: -150px 0px;
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+[name="Back Where We Started"] .step2 .geocities {
+  -webkit-clip-path: polygon(0px 0px, 700px 0px, 680px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+
+[name="Back Where We Started"] .image {
+  background: url(../images/sublime-image.png) no-repeat;
+  background-color: black;
+  /*background-position: 600px -30px;*/
+  background-position: 0px -60px;
+  background-size: 1400px;
+  width: 1400px;
+  height: 800px;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(0px 0px, 1400px 0px, 1400px 800px, 0px 800px);
+  -webkit-transition: all .5s ease;
+}
+
+[name="Back Where We Started"] .step2 .image {
+  /*opacity: 0.6;*/
+  background-position: 600px -60px;
+  -webkit-clip-path: polygon(700px 0px, 1400px 0px, 1400px 800px, 680px 800px);
+  -webkit-transition: all .5s ease;
+}

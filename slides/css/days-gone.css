@@ -1,0 +1,99 @@
+[name="Days Gone"] {
+  background: black;
+}
+
+[name="Days Gone"] .image,
+[name="Days Gone"] .overlay,
+[name="Days Gone"] .overlay-left,
+[name="Days Gone"] .overlay-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1400px;
+  height: 800px;
+}
+
+[name="Days Gone"] .text {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.5);
+  -webkit-transition: all .5s;
+}
+
+[name="Days Gone"] .overlay {
+  opacity: 0;
+  background: #4197f1;
+  -webkit-transition: all .5s;
+}
+
+[name="Days Gone"] .overlay-left,
+[name="Days Gone"] .overlay-right {
+  opacity: 0.8;
+  background: #4197f1;
+  /*background: #e42c64;*/
+  -webkit-transition: all .5s;
+}
+
+[name="Days Gone"] .overlay-left {
+  -webkit-clip-path: polygon(725px -100px, 725px -100px, 675px 900px, 675px 900px);
+}
+
+[name="Days Gone"] .overlay-right {
+  -webkit-clip-path: polygon(725px -100px, 725px -100px, 675px 900px, 675px 900px);
+}
+
+[name="Days Gone"] .dreamweaver {
+  background: url(../images/dreamweaver-design.png);
+  background-position: -50px -30px;
+  background-size: 1400px;
+  /*-webkit-clip-path: polygon(0px 0px, 1400px 0px, 0px 900px);*/
+  /*-webkit-clip-path: polygon(-100px -100px, 675px -100px, 725px 900px, -100px 900px);*/
+  -webkit-clip-path: polygon(-100px -100px, 0px -100px, -100px 900px, -100px 900px);
+  -webkit-transition: all .5s;
+}
+
+[name="Days Gone"] .muse {
+  background: url(../images/muse-code.png);
+  background-position: 700px 0px;
+  background-size: 1700px;
+  /*-webkit-clip-path: polygon(0px 0px, 1400px 0px, 0px 900px);*/
+  /*-webkit-clip-path: polygon(675px -100px, 1500px -100px, 1500px 900px, 725px 900px);*/
+  /*-webkit-clip-path: polygon(-100px -100px, 0px -100px, -100px 900px, -100px 900px);*/
+  -webkit-clip-path: polygon(1500px -100px, 1500px -100px, 1400px 900px, 1400px 900px);
+  -webkit-transition: all .5s;
+}
+
+/* step 2 */
+
+[name="Days Gone"] .step2 .overlay {
+  opacity: 0.8;
+}
+
+[name="Days Gone"] .step2 .dreamweaver {
+  -webkit-clip-path: polygon(-100px -100px, 726px -100px, 676px 900px, -100px 900px);
+}
+
+[name="Days Gone"] .step2 .muse {
+  -webkit-clip-path: polygon(725px -100px, 1500px -100px, 1400px 900px, 675px 900px);
+}
+
+/* step 3 */
+
+[name="Days Gone"] .step3 .overlay-left {
+  -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1400px 900px, -100px 900px);
+}
+
+/*name="Days Gone"] .step3 .overlay-right {
+  -webkit-clip-path: polygon(725px -100px, 1500px -100px, 1400px 900px, 675px 900px);
+}*/
+
+[name="Days Gone"] .step3 .text {
+  opacity: 1;
+  -webkit-transition: all .5s ease .5s;
+}

@@ -1,0 +1,59 @@
+<div class="wrapper" sub="image-editors">
+
+  <img src="slides/images/image-editors-screen.png" class="image-overlay screenshot" />
+  <img src="slides/images/colbert-facepalm.gif" class="image-overlay facepalm" />
+
+  <div class="cover overlay"></div>
+  <div class="cover overlay-black"></div>
+
+  <div class="approach-title">
+    <div class="approach-wrapper">
+      <img src="slides/images/image-icon.png" class="slide-icon">
+      <div class="title">Image Editors</div>
+    </div>
+  </div>
+
+  <div class="ratings">
+
+    <div class="rating-range"></div>
+
+    <div class="rating left">
+      <div class="bar design">
+        <img src="slides/images/pencil-icon.png" class="bar-icon">
+      </div>
+    </div>
+
+    <div class="rating right">
+      <div class="bar output">
+        <img src="slides/images/html-icon.png" class="bar-icon">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+  </div>
+</div>
+
+<script sub-def="image-editors">
+  (function() {
+    return [
+      function() {
+        $('[sub="image-editors"]').removeClass('step2 step3 step4 step5');
+      },
+      function() {
+        $('[sub="image-editors"]').removeClass('step3 step4');
+        $('[sub="image-editors"]').addClass('step2');
+      },
+      function() {
+        $('[sub="image-editors"]').removeClass('step4');
+        $('[sub="image-editors"]').addClass('step3');
+      },
+      function() {
+        $('[sub="image-editors"]').removeClass('step5');
+        $('[sub="image-editors"]').addClass('step4');
+      },
+      function() {
+        $('[sub="image-editors"]').addClass('step5');
+      }
+    ];
+  })();
+</script>
