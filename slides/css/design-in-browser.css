@@ -31,68 +31,6 @@
   line-height: 90px;
 }
 
-[name="Design In Browser"] .start-q > div {
-  float: left;
-  padding: 10px;
-}
-
-[name="Design In Browser"] .step2 .start-q {
-  opacity: 0;
-  -webkit-transition: all .3s linear;
-}
-
-[name="Design In Browser"] .start-q .so {
-  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 0px, 0px 0px);
-  -webkit-backface-visibility: hidden;
-}
-
-[name="Design In Browser"] .step1 .start-q .so {
-  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 125px, 0px 125px);
-  -webkit-transition: all .2s ease;
-}
-
-[name="Design In Browser"] .start-q .where {
-  color: black;
-  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 125px, 0px 125px);
-  -webkit-backface-visibility: hidden;
-}
-
-[name="Design In Browser"] .step1 .start-q .where {
-  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 125px, 0px 125px);
-  -webkit-transition: all .5s ease .2s;
-}
-
-[name="Design In Browser"] .start-q .are {
-  -webkit-clip-path: polygon(0px 125px, 600px 125px, 600px 125px, 0px 125px);
-  -webkit-backface-visibility: hidden;
-  clear: both;
-}
-
-[name="Design In Browser"] .step1 .start-q .are {
-  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 125px, 0px 125px);
-  -webkit-transition: all .1s linear .4s;
-}
-
-[name="Design In Browser"] .start-q .we {
-  -webkit-clip-path: polygon(0px 125px, 600px 125px, 600px 125px, 0px 125px);
-  -webkit-backface-visibility: hidden;
-}
-
-[name="Design In Browser"] .step1 .start-q .we {
-  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 125px, 0px 125px);
-  -webkit-transition: all .1s linear .6s;
-}
-
-[name="Design In Browser"] .start-q .now {
-  -webkit-clip-path: polygon(0px 125px, 600px 125px, 600px 125px, 0px 125px);
-  -webkit-backface-visibility: hidden;
-}
-
-[name="Design In Browser"] .step1 .start-q .now {
-  -webkit-clip-path: polygon(0px 0px, 600px 0px, 600px 125px, 0px 125px);
-  -webkit-transition: all .1s linear .7s;
-}
-
 [name="Design In Browser"] .image {
   background: url(../images/sublime-image.png) no-repeat;
   background-color: black;
@@ -119,7 +57,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+  /*opacity: 0;*/
+  opacity: 0.3;
   -webkit-clip-path: polygon(0px 0px, 1400px 0px, 1400px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
@@ -143,7 +82,8 @@
   text-align: center;
   font-size: 50px;
   font-weight: bold;
-  opacity: 0;
+  /*opacity: 0;*/
+  opacity: 1;
   -webkit-transition: all .5s ease;
 }
 

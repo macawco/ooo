@@ -16,7 +16,7 @@
   -webkit-transition: all .5s ease;
 }
 
-[name="A Look Back"] .overlay {
+[name="A Look Back"] .overlay-color {
   position: absolute;
   width: 1400px;
   height: 800px;

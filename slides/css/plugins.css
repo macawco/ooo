@@ -26,7 +26,7 @@
   -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
 }
 
-[name="Plugins"] .overlay {
+[name="Plugins"] .overlay-color {
   position: absolute;
   width: 1400px;
   height: 800px;
@@ -72,6 +72,7 @@
   font-weight: bold;
   text-transform: uppercase;
   position: absolute;
+  margin-left: -35px;
   top: 100px;
   left: 360px;
   width: 522px;
@@ -83,6 +84,7 @@
 }
 
 [name="Plugins"] .slide-icon {
+  position: relative;
   float: left;
   -webkit-filter: invert(100%);
 }
@@ -149,6 +151,7 @@
 }
 
 [name="Plugins"] .ratings .bar-icon {
+  position: relative;
   width: 50px;
 }
 
@@ -198,7 +201,7 @@
   -webkit-transition: all .4s ease .3s;
 }
 
-[name="Plugins"] .step3 .overlay {
+[name="Plugins"] .step3 .overlay-color {
   -webkit-clip-path: polygon(1400px -100px, 1400px -100px, 1550px 800px, 1550px 800px);
   -webkit-transition: all .4s ease .3s;
 }
@@ -216,7 +219,7 @@
   -webkit-transition: all .5s ease;
 }
 
-[name="Plugins"] .step4 .overlay {
+[name="Plugins"] .step4 .overlay-color {
   -webkit-clip-path: polygon(1400px 800px, 1400px 800px, 1550px 800px, 1550px 800px);
   /*-webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);*/
   -webkit-transition: all .5s ease;

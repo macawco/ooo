@@ -15,6 +15,7 @@
 }
 
 [name="Current Tools"] .tools span {
+  position: relative;
   opacity: .15;
   -webkit-transition: all .5s linear .5s;
 }
