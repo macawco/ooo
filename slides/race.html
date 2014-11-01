@@ -14,6 +14,18 @@
     <div class="url">creative.adobe.com/products/reflow</div>
     <img class="screen" src="slides/images/reflow-screen.jpg">
   </div>
+
+  <div class="uxpin product">
+    <img class="logo" src="slides/images/uxpin-logo.png">
+    <div class="url">uxpin.com</div>
+    <img class="screen" src="slides/images/uxpin-screen.png">
+  </div>
+
+  <div class="pinegrow product">
+    <img class="logo" src="slides/images/pinegrow-logo.png">
+    <div class="url">pinegrow.com</div>
+    <img class="screen" src="slides/images/pinegrow-screen.png">
+  </div>
 </div>
 
 <script sub-def="race">
@@ -23,6 +35,7 @@
         $('.macaw').removeClass('visible');
         $('.webflow').removeClass('visible');
         $('.reflow').removeClass('visible');
+        $('.uxpin').removeClass('visible');
       },
       function() {
         $('.macaw').addClass('visible');
@@ -34,6 +47,14 @@
       function() {
         $('.webflow').removeClass('visible');
         $('.reflow').addClass('visible');
+      },
+      function() {
+        $('.reflow').removeClass('visible');
+        $('.uxpin').addClass('visible');
+      },
+      function() {
+        $('.uxpin').removeClass('visible');
+        $('.pinegrow').addClass('visible');
       }
     ];
   })();
