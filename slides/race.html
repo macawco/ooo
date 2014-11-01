@@ -20,6 +20,12 @@
     <div class="url">uxpin.com</div>
     <img class="screen" src="slides/images/uxpin-screen.png">
   </div>
+
+  <div class="pinegrow product">
+    <img class="logo" src="slides/images/pinegrow-logo.png">
+    <div class="url">pinegrow.com</div>
+    <img class="screen" src="slides/images/pinegrow-screen.png">
+  </div>
 </div>
 
 <script sub-def="race">
@@ -45,6 +51,10 @@
       function() {
         $('.reflow').removeClass('visible');
         $('.uxpin').addClass('visible');
+      },
+      function() {
+        $('.uxpin').removeClass('visible');
+        $('.pinegrow').addClass('visible');
       }
     ];
   })();

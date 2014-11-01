@@ -35,6 +35,10 @@
   width: 142px;
 }
 
+[name="Race"] .pinegrow .logo {
+  width: 142px;
+}
+
 [name="Race"] .screen {
   bottom: -50px;
   left: 0;
@@ -96,5 +100,17 @@
 }
 
 [name="Race"] .product.uxpin .url {
+  top: 190px;
+}
+
+[name="Race"] .product.pinegrow .logo {
+  top: 0px;
+}
+
+[name="Race"] .product.pinegrow.visible .logo {
+  top: 30px;
+}
+
+[name="Race"] .product.pinegrow .url {
   top: 190px;
 }
