@@ -16,7 +16,7 @@
 }
 
 [name="Design In Browser"] .step4 .geocities {
-  -webkit-clip-path: polygon(0px 0px, 700px 0px, 680px 800px, 0px 800px);
+  -webkit-clip-path: polygon(0px 0px, 700px 0px, 700px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
 
@@ -44,7 +44,7 @@
 }
 
 [name="Design In Browser"] .step3 .image {
-  -webkit-clip-path: polygon(700px 0px, 1400px 0px, 1400px 800px, 680px 800px);
+  -webkit-clip-path: polygon(700px 0px, 1400px 0px, 1400px 800px, 700px 800px);
   -webkit-transition: all .5s ease;
 }
 
@@ -71,7 +71,7 @@
 [name="Design In Browser"] .step3 .browser {
   background-position: 51% 50%;
   background-size: 1255px;
-  -webkit-clip-path: polygon(0px 0px, 700px 0px, 680px 800px, 0px 800px);
+  -webkit-clip-path: polygon(0px 0px, 700px 0px, 700px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
 

@@ -22,8 +22,13 @@
   -webkit-transition: all .5s ease;
 }
 
+[name="WYSIWYGS"] .screenshot {
+  top: 8px;
+}
+
 [name="WYSIWYGS"] .facepalm {
-  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
+  -webkit-clip-path: polygon(-100px 0px, 1500px 0px, 1500px 0px, 0px 0px);
+  /*-webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);*/
 }
 
 [name="WYSIWYGS"] .overlay-color {
@@ -42,7 +47,8 @@
   height: 800px;
   background: black;
   opacity: 0.3;
-  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
+  -webkit-clip-path: polygon(-100px 0px, 1500px 0px, 1500px 0px, 0px 0px);
+  /*-webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);*/
   -webkit-transition: all .5s ease;
 }
 
@@ -254,12 +260,12 @@
 /* step 5 */
 
 /*[name="WYSIWYGS"] .step5 .overlay,*/
-[name="WYSIWYGS"] .step5 .facepalm {
+[name="WYSIWYGS"] .step4 .facepalm {
   -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
 
-[name="WYSIWYGS"] .step5 .overlay-black {
+[name="WYSIWYGS"] .step4 .overlay-black {
   -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
-  -webkit-transition: none;
+  /*-webkit-transition: none;*/
 }

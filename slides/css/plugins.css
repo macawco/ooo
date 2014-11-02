@@ -23,7 +23,8 @@
 }
 
 [name="Plugins"] .facepalm {
-  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
+  /*-webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);*/
+  -webkit-clip-path: polygon(-100px 0px, 1500px 0px, 1500px 0px, 0px 0px);
 }
 
 [name="Plugins"] .overlay-color {
@@ -42,7 +43,8 @@
   height: 800px;
   background: black;
   opacity: 0;
-  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
+  -webkit-clip-path: polygon(-100px 0px, 1500px 0px, 1500px 0px, 0px 0px);
+  /*-webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);*/
   -webkit-transition: all .5s ease;
 }
 
@@ -254,12 +256,12 @@
 /* step 5 */
 
 /*[name="Plugins"] .step5 .overlay,*/
-[name="Plugins"] .step5 .facepalm {
+[name="Plugins"] .step4 .facepalm {
   -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
 
-[name="Plugins"] .step5 .overlay-black {
+[name="Plugins"] .step4 .overlay-black {
   -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
-  -webkit-transition: none;
+  /*-webkit-transition: none;*/
 }
