@@ -23,7 +23,8 @@
 }
 
 [name="Coding"] .facepalm {
-  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
+  -webkit-clip-path: polygon(-100px 0px, 1500px 0px, 1500px 0px, 0px 0px);
+  /*-webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);*/
 }
 
 [name="Coding"] .overlay-color {
@@ -42,7 +43,8 @@
   height: 800px;
   background: black;
   opacity: 0.4;
-  -webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);
+  -webkit-clip-path: polygon(-100px 0px, 1500px 0px, 1500px 0px, -100px 0px);
+  /*-webkit-clip-path: polygon(-100px 800px, 1500px 800px, 1500px 800px, 0px 800px);*/
   -webkit-transition: all .5s ease;
 }
 
@@ -253,14 +255,14 @@
 /* step 5 */
 
 /*[name="Coding"] .step5 .overlay,*/
-[name="Coding"] .step5 .facepalm {
+[name="Coding"] .step4 .facepalm {
   -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
   -webkit-transition: all .5s ease;
 }
 
-[name="Coding"] .step5 .overlay-black {
+[name="Coding"] .step4 .overlay-black {
   -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1500px 800px, 0px 800px);
-  -webkit-transition: none;
+  /*-webkit-transition: none;*/
 }
 
 

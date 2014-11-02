@@ -74,7 +74,7 @@
 
 /* frame 2 */
 
-[name="Current Tools"] .frame2 .title .main {
+[name="Current Tools"] .frame3 .title .main {
   opacity: 0;
   -webkit-transition: all .5s;
 }
@@ -92,7 +92,7 @@
 
 /* frame 3 */
 
-[name="Current Tools"] .frame3 .title .wireframe-prototype {
+/*[name="Current Tools"] .frame3 .title .wireframe-prototype {
   opacity: 0;
   -webkit-transition: all .5s;
 }
@@ -100,7 +100,7 @@
 [name="Current Tools"] .frame3 .tools .wireframe-prototype {
   opacity: .3;
   -webkit-transition: all .5s linear .5s;
-}
+}*/
 
 [name="Current Tools"] .frame3 .title .html-framework {
   opacity: 1;
