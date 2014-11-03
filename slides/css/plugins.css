@@ -27,6 +27,10 @@
   -webkit-clip-path: polygon(-100px 0px, 1500px 0px, 1500px 0px, 0px 0px);
 }
 
+[name="Plugins"] .screenshot {
+  top: 8px;
+}
+
 [name="Plugins"] .overlay-color {
   position: absolute;
   width: 1400px;
