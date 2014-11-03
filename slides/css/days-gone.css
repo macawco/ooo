@@ -1,11 +1,11 @@
-[name="Days Gone"] {
+[name="WYSIWTF?"] {
   background: black;
 }
 
-[name="Days Gone"] .image,
-[name="Days Gone"] .overlay,
-[name="Days Gone"] .overlay-left,
-[name="Days Gone"] .overlay-right {
+[name="WYSIWTF?"] .image,
+[name="WYSIWTF?"] .overlay,
+[name="WYSIWTF?"] .overlay-left,
+[name="WYSIWTF?"] .overlay-right {
   position: absolute;
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@
   height: 800px;
 }
 
-[name="Days Gone"] .text {
+[name="WYSIWTF?"] .text {
   color: white;
   font-size: 100px;
   font-weight: bold;
@@ -26,29 +26,29 @@
   -webkit-transition: all .5s;
 }
 
-[name="Days Gone"] .overlay-color {
+[name="WYSIWTF?"] .overlay-color {
   opacity: 0;
   background: #4197f1;
   -webkit-transition: all .5s;
 }
 
-[name="Days Gone"] .overlay-left,
-[name="Days Gone"] .overlay-right {
+[name="WYSIWTF?"] .overlay-left,
+[name="WYSIWTF?"] .overlay-right {
   opacity: 0.8;
   background: #4197f1;
   /*background: #e42c64;*/
   -webkit-transition: all .5s;
 }
 
-[name="Days Gone"] .overlay-left {
+[name="WYSIWTF?"] .overlay-left {
   -webkit-clip-path: polygon(725px -100px, 725px -100px, 675px 900px, 675px 900px);
 }
 
-[name="Days Gone"] .overlay-right {
+[name="WYSIWTF?"] .overlay-right {
   -webkit-clip-path: polygon(725px -100px, 725px -100px, 675px 900px, 675px 900px);
 }
 
-[name="Days Gone"] .dreamweaver {
+[name="WYSIWTF?"] .dreamweaver {
   background: url(../images/dreamweaver-design.png);
   background-position: -50px -30px;
   background-size: 1400px;
@@ -58,7 +58,7 @@
   -webkit-transition: all .5s;
 }
 
-[name="Days Gone"] .muse {
+[name="WYSIWTF?"] .muse {
   background: url(../images/muse-code.png);
   background-position: 700px 0px;
   background-size: 1700px;
@@ -71,29 +71,29 @@
 
 /* step 2 */
 
-[name="Days Gone"] .step2 .overlay-color {
+[name="WYSIWTF?"] .step2 .overlay-color {
   opacity: 0.8;
 }
 
-[name="Days Gone"] .step2 .dreamweaver {
+[name="WYSIWTF?"] .step2 .dreamweaver {
   -webkit-clip-path: polygon(-100px -100px, 726px -100px, 676px 900px, -100px 900px);
 }
 
-[name="Days Gone"] .step2 .muse {
+[name="WYSIWTF?"] .step2 .muse {
   -webkit-clip-path: polygon(725px -100px, 1500px -100px, 1400px 900px, 675px 900px);
 }
 
 /* step 3 */
 
-[name="Days Gone"] .step3 .overlay-left {
+[name="WYSIWTF?"] .step3 .overlay-left {
   -webkit-clip-path: polygon(-100px -100px, 1500px -100px, 1400px 900px, -100px 900px);
 }
 
-/*name="Days Gone"] .step3 .overlay-right {
+/*name="WYSIWTF?"] .step3 .overlay-right {
   -webkit-clip-path: polygon(725px -100px, 1500px -100px, 1400px 900px, 675px 900px);
 }*/
 
-[name="Days Gone"] .step3 .text {
+[name="WYSIWTF?"] .step3 .text {
   opacity: 1;
   -webkit-transition: all .5s ease .5s;
 }
