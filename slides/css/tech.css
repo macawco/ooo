@@ -24,24 +24,22 @@
   opacity: 0;
 }
 
-[name="Tech"] .logo {
-  width: 200px;
-}
-
 [name="Tech"] .html-logo {
-  top: 300px;
-  left: 120px;
-  width: 180px;
+  top: 280px;
+  left: 160px;
+  width: 260px;
 }
 
 [name="Tech"] .css-logo {
-  top: 310px;
-  left: 420px;
+  top: 290px;
+  left: 550px;
+  width: 280px;
 }
 
 [name="Tech"] .v8-logo {
-  top: 300px;
-  left: 730px;
+  top: 280px;
+  left: 940px;
+  width: 300px;
 }
 
 [name="Tech"] .node-logo {
