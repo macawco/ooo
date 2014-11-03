@@ -27,13 +27,14 @@
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transform: translateZ(-350px);
+  -webkit-transform: translateZ(-350px) scale(1.5);
   -webkit-transition: all 1s;
+  -webkit-transform-origin: top left;
 }
 
 [sub="5d"] .face.visible {
   opacity: 1;
-  -webkit-transform: translateZ(-150px);
+  -webkit-transform: translateZ(-150px) scale(1.5);
 }
 
 [sub="5d"] .fill {
