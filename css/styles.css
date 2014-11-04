@@ -164,6 +164,7 @@ slide[transition="swingTop"].visible {
   z-index: 1;
   width: 100%;
   height: 100%;
-  mix-blend-mode: color;
+  opacity: 0.6;
+  /*mix-blend-mode: color;*/
   background: red;
 }

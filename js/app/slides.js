@@ -86,13 +86,13 @@ define([
         scope: true,
         link: function(scope, element, attributes) {
 
-          slideService.setup(element.find('slide'));
+          slideService.setup($(element).find('slide'));
           scope.setup();
           slideService.setIndex(0);
 
           // pass transitions down to each slide if
           if (attributes.transition) {
-            element.find('slide').each(function() {
+            $(element).find('slide').each(function() {
               if (!$(this).attr('transition')) {
                 $(this).attr('transition', attributes.transition);
               }

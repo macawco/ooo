@@ -79,14 +79,16 @@
       },
       function() {
         $('[sub="5d"] .face-1').addClass('visible');
-      },
-      function() {
-        $('[sub="5d"] .face-1').removeClass('visible');
-        $('[sub="5d"] .face-2').addClass('visible');
-      },
-      function() {
-        $('[sub="5d"] .face-2').removeClass('visible');
-        $('[sub="5d"] .face-3').addClass('visible');
+
+        setTimeout(function() {
+          $('[sub="5d"] .face-1').removeClass('visible');
+          $('[sub="5d"] .face-2').addClass('visible');
+        }, 2000);
+
+        setTimeout(function() {
+          $('[sub="5d"] .face-2').removeClass('visible');
+          $('[sub="5d"] .face-3').addClass('visible');
+        }, 4000);
       }
     ];
   })();

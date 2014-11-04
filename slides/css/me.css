@@ -1,23 +1,25 @@
-[name="Me?"] .overlay {
-  background: rgb(0, 255, 119);
+[name="Me?"] .overlay,
+[name="Me LDE?"] .overlay {
+  background: rgb(94, 182, 255);
 }
 
-[name="Me?"] .me {
+[name="Me?"] .me,
+[name="Me LDE?"] .me {
   left: -100px;
   width: 1600px;
 }
 
-[name="Me?"] h1 {
+[name="Me?"] h1,
+[name="Me LDE?"] h1 {
   position: absolute;
   top: 350px;
-  left: 0;
-  right: 0;
+  right: 100px;
+  width: 400px;
   z-index: 2;
-  font-size: 100px;
+  font-size: 120px;
   font-weight: 700;
-  letter-spacing: 10px;
-  line-height: 1em;
-  text-align: center;
+  line-height: 0.9em;
+  text-align: right;
   text-transform: uppercase;
   color: white;
 }

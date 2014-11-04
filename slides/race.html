@@ -1,4 +1,5 @@
 <div class="wrapper" sub="race">
+
   <div class="macaw product">
     <img class="logo" src="slides/images/macaw-logo.png">
     <div class="url">macaw.co</div>
@@ -15,46 +16,22 @@
     <img class="screen" src="slides/images/reflow-screen.jpg">
   </div>
 
-  <div class="uxpin product">
-    <img class="logo" src="slides/images/uxpin-logo.png">
-    <div class="url">uxpin.com</div>
-    <img class="screen" src="slides/images/uxpin-screen.png">
-  </div>
-
-  <div class="pinegrow product">
-    <img class="logo" src="slides/images/pinegrow-logo.png">
-    <div class="url">pinegrow.com</div>
-    <img class="screen" src="slides/images/pinegrow-screen.png">
-  </div>
 </div>
 
 <script sub-def="race">
   (function() {
     return [
       function() {
-        $('.macaw').removeClass('visible');
-        $('.webflow').removeClass('visible');
-        $('.reflow').removeClass('visible');
-        $('.uxpin').removeClass('visible');
-      },
-      function() {
-        $('.macaw').addClass('visible');
-      },
-      function() {
-        $('.macaw').removeClass('visible');
+        $('.product').removeClass('visible');
         $('.webflow').addClass('visible');
       },
       function() {
-        $('.webflow').removeClass('visible');
+        $('.product').removeClass('visible');
         $('.reflow').addClass('visible');
       },
       function() {
-        $('.reflow').removeClass('visible');
-        $('.uxpin').addClass('visible');
-      },
-      function() {
-        $('.uxpin').removeClass('visible');
-        $('.pinegrow').addClass('visible');
+        $('.product').removeClass('visible');
+        $('.macaw').addClass('visible');
       }
     ];
   })();

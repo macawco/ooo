@@ -8,13 +8,11 @@
 
 [name="EWW"] h1 {
   position: absolute;
-  top: 350px;
-  left: 0;
-  right: 0;
+  top: 560px;
+  left: 150px;
   z-index: 2;
-  font-size: 100px;
+  font-size: 120px;
   font-weight: 700;
-  letter-spacing: 10px;
   line-height: 1em;
   text-align: center;
   color: white;

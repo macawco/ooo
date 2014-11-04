@@ -22,7 +22,7 @@ define([
             var subDef = $('[sub-def="' + id + '"]');
             if (subDef) {
               scope.sub = eval(subDef.html());
-              slideService.registerSub(element.index(), scope.sub);
+              slideService.registerSub($(element).index(), scope.sub);
             }
           }
 
@@ -35,9 +35,9 @@ define([
 
           // load content
           if (attributes.src) {
-            element.load(attributes.src, function() {
+            $(element).load(attributes.src, function() {
               // find and set the sub
-              var sub = element.find('> *').eq(0).attr('sub');
+              var sub = $(element).find('> *').eq(0).attr('sub');
               if (sub) {
                 _setSub(sub);
               }

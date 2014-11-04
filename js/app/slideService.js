@@ -19,10 +19,9 @@ define([
 
       service.setup = function($slides) {
         service.slides = [];
-        service.$slides = $slides;
+        service.$slides = $($slides);
         service.total = $slides.length;
-
-        service.$slides.each(function() {
+        $(service.$slides).each(function() {
           service.slides.push({
             name: $(this).attr('name')
           });

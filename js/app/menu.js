@@ -11,6 +11,7 @@ define([
 
       $scope.slides = slideService.slides;
       $scope.index = 0;
+      $element = $($element);
 
       slideService.on('newIndex', function(newIndex) {
         $scope.index = newIndex;
