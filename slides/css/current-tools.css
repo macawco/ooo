@@ -131,7 +131,8 @@
 }
 
 [name="Current Tools"] .frame4 .tools .grid-system {
-  color: #f4d85e;
+  /*color: #f4d85e;*/
+  color: #4197f1;
   opacity: .8;
   -webkit-transition: all .5s linear .5s;
 }
